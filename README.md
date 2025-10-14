@@ -1,6 +1,6 @@
 # Logosfield — Public Evidence & Reproducibility (v1)
 
-This repository ships **validated evidence and reproduction scaffolding** for the Logosfield; a memory scalar field that is coupled across all matter and represented here project across six tracks:
+This repository ships **validated evidence and reproduction scaffolding** for the Logosfield; a memory scalar field that is coupled across all matter and represented here projected across six tracks:
 
 - **Mechanism #1 — Galaxy Spin Alignment**
 - **Mechanism #2 — Density–Lensing (κ) Coherence**
