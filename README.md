@@ -3,7 +3,7 @@
 This repository ships **validated evidence and reproduction scaffolding** for the Logosfield; a memory scalar field that is coupled across all matter and represented here projected across six tracks:
 
 - **Mechanism #1 — Galaxy Spin Alignment**
-- **Mechanism #2 — Density–Lensing (κ) Coherence**
+- **Mechanism #2 — Density Lensing (κ) Coherence**
 - **Mechanism #3 — Sacred Sites (land + submerged)**
 - **Mechanism #14 — Biological Archetype Recurrence**
 - **Cosmology/CDDR — Etherington Distance Duality (η-test)**
@@ -16,17 +16,17 @@ This repository ships **validated evidence and reproduction scaffolding** for th
 
 > This repo follows a *prereg + robustness + replication* pattern. Runners validate a machine‑readable prereg file and emit results + robustness grids + meta hashes.
 
-## 🧾 Peer-Review Readiness Statement
+## 🧾 Peer Review Readiness Statement
 
 This repository contains all preregistered and validated Logosfield mechanisms.  
 For reproducibility, see the release bundles and Docker/Make instructions below.
 
 **Mechanisms included:**
 - **M1 – Galaxy Spin Alignment**
-- **M2 – Density–Lensing (κ) Coherence**
-- **M3 – Sacred-Site Alignment (land + submerged)**
+- **M2 – Density Lensing (κ) Coherence**
+- **M3 – Sacred Site Alignment (land + submerged)**
 - **M14 – Biological Archetype Recurrence**
-- **Cosmology/CDDR – Etherington Distance Duality (η-test)**
+- **Cosmology/CDDR – Etherington Distance Duality (η test)**
 - **Cosmology/SMBH – High-z Growth Feasibility & Curvature**
 
 **Quick start:**
@@ -35,7 +35,7 @@ For reproducibility, see the release bundles and Docker/Make instructions below.
 3. Each mechanism folder includes a `README` with dataset links + expected outputs.  
 
 > This repo follows a *prereg + robustness + replication* pattern.  
-> Runners validate machine-readable prereg files, emit results, and log meta-hashes for cross-domain replication.
+> Runners validate machine readable prereg files, emit results, and log meta hashes for cross domain replication.
 
 ## Headline Results (Conservative, prereg-aligned)
 - **M1 (Spins):** pooled f ≈ 0.625 (N ≈ 1.3M); SDSS 0.623; JWST bins 0.613→0.693; controls collapse.
