@@ -6,7 +6,7 @@ This repository ships **validated evidence and reproduction scaffolding** for th
 - **Mechanism #2 — Density Lensing (κ) Coherence**
 - **Mechanism #3 — Sacred Sites (land + submerged)**
 - **Mechanism #14 — Biological Archetype Recurrence**
-- **Cosmology/CDDR — Etherington Distance Duality (η-test)**
+- **Cosmology/CDDR — Etherington Distance Duality (η test)**
 - **Cosmology/SMBH — High-z Growth Feasibility & Curvature**
 
 ## Fast‑track
