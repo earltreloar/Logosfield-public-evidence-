@@ -1,0 +1,8 @@
+# Common Utilities
+
+Shared routines for:
+- Map I/O, reprojection, and masking (HEALPix helpers)
+- Null generation (rotations, shuffles, matched covariate sampling)
+- Spectra, w(θ), statistics, and plotting
+
+Used by multiple mechanisms to ensure consistent treatment and evaluation.
