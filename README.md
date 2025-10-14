@@ -1,6 +1,6 @@
 # Logosfield — Public Evidence & Reproducibility (v1)
 
-This repository ships **validated evidence and reproduction scaffolding** for the Logosfield project across six tracks:
+This repository ships **validated evidence and reproduction scaffolding** for the Logosfield; a memory scalar field that is coupled across all matter and represented here project across six tracks:
 
 - **Mechanism #1 — Galaxy Spin Alignment**
 - **Mechanism #2 — Density–Lensing (κ) Coherence**
@@ -15,7 +15,7 @@ This repository ships **validated evidence and reproduction scaffolding** for th
 3. See each folder's README for dataset links and expected outputs.
 
 > This repo follows a *prereg + robustness + replication* pattern. Runners validate a machine‑readable prereg file and emit results + robustness grids + meta hashes.
-
+Peer-Review Readiness Statement
 ---
 ## Headline Results (Conservative, prereg-aligned)
 - **M1 (Spins):** pooled f ≈ 0.625 (N ≈ 1.3M); SDSS 0.623; JWST bins 0.613→0.693; controls collapse.
