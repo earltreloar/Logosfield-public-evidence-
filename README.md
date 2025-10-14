@@ -18,18 +18,25 @@ This repository ships **validated evidence and reproduction scaffolding** for th
 
 ## 🧾 Peer-Review Readiness Statement
 
-This repository contains all materials required for independent reproduction and evaluation of the **Logosfield Fifth-Force Project (ODCCT)**.  
-It includes validated Mechanisms #1 (Spin Alignment) and #2 (Density–Lensing κ Coherence), with cross-domain cosmology modules for **CDDR (Etherington distance-duality)** and **SMBH high-z growth feasibility**.
+This repository contains all preregistered and validated Logosfield mechanisms.  
+For reproducibility, see the release bundles and Docker/Make instructions below.
 
-All analysis scripts, data files, and statistical outputs are archived and hash-verified for reproducibility.  
-This project follows open-science standards: **parameter preregistration, null-model testing, Bayesian inference, and robustness replication**.
+**Mechanisms included:**
+- **M1 – Galaxy Spin Alignment**
+- **M2 – Density–Lensing (κ) Coherence**
+- **M3 – Sacred-Site Alignment (land + submerged)**
+- **M14 – Biological Archetype Recurrence**
+- **Cosmology/CDDR – Etherington Distance Duality (η-test)**
+- **Cosmology/SMBH – High-z Growth Feasibility & Curvature**
 
-The results demonstrate statistically significant alignment and coherence patterns consistent with a **memory-like cosmological field**, offering testable evidence for a possible fifth fundamental interaction.  
-This release is intended for **public peer review and interdisciplinary collaboration**.
+**Quick start:**
+1. See **Releases** for validated result bundles (ZIPs) + checksums.  
+2. For a minimal run, open `REPRODUCE.md` and use the Docker one-liner with a prereg file.  
+3. Each mechanism folder includes a `README` with dataset links + expected outputs.  
 
----
+> This repo follows a *prereg + robustness + replication* pattern.  
+> Runners validate machine-readable prereg files, emit results, and log meta-hashes for cross-domain replication.
 
----
 ## Headline Results (Conservative, prereg-aligned)
 - **M1 (Spins):** pooled f ≈ 0.625 (N ≈ 1.3M); SDSS 0.623; JWST bins 0.613→0.693; controls collapse.
 - **M2 (κ coherence):** per‑ℓ SNR ≈ 12.68; log₁₀ BF ≈ 33.9 (C_ell); r‑stat alt log₁₀ BF ≈ 101.0; nulls collapse.
