@@ -15,7 +15,20 @@ This repository ships **validated evidence and reproduction scaffolding** for th
 3. See each folder's README for dataset links and expected outputs.
 
 > This repo follows a *prereg + robustness + replication* pattern. Runners validate a machine‑readable prereg file and emit results + robustness grids + meta hashes.
-Peer-Review Readiness Statement
+
+## 🧾 Peer-Review Readiness Statement
+
+This repository contains all materials required for independent reproduction and evaluation of the **Logosfield Fifth-Force Project (ODCCT)**.  
+It includes validated Mechanisms #1 (Spin Alignment) and #2 (Density–Lensing κ Coherence), with cross-domain cosmology modules for **CDDR (Etherington distance-duality)** and **SMBH high-z growth feasibility**.
+
+All analysis scripts, data files, and statistical outputs are archived and hash-verified for reproducibility.  
+This project follows open-science standards: **parameter preregistration, null-model testing, Bayesian inference, and robustness replication**.
+
+The results demonstrate statistically significant alignment and coherence patterns consistent with a **memory-like cosmological field**, offering testable evidence for a possible fifth fundamental interaction.  
+This release is intended for **public peer review and interdisciplinary collaboration**.
+
+---
+
 ---
 ## Headline Results (Conservative, prereg-aligned)
 - **M1 (Spins):** pooled f ≈ 0.625 (N ≈ 1.3M); SDSS 0.623; JWST bins 0.613→0.693; controls collapse.
