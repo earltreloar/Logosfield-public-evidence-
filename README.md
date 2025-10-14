@@ -29,6 +29,22 @@ For reproducibility, see the release bundles and Docker/Make instructions below.
 - **Cosmology/CDDR – Etherington Distance Duality (η test)**
 - **Cosmology/SMBH – High-z Growth Feasibility & Curvature**
 
+- ---
+
+### 🔍 Peer Review Rebuttal & Strengthening Plan
+A structured response addressing all independent critiques, including replication, parameter fitting, and transparency actions.
+
+📄 [Read the full Peer Review Rebuttal and Strengthening Plan →](./docs/PeerReview_Rebuttal_and_Strengthening.md)
+
+This document outlines next steps for:
+- Independent replication (Mechanisms #1–3, #14, CDDR, SMBH)
+- Predictive modeling for JWST Cycle 4 data
+- Open collaboration and dual-repository structure (science vs theology)
+- Transparent roadmap through 2026 milestones
+
+---
+
+
 **Quick start:**
 1. See **Releases** for validated result bundles (ZIPs) + checksums.  
 2. For a minimal run, open `REPRODUCE.md` and use the Docker one-liner with a prereg file.  
