@@ -1,0 +1,13 @@
+# Cosmology Modules — CDDR & SMBH
+
+**CDDR (Etherington distance duality)**  
+η(z) = D_L / [(1+z)² D_A] using Pantheon+, SH0ES, DESI BAO (with Lyα caution).  
+**Result (conservative)**: best-fit η ≈ **0.95–0.98**.
+
+**SMBH high-z feasibility**  
+Feasibility surface over (ε, λ_Edd, duty) under ΛCDM vs Logosfield t(z).  
+**Result**: all seed scenarios feasible under Logosfield timing (strict ΛCDM tighter).
+
+**Reproduce**  
+`python run.py --cosmo cddr`   or   `python run.py --cosmo smbh`  
+(See Release bundles for prereg files, inputs, and expected outputs.)
