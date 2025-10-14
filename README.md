@@ -31,7 +31,7 @@ For reproducibility, see the release bundles and Docker/Make instructions below.
 
 - ---
 ### 🧩 Peer Review Rebuttal & Strengthening Plan  
-See [PeerReview_Rebuttal_and_Strengthening.md](./docs/PeerReview_Rebuttal_and_Strengthening.md) for detailed responses to reviewer critiques, replication strategy, and the 2026 strengthening roadmap.
+See [[PeerReview_Rebuttal_and_Strengthening.md](https://github.com/earltreloar/Logosfield-public-evidence-/blob/main/peer_review_rebuttal_and_strengthening.md) for detailed responses to reviewer critiques, replication strategy, and the 2026 strengthening roadmap.
 
 ---
 
