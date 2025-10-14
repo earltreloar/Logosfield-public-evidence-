@@ -34,7 +34,7 @@ For reproducibility, see the release bundles and Docker/Make instructions below.
 ### 🔍 Peer Review Rebuttal & Strengthening Plan
 A structured response addressing all independent critiques, including replication, parameter fitting, and transparency actions.
 
-📄 [Read the full Peer Review Rebuttal and Strengthening Plan →](./docs/PeerReview_Rebuttal_and_Strengthening.md)
+blob:https://github.com/8d9dac1b-7627-4ace-b251-3eae66a45e0f
 
 This document outlines next steps for:
 - Independent replication (Mechanisms #1–3, #14, CDDR, SMBH)
