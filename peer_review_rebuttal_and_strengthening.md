@@ -35,7 +35,7 @@ We have addressed these through specific reproducible mechanisms and controls:
 - Fisher combined p ≈ 1.9 × 10⁻¹² across 10 symbolic-evolutionary traits.  
 - Significant even after Bonferroni correction.
 
-- **CDDR (Etherington Distance Duality) / Mechanism C**
+ **CDDR (Etherington Distance Duality) / Mechanism C**
 
 - Tested η = D_L / [(1+z)² D_A] using Pantheon+ SH0ES SNe Ia and DESI DR2 BAO data.  
 - With fixed r_d = 147.05 Mpc, recovered η ≈ 0.95–0.98 (< 1), indicating mild deviation from ΛCDM.  
