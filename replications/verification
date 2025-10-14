@@ -1,0 +1,29 @@
+### Verify replication assets
+
+To check file integrity locally or in Colab:
+
+```python
+import json, hashlib, os, glob
+
+def sha256sum(path):
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(1024*1024), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+with open("replications/hashes.json") as f:
+    expected = json.load(f)
+
+for fn, ref in expected.items():
+    matches = glob.glob(fn) or glob.glob(fn.replace(" (", "*").replace(")", "*"))
+    if not matches:
+        print(f"[WARN] {fn} not found")
+        continue
+    path = matches[0]
+    got = sha256sum(path)
+    if got == ref:
+        print(f"[OK] {fn} ✓")
+    else:
+        print(f"[MISMATCH] {fn}")
+        print(f" expected: {ref}\n got:      {got}")
