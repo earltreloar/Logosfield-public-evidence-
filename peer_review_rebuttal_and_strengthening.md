@@ -35,6 +35,21 @@ We have addressed these through specific reproducible mechanisms and controls:
 - Fisher combined p ≈ 1.9 × 10⁻¹² across 10 symbolic-evolutionary traits.  
 - Significant even after Bonferroni correction.
 
+- **CDDR (Etherington Distance Duality) / Mechanism C**
+
+- Tested η = D_L / [(1+z)² D_A] using Pantheon+ SH0ES SNe Ia and DESI DR2 BAO data.  
+- With fixed r_d = 147.05 Mpc, recovered η ≈ 0.95–0.98 (< 1), indicating mild deviation from ΛCDM.  
+- When allowing r_d to vary, best-fit r_d ≈ 132 Mpc (SDSS) and ≈ 115 Mpc (DESI Lyα), consistent with a small redshift-dependent scaling predicted by the Logosfield model.  
+- Replication ZIP bundle: `Mechanism_C_CDDR_Results.zip` (includes plots + csv tables).
+
+**SMBH Growth / Mechanism B**
+
+- Evaluated high-z quasar growth feasibility under ΛCDM vs. Logosfield-modified H(z).  
+- Using seeds M₀ = 10⁵ M⊙, ε = 0.1, λ_Edd = 0.8, the Logosfield variant (A_t ≈ −0.15, z_t ≈ 7.0, Δz ≈ 0.6) reduces required duty cycle from > 100% to ≈ 65–80%.  
+- Corresponding EHT shadow/QNM fits yield ε_core ≲ 0.05 (consistent with 5% shadow shift).  
+- Replication bundle: `SMBH_Growth_Repro_v0.2.zip` with summary csvs and plots.
+
+
 Each mechanism includes a reproducibility ZIP bundle with hash-verified metadata, preregistered null models, and descriptive statistics.
 
 ---
