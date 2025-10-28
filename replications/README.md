@@ -22,6 +22,14 @@ and early structure growth.
 - Interpretation: Logosfield buys early growth time without exotic seeds / insane accretion.
 - Repro: run `SMBH_strict_uplift.ipynb`.
 
+
+### Mechanism1_Spins_PublicRepo.ipynb
+• Test: galaxy spin alignment across ~1.3M objects (SDSS, JWST high-z bins).  
+• Result: pooled f_align ≈ 0.62–0.64; p < 1e−6; null shuffles collapse.  
+• Interpretation: preferred cosmic spin axis / handedness consistent with the same Logosfield parameters (α=1, β=2π, γ=0.005) used in all other domains.  
+• Repro: open `replications/Mechanism1_Spins_PublicRepro.ipynb` and run with the provided CSV.
+
+
 ## Notes
 - These two tests are new after v1.0 and are what we call “direct physical coupling tests.”
 - Earlier nested `replications/replications/` layout was a v1.0 artifact and was cleaned.
