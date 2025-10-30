@@ -137,3 +137,8 @@ Conclusion: These two post-v1.0 tests directly address the critique “show phys
 
 
 Together, these results support a single, memory-like scalar field (“Logosfield”) that couples coherently across scales — imprinting spin alignment and lensing structure, contributing a measurable ~5σ dynamical excess in galaxy rotation curves, and easing early-universe growth timing for z ≳ 6 quasars.
+
+### How to cite
+Treloar, E. (2025). *Logosfield — Public Evidence & Reproducibility (v2.0)*. GitHub.
+Versioned release: v2.0. DOI: _add Zenodo DOI here_.
+
