@@ -69,7 +69,7 @@ This is not a null. It is a signed, dynamical excess compatible with “fifth-fo
 
 
 ###  Reproduction notebook: 
-[replications/RotationCurve_4p8sigma/Logosfield_RotationCurve_4p8sigma.ipynb](replications/RotationCurve_4p8sigma/Logosfield_RotationCurve_4p8sigma.ipynb)
+[Reproduction notebook](replications/Logosfield_Astrophysics_4p8sigma.ipynb)
 
 This notebook:
 
@@ -90,7 +90,7 @@ At least one object is “rescued”: it is infeasible under strict ΛCDM timing
 Operationally: The Logosfield clock gives more usable growth time in the first ~700 Myr of cosmic history, reducing the high-z SMBH growth tension without demanding absurd seed masses or permanently super-Eddington duty cycles.
 
 ### Reproduction notebook: 
-[replications/SMBH_strict_uplift/Logosfield_SMBH_TimingRescue.ipynb](replications/SMBH_strict_uplift/Logosfield_SMBH_TimingRescue.ipynb)
+[Reproduction notebook](replications/SMBH_TimingRescue_STRICT.ipynb)
 
 This notebook:
 
