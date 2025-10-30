@@ -67,8 +67,10 @@ Typical SDSS rotation-curve noise at that radius is ≈ 0.10 km/s. That implies 
 
 This is not a null. It is a signed, dynamical excess compatible with “fifth-force-like” behavior. Importantly, it is predicted directly from the same {α,β,γ} that appear in the cosmology and structure results — we did not tune γ to force a detection at 10 kpc.
 
-**Reproduction notebook:**
-`replications/RotationCurve_4p8sigma/Logosfield_RotationCurve_4p8sigma.ipynb`
+
+###  Reproduction notebook: 
+[replications/RotationCurve_4p8sigma/Logosfield_RotationCurve_4p8sigma.ipynb](replications/RotationCurve_4p8sigma/Logosfield_RotationCurve_4p8sigma.ipynb)
+
 This notebook:
 
 * defines α, β, γ,
@@ -87,8 +89,9 @@ At least one object is “rescued”: it is infeasible under strict ΛCDM timing
 
 Operationally: The Logosfield clock gives more usable growth time in the first ~700 Myr of cosmic history, reducing the high-z SMBH growth tension without demanding absurd seed masses or permanently super-Eddington duty cycles.
 
-**Reproduction notebook:**
-`replications/SMBH_strict_uplift/Logosfield_SMBH_TimingRescue.ipynb`
+### Reproduction notebook: 
+[replications/SMBH_strict_uplift/Logosfield_SMBH_TimingRescue.ipynb](replications/SMBH_strict_uplift/Logosfield_SMBH_TimingRescue.ipynb)
+
 This notebook:
 
 * ingests the quasar timing tables (the `memo_quasar_growth_summary.csv` / `delta_t_table_v0.2.csv` style inputs),
