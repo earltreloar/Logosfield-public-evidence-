@@ -122,7 +122,6 @@ The Logosfield, as a memory-coherent scalar field, naturally extends to quantum 
 
 Atom Interferometry for Fifth-Force Excess: Predicts a Yukawa-like force deviation F5 ≈ γ α / (β + γ r) ≈ 8×10^{-4} g at r=0.1 mm, detectable at 0.8σ with Magis-100 noise (10^{-3} g). Bell Inequality Violations in Entangled Systems: β phase/handedness predicts subtle asymmetry in CHSH inequality (S ≈ 2 + γ sin(β φ)), up to 0.05 violation in photon pairs (testable with AION/quantum optics, σ~0.2). BBN/CMB Quantum Corrections: γ-modulated scalar pressure alters He-4 yield by ~0.01 (AlterBBN simulation), testable at 1σ with CMB-S4 polarization (links to CDDR photon coupling).
 
-Release quantum repro notebooks in /replications/ with fixed parameters; invite Magis/AION collaborations.
 Milestone: Preregister tests on OSF by Q1 2026; preliminary results from AlterBBN/CMB-S4 fits by Q3 2026. If positive, boosts Logosfield viability as quantum-cosmo unifier ~20%.
 
 
