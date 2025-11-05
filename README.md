@@ -1,6 +1,7 @@
 # Logosfield — Public Evidence & Reproducibility (v2.0)
 
-**arXiv:** [2511.XXXXX](https://arxiv.org/abs/2511.XXXXX) (CC BY 4.0)  
+**arXiv:** [2511.XXXXX](https://arxiv.org/abs/2511.XXXXX) (CC BY 4.0)  (announced soon — submission pending)
+**Preregistered on OSF** | **Docker one-liner** | **14 mechanisms**
 **Manuscript:** ©2025 Ethan Treloar — *The Remembering Cosmos*
 
 ---
@@ -21,8 +22,6 @@ Fork, improve, survive — but credit the source.
 
 ---
 
-**arXiv:** [2511.XXXXX](https://arxiv.org/abs/2511.XXXXX) (announced soon — submission pending)
-**Preregistered on OSF** | **Docker one-liner** | **14 mechanisms**
 
 This repository ships **validated evidence and reproduction scaffolding** for the Logosfield; a memory scalar field that is coupled across all matter and represented here projected across six tracks:
 
