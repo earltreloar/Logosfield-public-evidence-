@@ -1,8 +1,7 @@
 # Logosfield — Public Evidence & Reproducibility (v2.0)
 
-**arXiv:** [[2511.XXXXX](https://arxiv.org/abs/2511.XXXXX) (CC BY 4.0)](https://arxiv.org/abs/2511.06507)  
+**arXiv:** [2511.XXXXX](https://arxiv.org/abs/2511.XXXXX) (pending announcement)  
 **Preregistered on OSF** | **Docker one-liner** | **14 mechanisms**
-
 
 This repository ships **validated evidence and reproduction scaffolding** for the Logosfield; a memory scalar field that is coupled across all matter and represented here projected across six tracks:
 
