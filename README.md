@@ -1,6 +1,6 @@
 # Logosfield — Public Evidence & Reproducibility (v2.0)
 
-**arXiv:** [2511.XXXXX](https://arxiv.org/abs/2511.XXXXX) (CC BY 4.0)  
+**arXiv:** [[2511.XXXXX](https://arxiv.org/abs/2511.XXXXX) (CC BY 4.0)](https://arxiv.org/abs/2511.06507)  
 **Preregistered on OSF** | **Docker one-liner** | **14 mechanisms**
 
 
