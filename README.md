@@ -1,6 +1,6 @@
 # Logosfield — Public Evidence & Reproducibility (v2.0)
 
-**arXiv:** [2511.XXXXX](https://arxiv.org/abs/2511.XXXXX) (CC BY 4.0)  (announced soon — submission pending)
+**arXiv:** [6955078](https://arxiv.org/submit/6955078) (pending announcement)
 **Preregistered on OSF** | **Docker one-liner** | **14 mechanisms**
 **Manuscript:** ©2025 Ethan Treloar — *The Remembering Cosmos*
 
