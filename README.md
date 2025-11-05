@@ -1,5 +1,26 @@
 # Logosfield — Public Evidence & Reproducibility (v2.0)
 
+**arXiv:** [2511.XXXXX](https://arxiv.org/abs/2511.XXXXX) (CC BY 4.0)  
+**Manuscript:** ©2025 Ethan Treloar — *The Remembering Cosmos*
+
+---
+
+## Derivative Work & Co-Authorship Policy
+
+Any publication that:
+- Uses the Logosfield scalar field (α=1, β≈2π, γ≈0.005)
+- Modifies parameters, equations, or mechanisms
+- Builds on the 14 preregistered tests or ODCCT framework
+
+**Must offer co-authorship to Ethan Treloar**.
+
+This is a condition of use under CC BY 4.0.  
+Fork, improve, survive — but credit the source.
+
+> "I planted the seed. You grow the tree. I get a branch."
+
+---
+
 **arXiv:** [2511.XXXXX](https://arxiv.org/abs/2511.XXXXX) (announced soon — submission pending)
 **Preregistered on OSF** | **Docker one-liner** | **14 mechanisms**
 
