@@ -27,7 +27,7 @@ Fork, improve, survive — but credit the source.
 
 The full theoretical foundation of **ODCCT** and **Logosfield** is now in the repo:
 
-📖 [**Read the manuscript (PDF)**] (./manuscript/the remembering cosmos.pdf) 
+📖 [**Read the manuscript (PDF)**] (./manuscript/the_remembering_cosmos.pdf)
 📄 [**DOCX version**](./manuscript/The_Remembering_Cosmos.docx)  
 📝 [**Markdown preview**](./manuscript/The_Remembering_Cosmos.md)
 
