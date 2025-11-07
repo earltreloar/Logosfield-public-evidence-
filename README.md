@@ -12,7 +12,7 @@
 Any publication that:
 - Uses the Logosfield scalar field (α=1, β≈2π, γ≈0.005)
 - Modifies parameters, equations, or mechanisms
-- Builds on the 14 preregistered tests or ODCCT framework
+- Builds on the 17 preregistered tests or ODCCT framework
 
 **Must offer co-authorship to Ethan Treloar**.
 
