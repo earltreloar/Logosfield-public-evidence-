@@ -1,0 +1,1 @@
+python\nimport numpy as np, random\nfrom predict import predict_sigma8\ndiffs = [predict_sigma8(random.gauss(0.96,0.02)) - 0.8121 for _ in range(1000)]\nprint(f"Null diff mean = {np.mean(diffs):.5f}")\n
