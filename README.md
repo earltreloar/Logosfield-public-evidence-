@@ -10,7 +10,7 @@ The full theoretical foundation for **ODCCT** and **Logosfield**:
 *"The Remembering Cosmos"* by Ethan Treloar (2025)
 
 - **PDF** (Full readable): [Download/View](./manuscript/the_remembering_cosmos.pdf)
-- **DOCX** (Original): [Download](./manuscript/the_remembering_cosmos.docx)
+- **DOCX** (Original): manuscript/The Remembering Cosmos.docx
 - **Markdown** (Preview): [View Online](./manuscript/The_Remembering_Cosmos.md)
 
 > *“The cosmos is not a machine but a memory.”* – Earl Treloar
