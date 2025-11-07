@@ -1,0 +1,1 @@
+python\nimport numpy as np, random\nfrom predict import predict_lya_escape\nsnrs = []\nfor _ in range(1000):\n    z_fake = random.uniform(6, 15)\n    snrs.append((predict_lya_escape(z_fake) - 0.5)/0.03)\nprint(f"Null mean SNR = {np.mean(snrs):.3f} ± {np.std(snrs):.3f}")\n
