@@ -1,0 +1,1 @@
+# Mechanism 17 – H₀ Reconciliation (TDCOSMO + JWST Cepheids)\n\n**Prediction**: `H₀ ≈ 70.0 ± 1.5 km/s/Mpc` (γ late-acceleration)\n**Data**: TDCOSMO-2025 + JWST Cepheid ladder\n**Prereg**: OSF 2025-11-07
