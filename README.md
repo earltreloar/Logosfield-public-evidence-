@@ -1,6 +1,7 @@
 # Logosfield — Public Evidence & Reproducibility (v2.0)
 
 **arXiv:** [6955078](https://arxiv.org/submit/6955078) (pending announcement) Declined my submission.
+
 **Preregistered on OSF** | **Docker one-liner** | **14 mechanisms**
 **Manuscript:** ©2025 Ethan Treloar — *The Remembering Cosmos*
 
