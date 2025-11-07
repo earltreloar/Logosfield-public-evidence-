@@ -1,6 +1,6 @@
 # Logosfield — Public Evidence & Reproducibility (v2.0)
 
-**arXiv:** [6955078](https://arxiv.org/submit/6955078) (pending announcement)
+**arXiv:** [6955078](https://arxiv.org/submit/6955078) (pending announcement) Declined my submission.
 **Preregistered on OSF** | **Docker one-liner** | **14 mechanisms**
 **Manuscript:** ©2025 Ethan Treloar — *The Remembering Cosmos*
 
@@ -23,7 +23,7 @@ Fork, improve, survive — but credit the source.
 ---
 
 
-This repository ships **validated evidence and reproduction scaffolding** for the Logosfield; a memory scalar field that is coupled across all matter and represented here projected across six tracks:
+This repository ships **validated evidence and reproduction scaffolding** for the Logosfield; a memory scalar field that is coupled across all matter and represented here projected across six tracks:It is the science behind my theory for the universe and existence the Odyssean-Dantean Cosmic Christy Theory (ODCCT)
 
 - **Mechanism #1 — Galaxy Spin Alignment**
 - **Mechanism #2 — Density Lensing (κ) Coherence**
