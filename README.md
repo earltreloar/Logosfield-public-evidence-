@@ -2,7 +2,7 @@
 
 **arXiv:** [6955078](https://arxiv.org/submit/6955078) (pending announcement) Declined my submission.
 
-**Preregistered on OSF** | **Docker one-liner** | **14 mechanisms**
+**Preregistered on OSF** | **Docker one-liner** | **17 mechanisms**
 **Manuscript:** ©2025 Ethan Treloar — *The Remembering Cosmos*
 
 ---
