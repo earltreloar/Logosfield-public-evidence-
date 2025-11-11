@@ -15,6 +15,9 @@ The full theoretical foundation for **ODCCT** and **Logosfield**:
 
 > *“The cosmos is not a machine but a memory.”* – Earl Treloar
 
+
+
+
 **Core Claims (from Executive Summary)**: ODCCT posits the universe as a "remembering" memory field (Logosfield scalar fifth force: α=1, β≈2π, γ≈0.005), unifying anomalies like galaxy spins (f≈0.625), SMBH growth (80% feasibility), and CMB signatures. Chapters 21–27 detail equations/falsifiability; Appendices cover rebuttals and 2025 data (JWST/DESI).
 
 Ties directly to repo tests: Run `make all` for 17 mechanisms. Preregistered on OSF. Copyright © 2025 Ethan Treloar.
@@ -111,6 +114,25 @@ This notebook:
 * evaluates Δv(r) on log-spaced radii,
 * plots Δv vs r alongside a 0.10 km/s reference noise band,
 * reports Δv(10 kpc) and σ = Δv / noise.
+
+
+# Logosfield: A Scalar Field of Cosmic Memory
+
+**Preregistered Mechanisms**: 21  
+**Latest**: [M#21 — 29.5% Damping for SMBH Seeding](mechanisms/21_SMBH_Seeding_Damping/Logosfield_SMBH_Seeding_Prediction.md)  
+**Plot**: [29.5% Tighter Clusters](mechanisms/21_SMBH_Seeding_Damping/logosfield_damping_plot.png)
+
+> φ(r,t) = φ₀ exp[−γ(t−t₀)] · Σ βᵢ δSᵢ(r)  
+> **γ = 0.005** — fixed from JWST
+
+**Unifies**:  
+- 4.8σ rotation excess  
+- JWST overmassive SMBHs  
+- H₀ tension (<3σ)  
+- g-2 residuals
+
+[Mechanisms](mechanisms/) · [Falsify me](https://x.com/EarlTreloar)
+
 
 ### (B) High-z SMBH timing rescue (strict ΛCDM vs Logosfield uplift)
 
