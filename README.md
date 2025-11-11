@@ -49,6 +49,7 @@ This repository ships validated evidence and reproduction scaffolding for the Lo
 - Mechanism #15 — JWST z=13 Ly-α Escape Fraction (2025)
 - Mechanism #16 — DESI Full-Shape σ₈ Suppression (2025)
 - Mechanism #17 — H₀ Reconciliation (TDCOSMO + JWST Cepheids, 2025)
+- Mechanism #21 - SMBH Seeding Damping (JWST, 2025-2026)
 
 ## Fast-Track
 
