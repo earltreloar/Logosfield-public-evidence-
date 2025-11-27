@@ -4,16 +4,6 @@ arXiv: 6955078 (declined—gatekeeping won't stop open science).
 
 Preregistered on OSF | Docker one-liner | 17 mechanisms | Full Manuscript: ©2025 Ethan Treloar — The Remembering Cosmos
 
-## 📖 The Remembering Cosmos Manuscript (New in v3.1.0)
-
-The full theoretical foundation for **ODCCT** and **Logosfield**:  
-*"The Remembering Cosmos"* by Ethan Treloar (2025)—a 115-page synthesis of theology, metaphysics, and testable cosmology.
-
-- **PDF** (Full 115 pages, readable): [Download/View](./manuscript/The_Remembering_Cosmos.pdf)
-- **DOCX** (Original editable): [Download](./manuscript/The_Remembering_Cosmos.docx)
-- **Markdown** (GitHub-rendered preview): [View Online](./manuscript/The_Remembering_Cosmos.md)
-
-> *“The cosmos is not a machine but a memory.”* – Earl Treloar
 
 
 
