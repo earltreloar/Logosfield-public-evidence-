@@ -1,0 +1,694 @@
+1. Scope and status
+
+Status: Frozen (v0.1)
+Purpose: Provide a minimal EFT completion linking the Logosfield scalar 
+Φ
+Φ to SM gauge + Yukawa sectors while keeping GR minimal and preserving backward compatibility with legacy mechanisms.
+
+2. Field content
+
+Metric 
+𝑔
+𝜇
+𝜈
+g
+μν
+	​
+
+ with Einstein–Hilbert action.
+
+Logosfield scalar 
+Φ
+Φ with local kinetic term + potential 
+𝑉
+(
+Φ
+)
+V(Φ).
+
+Standard Model fields (unchanged).
+
+Memory kernel term 
+𝑆
+m
+e
+m
+S
+mem
+	​
+
+ encoding Logosfield recursion.
+
+3. Locked parameters (Logosfield identity)
+
+𝛼
+=
+1
+α=1 (normalization)
+
+𝛽
+≈
+2
+𝜋
+β≈2π (memory falloff parameter)
+
+𝛾
+=
+0.005
+γ=0.005 (memory strength/decay)
+
+These are global (no per-mechanism retuning).
+
+4. Minimal GR (conservative requirement)
+𝐿
+G
+R
+=
+−
+𝑔
+ 
+𝑀
+P
+l
+2
+2
+𝑅
+L
+GR
+	​
+
+=
+−g
+	​
+
+2
+M
+Pl
+2
+	​
+
+	​
+
+R
+
+No 
+𝜉
+Φ
+2
+𝑅
+ξΦ
+2
+R, no conformal/disformal couplings.
+
+5. Local Logosfield sector
+𝐿
+Φ
+=
+−
+𝑔
+[
+−
+1
+2
+(
+∇
+Φ
+)
+2
+−
+𝑉
+(
+Φ
+)
+]
+L
+Φ
+	​
+
+=
+−g
+	​
+
+[−
+2
+1
+	​
+
+(∇Φ)
+2
+−V(Φ)]
+6. Standard Model sector
+𝐿
+S
+M
+  (standard, unmodified operator content)
+L
+SM
+	​
+
+  (standard, unmodified operator content)
+7. Frozen interactions (Option B)
+7.1 Universal gauge-kinetic dressing
+𝐿
+g
+a
+u
+g
+e
+=
+−
+−
+𝑔
+ 
+1
+4
+ 
+𝑍
+(
+Φ
+)
+ ⁣
+ ⁣
+∑
+𝐴
+∈
+{
+𝐵
+,
+𝑊
+,
+𝐺
+}
+ ⁣
+ ⁣
+𝐹
+𝜇
+𝜈
+𝐴
+𝐹
+𝐴
+ 
+𝜇
+𝜈
+L
+gauge
+	​
+
+=−
+−g
+	​
+
+4
+1
+	​
+
+Z(Φ)
+A∈{B,W,G}
+∑
+	​
+
+F
+μν
+A
+	​
+
+F
+Aμν
+
+with frozen linear form:
+
+𝑍
+(
+Φ
+)
+=
+1
++
+𝑐
+𝑔
+Φ
+𝑀
+P
+l
+.
+Z(Φ)=1+c
+g
+	​
+
+M
+Pl
+	​
+
+Φ
+	​
+
+.
+7.2 Universal Yukawa dressing
+𝐿
+y
+u
+k
+=
+−
+−
+𝑔
+∑
+𝑓
+(
+𝑦
+𝑓
+(
+0
+)
+ 
+𝑌
+(
+Φ
+)
+ 
+𝜓
+ˉ
+𝑓
+𝐻
+𝜓
+𝑓
++
+h
+.
+c
+.
+)
+L
+yuk
+	​
+
+=−
+−g
+	​
+
+f
+∑
+	​
+
+(y
+f
+(0)
+	​
+
+Y(Φ)
+ψ
+ˉ
+	​
+
+f
+	​
+
+Hψ
+f
+	​
+
++h.c.)
+
+with frozen linear form:
+
+𝑌
+(
+Φ
+)
+=
+1
++
+𝑐
+𝑦
+Φ
+𝑀
+P
+l
+.
+Y(Φ)=1+c
+y
+	​
+
+M
+Pl
+	​
+
+Φ
+	​
+
+.
+8. Memory kernel term (Logosfield recursion)
+𝑆
+m
+e
+m
+=
+𝛾
+2
+∫
+𝑑
+4
+𝑥
+ 
+𝑑
+4
+𝑥
+′
+ 
+−
+𝑔
+−
+𝑔
+′
+  
+Φ
+(
+𝑥
+)
+ 
+𝐾
+𝛽
+(
+𝑥
+,
+𝑥
+′
+)
+ 
+Φ
+(
+𝑥
+′
+)
+.
+S
+mem
+	​
+
+=
+2
+γ
+	​
+
+∫d
+4
+xd
+4
+x
+′
+−g
+	​
+
+−g
+′
+	​
+
+Φ(x)K
+β
+	​
+
+(x,x
+′
+)Φ(x
+′
+).
+Kernel family (frozen v0.1)
+
+Kernel is retarded/causal in the EOM:
+
+𝐾
+𝛽
+(
+𝑡
+,
+𝑡
+′
+)
+∝
+𝑒
+−
+𝛽
+(
+𝑡
+−
+𝑡
+′
+)
+ 
+Θ
+(
+𝑡
+−
+𝑡
+′
+)
+K
+β
+	​
+
+(t,t
+′
+)∝e
+−β(t−t
+′
+)
+Θ(t−t
+′
+)
+
+No additional shape parameters beyond 
+𝛽
+β and 
+𝛾
+γ are introduced in v0.1.
+
+9. Full frozen Lagrangian
+𝐿
+=
+−
+𝑔
+[
+𝑀
+P
+l
+2
+2
+𝑅
+−
+1
+2
+(
+∇
+Φ
+)
+2
+−
+𝑉
+(
+Φ
+)
++
+𝐿
+S
+M
+−
+1
+4
+ 
+𝑍
+(
+Φ
+)
+ ⁣
+ ⁣
+∑
+𝐴
+∈
+{
+𝐵
+,
+𝑊
+,
+𝐺
+}
+ ⁣
+ ⁣
+𝐹
+𝜇
+𝜈
+𝐴
+𝐹
+𝐴
+ 
+𝜇
+𝜈
+−
+∑
+𝑓
+(
+𝑦
+𝑓
+(
+0
+)
+ 
+𝑌
+(
+Φ
+)
+ 
+𝜓
+ˉ
+𝑓
+𝐻
+𝜓
+𝑓
++
+h
+.
+c
+.
+)
+]
++
+𝑆
+m
+e
+m
+.
+L=
+−g
+	​
+
+[
+2
+M
+Pl
+2
+	​
+
+	​
+
+R−
+2
+1
+	​
+
+(∇Φ)
+2
+−V(Φ)+L
+SM
+	​
+
+−
+4
+1
+	​
+
+Z(Φ)
+A∈{B,W,G}
+∑
+	​
+
+F
+μν
+A
+	​
+
+F
+Aμν
+−
+f
+∑
+	​
+
+(y
+f
+(0)
+	​
+
+Y(Φ)
+ψ
+ˉ
+	​
+
+f
+	​
+
+Hψ
+f
+	​
+
++h.c.)]+S
+mem
+	​
+
+.
+	​
+
+10. Freeze policy
+
+Only 
+{
+𝑐
+𝑔
+,
+𝑐
+𝑦
+}
+{c
+g
+	​
+
+,c
+y
+	​
+
+} exist in v0.1.
+
+Universality enforced; no sector/fermion splitting.
+
+Bound-first or fit-once, then freeze globally.
+
+No rescue parameters added per mechanism.
+
+11. Backward compatibility rule
+
+Legacy mechanism runs correspond to:
+
+𝑐
+𝑔
+=
+0
+,
+𝑐
+𝑦
+=
+0.
+c
+g
+	​
+
+=0,c
+y
+	​
+
+=0.
+
+Any use of nonzero 
+{
+𝑐
+𝑔
+,
+𝑐
+𝑦
+}
+{c
+g
+	​
+
+,c
+y
+	​
+
+} must be explicitly labeled “Direct Coupling / EFT mode” with a recorded parameter hash.
