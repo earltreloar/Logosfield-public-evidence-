@@ -26,31 +26,27 @@ Logosfield mechanisms to date have been evaluated using a **locked Logosfield pa
 
 ---
 
-## Frozen Lagrangian (overview)
+### Frozen EFT (minimal GR) — v0.1
 
-We take:
-
-- GR + minimally coupled scalar \(\Phi\),
-- the Standard Model Lagrangian \(\mathcal{L}_{\rm SM}\),
-- Option B universal SM couplings: one gauge-kinetic dressing coefficient \(c_g\) and one Yukawa dressing coefficient \(c_y\),
-- and a retarded memory kernel term \(S_{\rm mem}\).
+We define the theory at the action level as:
 
 \[
-\mathcal{L}
-=
-\sqrt{-g}\Big[
-\frac{M_{\rm Pl}^2}{2}R
--\frac12(\nabla\Phi)^2
-- V(\Phi)
-+\mathcal{L}_{\rm SM}
--\frac14\,Z(\Phi)\sum_{A\in\{B,W,G\}}F^A_{\mu\nu}F^{A\,\mu\nu}
--\sum_f\big(y_f^{(0)}\,Y(\Phi)\,\bar\psi_f H\psi_f + {\rm h.c.}\big)
-\Big]
-\;+\;
-S_{\rm mem}.
+S \;=\; S_{\rm GR} \;+\; S_{\Phi} \;+\; S_{\rm SM} \;+\; S_{\rm int} \;+\; S_{\rm mem}.
 \]
 
-### Option B (frozen universal couplings)
+- \(S_{\rm GR}=\int d^4x\,\sqrt{-g}\,\frac{M_{\rm Pl}^2}{2}R\)  (minimal GR)
+- \(S_{\Phi}=\int d^4x\,\sqrt{-g}\left[-\frac12(\nabla\Phi)^2 - V(\Phi)\right]\)
+- \(S_{\rm SM}=\int d^4x\,\sqrt{-g}\,\mathcal{L}_{\rm SM}\) (SM operator content unchanged)
+- \(S_{\rm mem}\) is the retarded exponential memory term (see `spec/KERNEL_CAUSALITY_STABILITY.md`)
+
+**Option B interactions (only two universal coefficients):**
+
+\[
+\mathcal{L}_{\rm int}
+=
+-\frac14\,Z(\Phi)\sum_{A\in\{B,W,G\}}F^A_{\mu\nu}F^{A\,\mu\nu}
+-\sum_f\left(y_f^{(0)}\,Y(\Phi)\,\bar\psi_f H\psi_f+{\rm h.c.}\right),
+\]
 
 \[
 Z(\Phi)=1+c_g\frac{\Phi}{M_{\rm Pl}},
@@ -58,16 +54,12 @@ Z(\Phi)=1+c_g\frac{\Phi}{M_{\rm Pl}},
 Y(\Phi)=1+c_y\frac{\Phi}{M_{\rm Pl}}.
 \]
 
----
-
-## Couplings to the four forces (what this means)
-
-- **Gravity:** minimal GR; \(\Phi\) gravitates only through its stress-energy (no extra curvature coupling).
-- **Electromagnetism:** arises after electroweak symmetry breaking (EWSB) from the usual \(B\)–\(W^3\) mixing; affected through the universal \(Z(\Phi)\) dressing of the \(U(1)_Y\) and \(SU(2)_L\) gauge kinetic terms.
-- **Weak:** explicit via the \(SU(2)_L\) field strength \(W^a_{\mu\nu}\) inside the same universal \(Z(\Phi)\).
-- **Strong:** explicit via the \(SU(3)_c\) field strength \(G^A_{\mu\nu}\) inside the same universal \(Z(\Phi)\).
-- **Matter sector (masses):** universal Yukawa dressing \(Y(\Phi)\) modifies fermion masses after EWSB.
-
+**What “couples to the four forces” means (EFT sense):**
+- **Gravity:** minimal GR; \(\Phi\) couples only through stress-energy (no \(\xi\Phi^2R\)).
+- **Electromagnetism:** arises after EWSB from \(B\)–\(W^3\) mixing; affected through \(Z(\Phi)\) in the gauge kinetic terms.
+- **Weak:** explicit through the \(SU(2)_L\) field strength \(W^a_{\mu\nu}\) in the same \(Z(\Phi)\).
+- **Strong:** explicit through the \(SU(3)_c\) field strength \(G^A_{\mu\nu}\) in the same \(Z(\Phi)\).
+- **Matter (masses):** universal Yukawa dressing \(Y(\Phi)\) modifies fermion masses after EWSB.
 ---
 
 ## Freeze policy (anti–ad hoc)
