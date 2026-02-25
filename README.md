@@ -7,473 +7,93 @@ Preregistered on OSF | Docker one-liner | 17 mechanisms | Full Manuscript: ©202
 
 
 
-Why this exists
+## Why this exists
 
-Logosfield mechanisms to date have been evaluated using a locked Logosfield parameter set (α, β, γ) and preregistered null tests. This section provides a minimal, explicit EFT / Lagrangian completion that (i) keeps GR and the SM intact, (ii) makes “couples to the four forces” explicit, and (iii) adds only two universal coupling coefficients to avoid ad hoc parameter sprawl.
+Logosfield mechanisms to date have been evaluated using a **locked Logosfield parameter set** \((\alpha,\beta,\gamma)\) and **preregistered null tests**. This section provides a **minimal, explicit EFT / Lagrangian completion** that:
 
-Model stance
+1. keeps **GR** and the **Standard Model** intact,
+2. makes “**couples to the four forces**” explicit in a conservative EFT sense, and
+3. adds only **two universal coupling coefficients** to avoid ad hoc parameter sprawl.
 
-Minimal GR: Einstein–Hilbert gravity only (no 
-𝑓
-(
-Φ
-)
-𝑅
-f(Φ)R, no 
-𝜉
-Φ
-2
-𝑅
-ξΦ
-2
-R, no conformal/disformal metric dressing).
+---
 
-SM intact: Standard Model gauge and Yukawa structure is unchanged; Logosfield enters only via universal dressing functions.
+## Model stance
 
-Logosfield identity: A scalar field 
-Φ
-Φ with a retarded exponential memory kernel characterized by locked parameters α=1, β≈2π, γ=0.005.
+- **Minimal GR:** Einstein–Hilbert gravity only (no \(f(\Phi)R\), no \(\xi \Phi^2 R\), no conformal/disformal metric dressing).
+- **SM intact:** Standard Model gauge and Yukawa operator content is unchanged; Logosfield enters only via **universal dressing functions**.
+- **Logosfield identity:** a scalar field \(\Phi\) with a **retarded exponential memory kernel**, characterized by locked parameters  
+  \(\alpha=1\), \(\beta\approx 2\pi\), \(\gamma=0.005\).
 
-Frozen Lagrangian (overview)
+---
+
+## Frozen Lagrangian (overview)
 
 We take:
 
-GR + minimally coupled scalar 
-Φ
-Φ,
+- GR + minimally coupled scalar \(\Phi\),
+- the Standard Model Lagrangian \(\mathcal{L}_{\rm SM}\),
+- Option B universal SM couplings: one gauge-kinetic dressing coefficient \(c_g\) and one Yukawa dressing coefficient \(c_y\),
+- and a retarded memory kernel term \(S_{\rm mem}\).
 
-Standard Model Lagrangian 
-𝐿
-S
-M
-L
-SM
-	​
-
-,
-
-Option B universal SM couplings: one gauge-kinetic dressing coefficient 
-𝑐
-𝑔
-c
-g
-	​
-
- and one Yukawa dressing coefficient 
-𝑐
-𝑦
-c
-y
-	​
-
-,
-
-and a retarded memory kernel term 
-𝑆
-m
-e
-m
-S
-mem
-	​
-
-.
-
-𝐿
+\[
+\mathcal{L}
 =
-−
-𝑔
-[
-𝑀
-P
-l
-2
-2
-𝑅
-−
-1
-2
-(
-∇
-Φ
-)
-2
-−
-𝑉
-(
-Φ
-)
-+
-𝐿
-S
-M
-−
-1
-4
- 
-𝑍
-(
-Φ
-)
- ⁣
- ⁣
-∑
-𝐴
-∈
-{
-𝐵
-,
-𝑊
-,
-𝐺
-}
- ⁣
- ⁣
-𝐹
-𝜇
-𝜈
-𝐴
-𝐹
-𝐴
- 
-𝜇
-𝜈
-−
-∑
-𝑓
-(
-𝑦
-𝑓
-(
-0
-)
- 
-𝑌
-(
-Φ
-)
- 
-𝜓
-ˉ
-𝑓
-𝐻
-𝜓
-𝑓
-+
-h
-.
-c
-.
-)
-]
-+
-𝑆
-m
-e
-m
-.
-L=
-−g
-	​
+\sqrt{-g}\Big[
+\frac{M_{\rm Pl}^2}{2}R
+-\frac12(\nabla\Phi)^2
+- V(\Phi)
++\mathcal{L}_{\rm SM}
+-\frac14\,Z(\Phi)\sum_{A\in\{B,W,G\}}F^A_{\mu\nu}F^{A\,\mu\nu}
+-\sum_f\big(y_f^{(0)}\,Y(\Phi)\,\bar\psi_f H\psi_f + {\rm h.c.}\big)
+\Big]
+\;+\;
+S_{\rm mem}.
+\]
 
-[
-2
-M
-Pl
-2
-	​
+### Option B (frozen universal couplings)
 
-	​
+\[
+Z(\Phi)=1+c_g\frac{\Phi}{M_{\rm Pl}},
+\qquad
+Y(\Phi)=1+c_y\frac{\Phi}{M_{\rm Pl}}.
+\]
 
-R−
-2
-1
-	​
+---
 
-(∇Φ)
-2
-−V(Φ)+L
-SM
-	​
+## Couplings to the four forces (what this means)
 
-−
-4
-1
-	​
+- **Gravity:** minimal GR; \(\Phi\) gravitates only through its stress-energy (no extra curvature coupling).
+- **Electromagnetism:** arises after electroweak symmetry breaking (EWSB) from the usual \(B\)–\(W^3\) mixing; affected through the universal \(Z(\Phi)\) dressing of the \(U(1)_Y\) and \(SU(2)_L\) gauge kinetic terms.
+- **Weak:** explicit via the \(SU(2)_L\) field strength \(W^a_{\mu\nu}\) inside the same universal \(Z(\Phi)\).
+- **Strong:** explicit via the \(SU(3)_c\) field strength \(G^A_{\mu\nu}\) inside the same universal \(Z(\Phi)\).
+- **Matter sector (masses):** universal Yukawa dressing \(Y(\Phi)\) modifies fermion masses after EWSB.
 
-Z(Φ)
-A∈{B,W,G}
-∑
-	​
+---
 
-F
-μν
-A
-	​
-
-F
-Aμν
-−
-f
-∑
-	​
-
-(y
-f
-(0)
-	​
-
-Y(Φ)
-ψ
-ˉ
-	​
-
-f
-	​
-
-Hψ
-f
-	​
-
-+h.c.)]+S
-mem
-	​
-
-.
-
-Option B (frozen universal couplings):
-
-𝑍
-(
-Φ
-)
-=
-1
-+
-𝑐
-𝑔
-Φ
-𝑀
-P
-l
-,
-𝑌
-(
-Φ
-)
-=
-1
-+
-𝑐
-𝑦
-Φ
-𝑀
-P
-l
-.
-Z(Φ)=1+c
-g
-	​
-
-M
-Pl
-	​
-
-Φ
-	​
-
-,Y(Φ)=1+c
-y
-	​
-
-M
-Pl
-	​
-
-Φ
-	​
-
-.
-Couplings “to the four forces” (what this means)
-
-Gravity: minimal GR; 
-Φ
-Φ gravitates only via its stress-energy (no extra curvature coupling).
-
-Electromagnetism: emerges from the standard 
-𝐵
-/
-𝑊
-3
-B/W
-3
- mixing after EWSB; affected through the universal 
-𝑍
-(
-Φ
-)
-Z(Φ) dressing of 
-𝐵
-𝜇
-𝜈
-B
-μν
-	​
-
- and 
-𝑊
-𝜇
-𝜈
-W
-μν
-	​
-
-.
-
-Weak: explicit via 
-𝑊
-𝜇
-𝜈
-𝑎
-W
-μν
-a
-	​
-
- dressing in the same universal 
-𝑍
-(
-Φ
-)
-Z(Φ).
-
-Strong: explicit via 
-𝐺
-𝜇
-𝜈
-𝐴
-G
-μν
-A
-	​
-
- dressing in the same universal 
-𝑍
-(
-Φ
-)
-Z(Φ).
-
-Matter sector (masses): universal Yukawa dressing 
-𝑌
-(
-Φ
-)
-Y(Φ) modifies fermion masses after EWSB.
-
-Freeze policy (anti–ad hoc)
+## Freeze policy (anti–ad hoc)
 
 This completion is only credible if the coupling degrees of freedom remain minimal and global:
 
-Only two EFT coefficients exist in v0.1: 
-{
-𝑐
-𝑔
-,
-𝑐
-𝑦
-}
-{c
-g
-	​
+1. Only **two** EFT coefficients exist in v0.1: \(\{c_g,c_y\}\).
+2. **Universality enforced:**  
+   - no split by gauge group (\(c_{g1},c_{g2},c_{g3}\) forbidden),  
+   - no per-fermion Yukawa coefficients (\(c_{y,f}\) forbidden).
+3. **Bound-first or fit-once, then freeze:** \(\{c_g,c_y\}\) are constrained once (external bounds preferred) and then held fixed across all mechanisms/datasets.
+4. No “rescue parameters” are introduced if a mechanism fails under the frozen model.
 
-,c
-y
-	​
+---
 
-}.
+## Legacy compatibility (existing results remain valid)
 
-Universality: no split by gauge group (
-𝑐
-𝑔
-1
-,
-𝑐
-𝑔
-2
-,
-𝑐
-𝑔
-3
-c
-g1
-	​
+All previously released mechanisms are preserved under the **legacy default**:
 
-,c
-g2
-	​
+\[
+c_g=0,
+\qquad
+c_y=0,
+\]
 
-,c
-g3
-	​
-
- forbidden) and no per-fermion Yukawa coefficients (
-𝑐
-𝑦
-,
-𝑓
-c
-y,f
-	​
-
- forbidden).
-
-Bound-first or fit-once, then freeze: 
-{
-𝑐
-𝑔
-,
-𝑐
-𝑦
-}
-{c
-g
-	​
-
-,c
-y
-	​
-
-} are constrained once (external bounds preferred) and then held fixed across all mechanisms/datasets.
-
-No “rescue parameters” are introduced if a mechanism fails under the frozen model.
-
-Legacy compatibility (existing results remain valid)
-
-All previously released mechanisms are preserved under the legacy default
-
-𝑐
-𝑔
-=
-0
-,
-𝑐
-𝑦
-=
-0
-,
-c
-g
-	​
-
-=0,c
-y
-	​
-
-=0,
-
-which ensures the frozen EFT completion is non-invasive unless explicitly enabled in “Direct Coupling / EFT” tests.
-
+which ensures the frozen EFT completion is non-invasive unless explicitly enabled in **Direct Coupling / EFT mode** tests (with a recorded parameter hash).
 
 
 
