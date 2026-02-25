@@ -26,53 +26,60 @@ Logosfield mechanisms to date have been evaluated using a **locked Logosfield pa
 
 ---
 
-### Frozen EFT (minimal GR) — v0.1
+## Frozen EFT (minimal GR) — v0.1
 
-We define the theory at the action level as:
+### What this is
+Logosfield mechanisms to date were evaluated with a locked parameter set (alpha, beta, gamma) and preregistered null tests. This section adds a minimal EFT/Lagrangian completion that:
 
-\[
-S \;=\; S_{\rm GR} \;+\; S_{\Phi} \;+\; S_{\rm SM} \;+\; S_{\rm int} \;+\; S_{\rm mem}.
-\]
+- keeps GR and the Standard Model intact,
+- makes “couples to the four forces” explicit (in an EFT sense),
+- adds only two universal coupling coefficients to avoid ad hoc parameter sprawl.
 
-- \(S_{\rm GR}=\int d^4x\,\sqrt{-g}\,\frac{M_{\rm Pl}^2}{2}R\)  (minimal GR)
-- \(S_{\Phi}=\int d^4x\,\sqrt{-g}\left[-\frac12(\nabla\Phi)^2 - V(\Phi)\right]\)
-- \(S_{\rm SM}=\int d^4x\,\sqrt{-g}\,\mathcal{L}_{\rm SM}\) (SM operator content unchanged)
-- \(S_{\rm mem}\) is the retarded exponential memory term (see `spec/KERNEL_CAUSALITY_STABILITY.md`)
+### Model stance
+- Minimal GR: Einstein–Hilbert only. No f(Phi)R, no xi*Phi^2*R, no conformal/disformal metric dressing.
+- SM intact: Standard Model operator content unchanged; Logosfield enters only through universal dressing functions.
+- Logosfield identity: scalar Phi with a retarded exponential memory kernel. Locked parameters: alpha = 1, beta ≈ 2π, gamma = 0.005.
 
-**Option B interactions (only two universal coefficients):**
+### Action decomposition (high level)
+S = S_GR + S_Phi + S_SM + S_int + S_mem
 
-\[
-\mathcal{L}_{\rm int}
-=
--\frac14\,Z(\Phi)\sum_{A\in\{B,W,G\}}F^A_{\mu\nu}F^{A\,\mu\nu}
--\sum_f\left(y_f^{(0)}\,Y(\Phi)\,\bar\psi_f H\psi_f+{\rm h.c.}\right),
-\]
+- S_GR: Einstein–Hilbert gravity
+- S_Phi: canonical scalar kinetic term + potential V(Phi)
+- S_SM: Standard Model Lagrangian (unchanged)
+- S_mem: retarded exponential memory term (see spec/KERNEL_CAUSALITY_STABILITY.md)
 
-\[
-Z(\Phi)=1+c_g\frac{\Phi}{M_{\rm Pl}},
-\qquad
-Y(\Phi)=1+c_y\frac{\Phi}{M_{\rm Pl}}.
-\]
+### Option B interactions (only two universal coefficients)
+The interaction sector applies universal “dressings” to:
 
-**What “couples to the four forces” means (EFT sense):**
-- **Gravity:** minimal GR; \(\Phi\) couples only through stress-energy (no \(\xi\Phi^2R\)).
-- **Electromagnetism:** arises after EWSB from \(B\)–\(W^3\) mixing; affected through \(Z(\Phi)\) in the gauge kinetic terms.
-- **Weak:** explicit through the \(SU(2)_L\) field strength \(W^a_{\mu\nu}\) in the same \(Z(\Phi)\).
-- **Strong:** explicit through the \(SU(3)_c\) field strength \(G^A_{\mu\nu}\) in the same \(Z(\Phi)\).
-- **Matter (masses):** universal Yukawa dressing \(Y(\Phi)\) modifies fermion masses after EWSB.
----
+1) SM gauge kinetic terms (U(1)_Y, SU(2)_L, SU(3)_c) using Z(Phi)  
+2) SM Yukawa terms using Y(Phi)
 
-## Freeze policy (anti–ad hoc)
+Definitions (frozen linear forms):
+- Z(Phi) = 1 + c_g * Phi / M_Pl
+- Y(Phi) = 1 + c_y * Phi / M_Pl
 
-This completion is only credible if the coupling degrees of freedom remain minimal and global:
+### What “couples to the four forces” means (EFT sense)
+- Gravity: minimal GR. Phi gravitates only through stress-energy; no extra curvature coupling.
+- Electromagnetism: emerges after EWSB from B–W3 mixing; affected via Z(Phi) dressing of electroweak gauge kinetic terms.
+- Weak: explicit via SU(2)_L gauge sector inside the same Z(Phi).
+- Strong: explicit via SU(3)_c gauge sector inside the same Z(Phi).
+- Matter (masses): Yukawa dressing Y(Phi) modifies fermion masses after EWSB.
 
-1. Only **two** EFT coefficients exist in v0.1: \(\{c_g,c_y\}\).
-2. **Universality enforced:**  
-   - no split by gauge group (\(c_{g1},c_{g2},c_{g3}\) forbidden),  
-   - no per-fermion Yukawa coefficients (\(c_{y,f}\) forbidden).
-3. **Bound-first or fit-once, then freeze:** \(\{c_g,c_y\}\) are constrained once (external bounds preferred) and then held fixed across all mechanisms/datasets.
-4. No “rescue parameters” are introduced if a mechanism fails under the frozen model.
+### Freeze policy (anti–ad hoc)
+This completion is only credible if coupling freedom stays minimal and global:
 
+- Only two EFT coefficients exist in v0.1: c_g and c_y.
+- Universality enforced:
+  - no split by gauge group (no c_g1, c_g2, c_g3),
+  - no per-fermion Yukawa coefficients (no c_y,f).
+- Bound-first or fit-once, then freeze globally across all mechanisms/datasets.
+- No rescue parameters are introduced if a mechanism fails under the frozen model.
+
+### Legacy compatibility
+All previously released mechanisms remain valid under the legacy default:
+c_g = 0, c_y = 0
+
+Nonzero couplings must be explicitly labeled “Direct Coupling / EFT mode” with a recorded parameter hash.
 ---
 
 ## Legacy compatibility (existing results remain valid)
