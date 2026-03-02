@@ -1,0 +1,28 @@
+# Preregistration Policy
+
+All mechanisms run under **frozen prereg JSONs** (parameter locks, null structures, and target metrics).  
+Each release publishes the prereg file and its **SHA-256**.  
+Replications should report the prereg hash alongside their outputs.
+
+mechanism: 14
+run_date: 2025-10-09
+model:
+  alpha: 1
+  beta: 6.283185307179586  # approx 2π
+  gamma: 0.005
+eft:
+  mode: "Frozen_EFT_OptionB_v0.1"
+  c_g: 0.0
+  c_y: 0.0
+kernel:
+  type: "retarded_exponential"
+  beta_kernel: 6.283185307179586
+nulls:
+  - type: "shuffle"
+    n: 1000
+metrics:
+  primary: "fisher_combined_p"
+inputs:
+  traits_csv: "data/traits_10panel.csv"
+outputs:
+  outdir: "outputs/mech14/2025-10-09"

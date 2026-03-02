@@ -1,5 +1,0 @@
-# Preregistration Policy
-
-All mechanisms run under **frozen prereg JSONs** (parameter locks, null structures, and target metrics).  
-Each release publishes the prereg file and its **SHA-256**.  
-Replications should report the prereg hash alongside their outputs.
