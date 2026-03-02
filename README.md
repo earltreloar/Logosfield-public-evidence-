@@ -101,16 +101,12 @@ which ensures the frozen EFT completion is non-invasive unless explicitly enable
 
 Ties directly to repo tests: Run `make all` for 17 mechanisms. Preregistered on OSF. Copyright © 2025 Ethan Treloar.
 
-## Derivative Work & Co-Authorship Policy
+## Attribution & Collaboration
+This repository is released under CC BY 4.0. If you use or build on this work, please cite the repository
+(and the specific release tag) and describe any modifications.
 
-Any publication that:
-* Uses the Logosfield scalar field (α=1, β≈2π, γ≈0.005)
-* Modifies parameters, equations, or mechanisms
-* Builds on the 17 preregistered tests or ODCCT framework
-
-Must offer co-authorship to Ethan Treloar.
-
-This is a condition of use under CC BY 4.0.
+If your work substantially extends the Logosfield framework and you would like to discuss collaboration
+or co-authorship, contact: ethan.treloar@southeasttech.edu
 
 
 This repository ships validated evidence and reproduction scaffolding for the Logosfield; a memory scalar field that is coupled across all matter and represented here projected across tracks. It is the science behind the Odyssean-Dantean Cosmic Christ Theory (ODCCT).
