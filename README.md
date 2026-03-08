@@ -4,6 +4,10 @@ Public research repository for the Logosfield program and its reproducibility ar
 
 This repository currently presents a **narrowed, frozen public test path** rather than a broad claim of completed discovery. The goal is to determine whether one fixed Logosfield structure can survive contact with data across multiple observables without branch-specific retuning.
 
+## Technical entry point
+
+For the current canonical technical summary of the model, frozen parameters, coupling interpretation, and active public test path, see [THEORY.md](THEORY.md).
+
 ## Why this repository exists
 
 The Logosfield program explores whether a single fixed underlying structure can produce repeatable, non-random coherence across otherwise disconnected physical domains.
