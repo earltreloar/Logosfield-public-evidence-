@@ -1,17 +1,32 @@
-# Reproduce Logosfield Results
+# Reproduce the current public Logosfield path
 
-## One‑click (Docker)
+This repository currently maintains a **narrowed frozen public test path**.
+
+The active public path includes only:
+
+1. CDDR
+2. Mechanism 16
+
+Other materials in the repository remain part of the broader project record, but they are not all equal in current evidentiary status.
+
+---
+
+## Requirements
+
+Recommended environment:
+
+- Python 3.10+
+- NumPy
+- Pandas
+- Matplotlib
+
+If additional packages are needed in your local environment, install them before running.
+
+---
+
+## Active reproduction commands
+
+### Run CDDR
+
 ```bash
-docker build -t logosfield -f common/Dockerfile .
-# Example: run Mechanism 14 with prereg
-docker run -e PREREG=/prereg/14/2025-10-09/prereg.yaml -v $PWD:/work logosfield
-```
-
-## Makefile
-```bash
-# Example for Mechanism 14
-cd Mechanism14 && make reproduce bundle MECH=14 DATE=2025-10-09 PREREG=../prereg/14/2025-10-09/prereg.yaml
-```
-
-## Colab
-Open the appropriate `RUNME.ipynb` (placeholder) or runner script, upload the `prereg.yaml` when prompted, and run all.
+python run.py --mode cddr
