@@ -2,28 +2,28 @@
 
 The current public replication challenge is intentionally narrow.
 
-We invite independent groups to reproduce the **frozen two-test path** using the current public runners, locked cosmology structure, and documented reproduction steps.
+This repository does not presently ask outside groups to reproduce every historical mechanism at once. The current goal is to test whether a **single frozen Logosfield structure** survives across more than one observable **without branch-specific retuning**.
 
-## Active challenge targets
+## Active public challenge targets
 
 ### 1. CDDR
-Reproduce the Etherington distance-duality diagnostic using the public Pantheon+ and BAO workflow.
+Reproduce the current Etherington distance-duality / CDDR diagnostic using the public runner and documented inputs.
 
 Target:
-- recover the public η(z) deviation pattern under the frozen pipeline
-- report robustness under covariance / interpolation / prior variants
+- recover the public η-pattern under the frozen pipeline
+- report robustness under reasonable covariance / interpolation / implementation checks
 - provide code, environment, and outputs
 
 ### 2. Mechanism 16
-Reproduce the σ8 response result as the child branch of the same frozen cosmology path.
+Reproduce the current σ8 response result as a **child branch of the same frozen cosmology path**.
 
 Target:
-- use the same frozen CDDR anchor
-- use the current weak-response public bridge
+- use the same CDDR anchor
+- use the current public weak-response bridge
 - report the resulting σ8 value and benchmark comparison
 - provide code, environment, and outputs
 
-## Not currently part of the active challenge path
+## Not currently part of the active locked public challenge
 
 The following are not current flagship locked-coupling challenge targets:
 
@@ -36,16 +36,22 @@ These may remain scientifically relevant, but they are not part of the current m
 
 ## What to submit
 
+Please include:
+
 - effect sizes
-- confidence intervals or equivalent uncertainty estimates
-- code + environment
-- notes on robustness
+- uncertainty estimates
+- code and environment details
+- robustness notes
 - any deviations from the public runner
 
-## Scoring
+## Evaluation standard
 
 Replication quality will be judged by:
 
 - closeness to the frozen public outputs
 - robustness under documented sensitivity checks
 - clarity and completeness of reproduction materials
+
+## Current public posture
+
+This challenge should be read as a test of the current narrowed public path, not as a claim that the Logosfield has already been established as a discovered force.
