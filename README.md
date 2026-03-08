@@ -1,287 +1,151 @@
-# Logosfield — Public Evidence & Reproducibility (v3.1.0)
+# Logosfield — Public Evidence & Reproducibility
 
-arXiv: 6955078 (declined—gatekeeping won't stop open science).
+Public research repository for the Logosfield program and its reproducibility artifacts.
 
-Preregistered on OSF | Docker one-liner | 17 mechanisms | Full Manuscript: ©2025 Ethan Treloar — The Remembering Cosmos
+This repository currently presents a **narrowed, frozen public test path** rather than a broad claim of completed discovery. The goal is to determine whether one fixed Logosfield structure can survive contact with data across multiple observables without branch-specific retuning.
 
+## Why this repository exists
 
+The Logosfield program explores whether a single fixed underlying structure can produce repeatable, non-random coherence across otherwise disconnected physical domains.
 
+This repository is organized around three principles:
 
-## Why this exists
+1. **Freeze the core**
+2. **Test with public data**
+3. **Prune failed branches instead of rescuing them**
 
-Logosfield mechanisms to date have been evaluated using a **locked Logosfield parameter set** \((\alpha,\beta,\gamma)\) and **preregistered null tests**. This section provides a **minimal, explicit EFT / Lagrangian completion** that:
-
-1. keeps **GR** and the **Standard Model** intact,
-2. makes “**couples to the four forces**” explicit in a conservative EFT sense, and
-3. adds only **two universal coupling coefficients** to avoid ad hoc parameter sprawl.
-
----
-
-## Model stance
-
-- **Minimal GR:** Einstein–Hilbert gravity only (no \(f(\Phi)R\), no \(\xi \Phi^2 R\), no conformal/disformal metric dressing).
-- **SM intact:** Standard Model gauge and Yukawa operator content is unchanged; Logosfield enters only via **universal dressing functions**.
-- **Logosfield identity:** a scalar field \(\Phi\) with a **retarded exponential memory kernel**, characterized by locked parameters  
-  \(\alpha=1\), \(\beta\approx 2\pi\), \(\gamma=0.005\).
+The current public emphasis is therefore on the strongest surviving reproducible path, not on maximizing the number of claimed mechanisms.
 
 ---
 
-## Frozen EFT (minimal GR) — v0.1
+## Current model stance
 
-### What this is
-Logosfield mechanisms to date were evaluated with a locked parameter set (alpha, beta, gamma) and preregistered null tests. This section adds a minimal EFT/Lagrangian completion that:
+### Minimal GR
+General Relativity is kept in its minimal Einstein–Hilbert form.
 
-- keeps GR and the Standard Model intact,
-- makes “couples to the four forces” explicit (in an EFT sense),
-- adds only two universal coupling coefficients to avoid ad hoc parameter sprawl.
+- No `f(Phi) R`
+- No `xi Phi^2 R`
+- No conformal or disformal metric dressing
 
-### Model stance
-- Minimal GR: Einstein–Hilbert only. No f(Phi)R, no xi*Phi^2*R, no conformal/disformal metric dressing.
-- SM intact: Standard Model operator content unchanged; Logosfield enters only through universal dressing functions.
-- Logosfield identity: scalar Phi with a retarded exponential memory kernel. Locked parameters: alpha = 1, beta ≈ 2π, gamma = 0.005.
+### Standard Model preserved
+Standard Model operator content is left intact. Logosfield enters, if enabled, only through universal effective dressings.
 
-### Action decomposition (high level)
-S = S_GR + S_Phi + S_SM + S_int + S_mem
+### Logosfield identity
+The current working reduction treats the Logosfield as an effective scalar sector `Phi` with a retarded exponential memory kernel and locked core parameters:
 
-- S_GR: Einstein–Hilbert gravity
-- S_Phi: canonical scalar kinetic term + potential V(Phi)
-- S_SM: Standard Model Lagrangian (unchanged)
-- S_mem: retarded exponential memory term (see spec/KERNEL_CAUSALITY_STABILITY.md)
+- `alpha = 1`
+- `beta ~= 2 pi`
+- `gamma = 0.005`
 
-### Option B interactions (only two universal coefficients)
-The interaction sector applies universal “dressings” to:
+These locked core parameters are part of the public freeze policy and are not retuned per mechanism.
 
-1) SM gauge kinetic terms (U(1)_Y, SU(2)_L, SU(3)_c) using Z(Phi)  
-2) SM Yukawa terms using Y(Phi)
-
-Definitions (frozen linear forms):
-- Z(Phi) = 1 + c_g * Phi / M_Pl
-- Y(Phi) = 1 + c_y * Phi / M_Pl
-
-### What “couples to the four forces” means (EFT sense)
-- Gravity: minimal GR. Phi gravitates only through stress-energy; no extra curvature coupling.
-- Electromagnetism: emerges after EWSB from B–W3 mixing; affected via Z(Phi) dressing of electroweak gauge kinetic terms.
-- Weak: explicit via SU(2)_L gauge sector inside the same Z(Phi).
-- Strong: explicit via SU(3)_c gauge sector inside the same Z(Phi).
-- Matter (masses): Yukawa dressing Y(Phi) modifies fermion masses after EWSB.
-
-### Freeze policy (anti–ad hoc)
-This completion is only credible if coupling freedom stays minimal and global:
-
-- Only two EFT coefficients exist in v0.1: c_g and c_y.
-- Universality enforced:
-  - no split by gauge group (no c_g1, c_g2, c_g3),
-  - no per-fermion Yukawa coefficients (no c_y,f).
-- Bound-first or fit-once, then freeze globally across all mechanisms/datasets.
-- No rescue parameters are introduced if a mechanism fails under the frozen model.
-
-### Legacy compatibility
-All previously released mechanisms remain valid under the legacy default:
-c_g = 0, c_y = 0
-
-Nonzero couplings must be explicitly labeled “Direct Coupling / EFT mode” with a recorded parameter hash.
 ---
 
-## Legacy compatibility (existing results remain valid)
+## Frozen EFT completion (public working form)
 
-All previously released mechanisms are preserved under the **legacy default**:
+This repository uses a minimal EFT-style completion whose purpose is to make “couples to the four forces” explicit in a conservative and attackable way while avoiding parameter sprawl.
 
-\[
-c_g=0,
-\qquad
-c_y=0,
-\]
+### Interaction sector
+Only two universal coefficients are admitted in the current public EFT layer:
 
-which ensures the frozen EFT completion is non-invasive unless explicitly enabled in **Direct Coupling / EFT mode** tests (with a recorded parameter hash).
+- `c_g`
+- `c_y`
 
+Universal dressing functions:
 
+- `Z(Phi) = 1 + c_g * Phi / M_Pl`
+- `Y(Phi) = 1 + c_y * Phi / M_Pl`
 
+Interpretation:
 
-**Core Claims (from Executive Summary)**: ODCCT posits the universe as a "remembering" memory field (Logosfield scalar fifth force: α=1, β≈2π, γ≈0.005), unifying anomalies like galaxy spins (f≈0.625), SMBH growth (80% feasibility), and CMB signatures. Chapters 21–27 detail equations/falsifiability; Appendices cover rebuttals and 2025 data (JWST/DESI).
+- Gauge-sector response is carried through `Z(Phi)`
+- Yukawa / mass-sector response is carried through `Y(Phi)`
 
-Ties directly to repo tests: Run `make all` for 17 mechanisms. Preregistered on OSF. Copyright © 2025 Ethan Treloar.
+### Important public caution
+The current narrowed cosmology path does **not** yet separately measure `c_g` and `c_y`.
 
-## Attribution & Collaboration
-This repository is released under CC BY 4.0. If you use or build on this work, please cite the repository
-(and the specific release tag) and describe any modifications.
+At present, the public two-test path only constrains an **effective cosmology response combination**, not fully separated couplings.
 
-If your work substantially extends the Logosfield framework and you would like to discuss collaboration
-or co-authorship, contact: ethan.treloar@southeasttech.edu
+That effective response should be treated operationally as something like:
 
+- `epsilon_g = c_g * Phi_ref / M_Pl`
+- `epsilon_y = c_y * Phi_ref / M_Pl`
+- `epsilon_C = A_g * epsilon_g + A_y * epsilon_y`
 
-This repository ships validated evidence and reproduction scaffolding for the Logosfield; a memory scalar field that is coupled across all matter and represented here projected across tracks. It is the science behind the Odyssean-Dantean Cosmic Christ Theory (ODCCT).
+where only the downstream effective cosmology response is presently constrained in the public path.
 
-- Mechanism #1 — Galaxy Spin Alignment
-- Mechanism #2 — Density Lensing (κ) Coherence
-- Mechanism #3 — Sacred Sites (land + submerged)
-- Mechanism #14 — Biological Archetype Recurrence
-- Cosmology/CDDR — Etherington Distance Duality (η test)
-- Cosmology/SMBH — High-z Growth Feasibility & Curvature
-- Preregistered Quantum Testing/Universal Coupling
-- Mechanism #15 — JWST z=13 Ly-α Escape Fraction (2025)
-- Mechanism #16 — DESI Full-Shape σ₈ Suppression (2025)
-- Mechanism #17 — H₀ Reconciliation (TDCOSMO + JWST Cepheids, 2025)
-- Mechanism #21 - SMBH Seeding Damping (JWST, 2025-2026)
+---
 
-## Fast-Track
+## Freeze policy
 
-0. See Releases for validated result bundles (ZIPs) and checksums.
-1. For a minimal run, open `REPRODUCE.md` and use the Docker one-liner with a prereg file.
-2. See each folder's README for dataset links and expected outputs.
+This repository is only credible if coupling freedom remains minimal and global.
 
-This repo follows a prereg + robustness + replication pattern. Runners validate machine-readable prereg files, emit results + robustness grids + meta hashes.
+The public freeze rules are:
 
-## 🧾 Peer Review Readiness Statement
+- only two EFT coefficients are admitted in the current layer: `c_g` and `c_y`
+- universality is enforced
+- no split coefficients by gauge group
+- no per-fermion Yukawa coefficients
+- no branch-specific rescue parameters
+- fit once or bound once, then freeze globally
+- if a branch fails under the frozen public structure, it is demoted rather than patched ad hoc
 
-This repository contains all preregistered and validated Logosfield mechanisms.
+---
 
-For reproducibility, see the release bundles and Docker/Make instructions below.
+## Legacy compatibility
 
-Mechanisms included:
-* M1 – Galaxy Spin Alignment
-* M2 – Density Lensing (κ) Coherence
-* M3 – Sacred Site Alignment (land + submerged)
-* M14 – Biological Archetype Recurrence
-* Cosmology/CDDR – Etherington Distance Duality (η test)
-* Cosmology/SMBH – High-z Growth Feasibility & Curvature
-* M15 – JWST z=13 Ly-α Escape
-* M16 – DESI Full-Shape σ₈ + wa < 0
-* M17 – H₀ Reconciliation
+All previously released legacy mechanisms remain preserved under the default legacy setting:
 
-### 🧩 Peer Review Rebuttal & Strengthening Plan
+- `c_g = 0`
+- `c_y = 0`
 
-See [peer_review_rebuttal_and_strengthening.md](peer_review_rebuttal_and_strengthening.md) for detailed responses to reviewer critiques, replication strategy, and the 2026 strengthening roadmap.
+This means:
 
-This document outlines next steps for:
-* Independent replication (Mechanisms #1–3, #14, CDDR, SMBH)
-* Predictive modeling for JWST Cycle 4 data
-* Open collaboration and dual-repository structure (science vs theology)
-* Transparent roadmap through 2026 milestones
+- legacy results remain legacy results
+- nonzero EFT-mode couplings must be labeled explicitly
+- legacy success does **not** automatically validate later nonzero-coupling claims
 
-## 2.5 Direct Physical Coupling Tests (New After v1.0)
+---
 
-Reviewer critique: “Patterns are interesting, but show that this is a physical force and not just morphology or catalog bias. Demonstrate a signed effect with a measurable magnitude.”
+## Current verified public path
 
-Response: We now provide two explicit, force-level tests. Both use the same fixed Logosfield parameter set α = 1, β ≈ 2π, γ = 0.005 which is already used in Mechanism #1 (galaxy spin alignment), Mechanism #2 (κ / lensing coherence), CDDR, and SMBH timing. No per-object retuning.
+The repository currently maintains a **frozen two-test public path**.
 
-### (A) Galactic rotation-curve pull (~4.8σ)
+### Active Test 1
+**CDDR diagnostic**  
+Distance-duality / Etherington-style diagnostic used as the current anchor branch.
 
-We model the Logosfield as a coherent scalar that contributes an additional radial pull in galactic disks. The induced circular-velocity excess is
+### Active Test 2
+**Mechanism 16 sigma8 response**  
+Treated only as a child branch of the same cosmology path.
 
-Δv(r) ≈ γ · α · exp(−γ r) × 1e2 km/s,
+### Public status
+- CDDR: provisional pass
+- Mechanism 16: provisional pass under the patched weak-response default
+- Direct force branches: not current flagship claims
+- Mechanism 17: under review / not part of the frozen public path
+- SMBH feasibility: separate lane unless a shared bridge is explicitly derived and survives
 
-with r in kpc (converted to meters in code). At r = 10 kpc, this gives
+---
 
-Δv ≈ 0.48 km/s.
+## What is not currently being claimed
 
-Typical SDSS rotation-curve noise at that radius is ≈ 0.10 km/s. That implies ≈ 4.8σ significance for an extra velocity component beyond baryons+ΛCDM.
+This repository does **not** currently claim:
 
-This is not a null. It is a signed, dynamical excess compatible with “fifth-force-like” behavior. Importantly, it is predicted directly from the same {α,β,γ} that appear in the cosmology and structure results—we did not tune γ to force a detection at 10 kpc.
+- confirmed new-force discovery
+- completed fifth-force validation
+- separated empirical measurement of `c_g` and `c_y`
+- a validated direct rotation-curve force detection
+- a validated universal bridge from the current CDDR path into every other mechanism
 
-### Reproduction notebook:
+This repository should be read as a **narrowed candidate-framework and reproducibility program**, not a completed coronation of the theory.
 
-[replications/Logosfield_Astrophysics_4p8sigma.ipynb](replications/Logosfield_Astrophysics_4p8sigma.ipynb)
+---
 
-This notebook:
-* defines α, β, γ,
-* evaluates Δv(r) on log-spaced radii,
-* plots Δv vs r alongside a 0.10 km/s reference noise band,
-* reports Δv(10 kpc) and σ = Δv / noise.
+## Reproducibility
 
+The current public reproduction priority is the frozen two-test path only.
 
-# Logosfield: A Scalar Field of Cosmic Memory
-
-**Preregistered Mechanisms**: 21  
-**Latest**: [M#21 — 29.5% Damping for SMBH Seeding](mechanisms/21_SMBH_Seeding_Damping/Logosfield_SMBH_Seeding_Prediction.md)  
-**Plot**: [29.5% Tighter Clusters](mechanisms/21_SMBH_Seeding_Damping/logosfield_damping_plot.png)
-
-> φ(r,t) = φ₀ exp[−γ(t−t₀)] · Σ βᵢ δSᵢ(r)  
-> **γ = 0.005** — fixed from JWST
-
-**Unifies**:  
-- 4.8σ rotation excess  
-- JWST overmassive SMBHs  
-- H₀ tension (<3σ)  
-- g-2 residuals
-
-[Mechanisms](mechanisms/) · [Falsify me](https://x.com/EarlTreloar)
-
-
-### (B) High-z SMBH timing rescue (strict ΛCDM vs Logosfield uplift)
-
-We compile z ≳ 6 quasars with estimated black hole mass, required growth time (`t_required_Gyr`), and available cosmic time under (i) strict ΛCDM and (ii) ΛCDM + Logosfield uplift (`t_lcdm_gyr`, `t_logos_gyr`). Then we test feasibility:
-
-- strict ΛCDM feasible fraction: 0.6 (3 / 5)
-- Logosfield feasible fraction: 0.8 (4 / 5)
-
-At least one object is “rescued”: it is infeasible under strict ΛCDM timing (`t_LCDM < t_required`) but becomes feasible when the Logosfield timing uplift is applied (`t_Logosfield ≥ t_required`). No objects flip the opposite way (feasible → infeasible). A simple paired flip metric gives rescued = 1, made_worse = 0, Z_binom_like ≈ 1.0 with N = 5.
-
-Operationally: The Logosfield clock gives more usable growth time in the first ~700 Myr of cosmic history, reducing the high-z SMBH growth tension without demanding absurd seed masses or permanently super-Eddington duty cycles.
-
-### Reproduction notebook:
-
-[replications/SMBH_TimingRescue_STRICT.ipynb](replications/SMBH_TimingRescue_STRICT.ipynb)
-
-This notebook:
-* ingests the quasar timing tables (the `memo_quasar_growth_summary.csv` / `delta_t_table_v0.2.csv` style inputs),
-* normalizes columns (`z`, `t_required_Gyr`, `t_lcdm_gyr`, `t_logos_gyr`),
-* computes feasibility under both cosmologies,
-* outputs the fractions 0.6 → 0.8 and the rescued/worse flip counts.
-
-### Why these two tests matter
-
-1. Common parameter set. Both tests use the exact same {α,β,γ} that we already used for galaxy spin alignment, κ coherence / lensing structure, and archetype recurrence. There is no retuning per domain.
-2. Signed predictions, not correlations. The rotation-curve test predicts a concrete extra velocity (≈0.48 km/s at 10 kpc), which can be falsified by higher-S/N rotation curves. The SMBH timing test predicts a concrete uplift in feasibility fraction (0.6 → 0.8) and a one-way “rescue” of at least one quasar.
-3. Unification pressure. Standard cosmology typically treats these as unrelated problems: dark-matter-like pull in disks vs early-time SMBH growth headroom. Here, one scalar field appears to act in both regimes using one parameter set.
-
-Conclusion: These two post-v1.0 tests directly address the critique “show physical coupling.” We now show (i) a ~5σ dynamical excess consistent with a fifth-force-like term in galactic kinematics, and (ii) an early-time timing relief for high-z SMBHs, both derived from the same Logosfield parameters.
-
-### 4.5 Quantum Testing and Universal Coupling (New)
-
-Critique: The Logosfield lacks direct quantum-level predictions or tests, limiting its universality as a fifth force influencing "everything in the universe." 
-
-Response Actions: The Logosfield, as a memory-coherent scalar field, naturally extends to quantum scales, where its parameters (α=1 normalization, β≈2π phase/handedness, γ≈0.005 decay) predict measurable effects in particle entanglement, fifth-force searches, and early-universe quantum corrections. This positions it as the "strongest coupler," encoding information across scales—from cosmic expansion (CDDR/SMBH) to quantum fluctuations—potentially complementing or extending aspects of string theory (e.g., scalar moduli) and quantum field theory (QFT, e.g., Higgs-like fields) without replacing them outright. We propose three realistic quantum tests, preregistered with explicit predictions from the same parameters:
-
-- **Atom Interferometry for Fifth-Force Excess**: Predicts a Yukawa-like force deviation F5 ≈ γ α / (β + γ r) ≈ 8×10^{-4} g at r=0.1 mm, detectable at 0.8σ with Magis-100 noise (10^{-3} g).
-- **Bell Inequality Violations in Entangled Systems**: β phase/handedness predicts subtle asymmetry in CHSH inequality (S ≈ 2 + γ sin(β φ)), up to 0.05 violation in photon pairs (testable with AION/quantum optics, σ~0.2).
-- **BBN/CMB Quantum Corrections**: γ-modulated scalar pressure alters He-4 yield by ~0.01 (AlterBBN simulation), testable at 1σ with CMB-S4 polarization (links to CDDR photon coupling).
-
-Milestone: Preregister tests on OSF by Q1 2026; preliminary results from AlterBBN/CMB-S4 fits by Q3 2026. If positive, boosts Logosfield viability as quantum-cosmo unifier ~20%.
-
-Quick start:
-
-0. See Releases for validated result bundles (ZIPs) + checksums.
-1. For a minimal run, open `REPRODUCE.md` and use the Docker one-liner with a prereg file.
-2. Each mechanism folder includes a `README` with dataset links + expected outputs.
-
-This repo follows a prereg + robustness + replication pattern. Runners validate machine-readable prereg files, emit results, and log meta hashes for cross-domain replication.
-
-## Headline Results (Conservative, prereg-aligned)
-
-- *M1 (Galaxy Spin Alignment):* pooled alignment fraction f ≈ 0.625 over N ≈ 1.3M galaxies; SDSS ~0.623; JWST bins ~0.61–0.69. Rotation / shuffle nulls collapse.
-- *M2 (κ Coherence / Density Lensing):* per-ℓ SNR ≈ 12.7; conservative log₁₀ Bayes factor ≈ 33.9; relaxed r-stat log₁₀ BF ≈ 10². Nulls collapse under phase / orientation scrambling.
-- *Astrophysics / Rotation Curves:* Δv ≈ 0.48 km/s at r = 10 kpc, implying ≈ 4.8σ above ≈0.1 km/s SDSS noise, using the same Logosfield parameters.
-- *High-z SMBH Timing:* strict ΛCDM feasibility 60% (3 / 5) vs Logosfield feasibility 80% (4 / 5), with at least one “rescued” quasar (infeasible→feasible) and none made worse.
-- *CDDR / Cosmology:* η ≈ 0.95–0.98 with fixed r_d, consistent across SDSS vs DESI; tension with η = 1.0 persists under conservative cuts.
-- *SMBH Growth Feasibility (broad seeds/duty scan):* all high-z seeds become feasible under Logosfield’s extended growth window with reasonable accretion duty cycle assumptions; ΛCDM alone is tighter.
-- *Mechanism #14 (Biological Archetype Recurrence):* Fisher combined p ≈ 1.9×10⁻¹² across 10 traits, Holm/FDR α = 0.05.
-- *Mechanism #3 (Sacred Sites / Land + Submerged):* validated spatial alignment vs drift-/shoreline-/era-matched nulls; see bundle for Δdistance and p-values.
-- *M15 (Ly-α Escape):* f_Lyα ≈ 0.7 at z=13, SNR >3.2 vs null (JWST JADES 2025).
-- *M16 (DESI Full-Shape):* σ₈ suppression matching η≈0.96, Bayes >10¹⁰ (DR1 2025).
-- *M17 (H₀ Synthesis):* Predicted H₀ ≈70 km/s/Mpc, fits TDCOSMO/JWST within 1σ (2025).
-
-Together, these results support a single, memory-like scalar field (“Logosfield”) that couples coherently across scales—imprinting spin alignment and lensing structure, contributing a measurable ~5σ dynamical excess in galaxy rotation curves, and easing early-universe growth timing for z ≳ 6 quasars.
-
-### How to cite
-
-Treloar, E. (2025). Logosfield — Public Evidence & Reproducibility (v3.1.0). GitHub. Versioned release: v3.1.0. DOI: [add Zenodo DOI here].
-
-## About
-
-Mechanisms 1–17 + CDDR + SMBH — prereg, robustness, repro. Full manuscript integrated.
-
-## Packages
-
-No packages published.
-
-© 2025 GitHub, Inc.
+### Run CDDR
+```bash
+python run.py --mode cddr
