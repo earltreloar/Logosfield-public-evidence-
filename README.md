@@ -149,3 +149,6 @@ The current public reproduction priority is the frozen two-test path only.
 ### Run CDDR
 ```bash
 python run.py --mode cddr
+
+
+python run.py --mode mech16
