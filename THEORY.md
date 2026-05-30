@@ -29,7 +29,7 @@ The public EFT layer does not replace the Standard Model. It adds only minimal u
 The current working reduction treats the Logosfield as an effective scalar sector `Phi` with a retarded exponential memory structure and locked core parameters:
 
 - `alpha = 1`
-- `beta ~= 2 pi`
+- `beta ~= 2 pi` (working assumption — derivation in progress; see Section 10)
 - `gamma = 0.005`
 
 These parameters are frozen in the current public path and are not retuned per mechanism.
@@ -55,6 +55,8 @@ Interpretation:
 
 The purpose of this layer is to make the coupling structure explicit while avoiding parameter sprawl.
 
+The memory-covariant derivative reduces to the standard covariant derivative D_mu in the conservative limit gamma → 0. This is the correct recovery condition: as gamma → 0, the memory contribution vanishes exactly.
+
 ---
 
 ## 4. What is actually constrained in the current public path
@@ -66,6 +68,17 @@ Instead, it should be interpreted as constraining an **effective cosmology respo
 - `epsilon_g = c_g * Phi_ref / M_Pl`
 - `epsilon_y = c_y * Phi_ref / M_Pl`
 - `epsilon_C = A_g * epsilon_g + A_y * epsilon_y`
+
+Derived coefficients (May 27, 2026):
+
+- `A_g = 1/2` exactly (analytical — Z(Phi) coupling to D_L^{1/2})
+- `A_y * f_y(z=0.5) = 0.2384` (numerical — Y channel is 4.2x larger than Z at z=0.5)
+
+Full CDDR formula:
+
+```
+eta(z=0.5) - 1 = -0.0569 * epsilon_g + 0.2384 * epsilon_y
+```
 
 Only this downstream effective response is currently constrained by the active public path.
 
@@ -137,7 +150,7 @@ Historical or broader materials remain part of the project record but are not al
 
 ## 9. Current public posture
 
-The repository’s current public posture is:
+The repository's current public posture is:
 
 - freeze the core
 - keep the path narrow
@@ -146,3 +159,51 @@ The repository’s current public posture is:
 - only build outward from tests that survive under the same fixed structure
 
 This file should be read as the canonical technical snapshot of the current public Logosfield path.
+
+---
+
+## 10. Beta parameter status
+
+`beta ~= 2 pi` is adopted as a working assumption, supported by two convergent arguments:
+
+1. **Phase resolution criterion:** tau_mem = T_char (the memory timescale equals the characteristic period)
+2. **Velocity structure:** beta = v_fast / v_slow (ratio of fast to slow propagation velocities in each sector)
+
+Neural check: tau_mem = 25 ms matches the gamma-band cycle at 40 Hz.
+
+Full symmetry derivation from the Lagrangian remains open (Gap 4). Beta should not be described as "confirmed" or "derived" until that derivation is complete.
+
+---
+
+## 11. Two-velocity scale structure
+
+The memory kernel operates on two characteristic velocities. This structure must be stated explicitly:
+
+- `v_fast`: the faster propagation velocity (sets r_ref and tau_K)
+- `v_slow`: the slower integration velocity (sets r_coh)
+- `beta = v_fast / v_slow` (frozen parameter, beta ~= 2 pi)
+
+Scale relationships (corrected May 27, 2026):
+
+```
+r_ref = v_fast / omega_char
+r_coh = v_slow / omega_char = r_ref / beta
+tau_K = 1 / omega_char          [NOT 1/(beta * omega_char)]
+```
+
+Scale table (corrected values):
+
+| Sector            | r_ref    | r_coh    | tau_K    |
+|-------------------|----------|----------|----------|
+| Cosmological      | 4.2 Gpc  | 673 Mpc  | 2.19 Gyr |
+| BH QNM (335.3 Hz) | 142.3 km | 22.6 km  | 0.474 ms |
+| Neural (40 Hz)    | 27.9 cm  | 4.43 cm  | 4.0 ms   |
+
+Sector velocity identifications:
+
+- **Cosmological:** v_fast and v_slow are field propagation velocities
+- **BH QNM:** v_fast = c; v_slow = c/beta (QNM ringdown structure)
+- **Neural:** v_fast = axonal conduction velocity; v_slow = synaptic/dendritic integration velocity
+
+Note: an earlier version of this file incorrectly stated tau_K = 1/(beta * omega_char) and used f_QNM = 250 Hz for the BH QNM row. Both have been corrected above.
+
