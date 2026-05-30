@@ -38,7 +38,7 @@ Standard Model operator content is left intact. Logosfield enters, if enabled, o
 The current working reduction treats the Logosfield as an effective scalar sector `Phi` with a retarded exponential memory kernel and locked core parameters:
 
 - `alpha = 1`
-- `beta ~= 2 pi`
+- `beta ~= 2 pi` (working assumption — supported by phase resolution and velocity structure arguments; full symmetry derivation from Lagrangian is open)
 - `gamma = 0.005`
 
 These locked core parameters are part of the public freeze policy and are not retuned per mechanism.
@@ -47,7 +47,7 @@ These locked core parameters are part of the public freeze policy and are not re
 
 ## Frozen EFT completion (public working form)
 
-This repository uses a minimal EFT-style completion whose purpose is to make “couples to the four forces” explicit in a conservative and attackable way while avoiding parameter sprawl.
+This repository uses a minimal EFT-style completion whose purpose is to make "couples to the four forces" explicit in a conservative and attackable way while avoiding parameter sprawl.
 
 ### Interaction sector
 Only two universal coefficients are admitted in the current public EFT layer:
@@ -76,7 +76,7 @@ That effective response should be treated operationally as something like:
 - `epsilon_y = c_y * Phi_ref / M_Pl`
 - `epsilon_C = A_g * epsilon_g + A_y * epsilon_y`
 
-where only the downstream effective cosmology response is presently constrained in the public path.
+where `A_g = 1/2` exactly (analytical) and `A_y * f_y(z=0.5) = 0.2384` (numerical). Only the downstream effective cosmology response is presently constrained in the public path.
 
 ---
 
@@ -116,11 +116,11 @@ This means:
 The repository currently maintains a **frozen two-test public path**.
 
 ### Active Test 1
-**CDDR diagnostic**  
+**CDDR diagnostic**
 Distance-duality / Etherington-style diagnostic used as the current anchor branch.
 
 ### Active Test 2
-**Mechanism 16 sigma8 response**  
+**Mechanism 16 sigma8 response**
 Treated only as a child branch of the same cosmology path.
 
 ### Public status
@@ -153,6 +153,10 @@ The current public reproduction priority is the frozen two-test path only.
 ### Run CDDR
 ```bash
 python run.py --mode cddr
+```
 
-
+### Run Mechanism 16
+```bash
 python run.py --mode mech16
+```
+
