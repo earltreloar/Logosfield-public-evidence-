@@ -203,15 +203,74 @@ The following paragraph is suitable for outreach to relativists and cosmologists
 
 ---
 
+
+---
+
+## 8b. Cassini Solar Profile — Gap 3 (Substantially Complete, May 29, 2026)
+
+**Status: SUBSTANTIALLY COMPLETE. Framework not ruled out. Phi_ref undetermined.**
+
+### Constraint form (V2)
+
+```
+c_g * DeltaPhi_solar / M_Pl < 4.6e-5
+```
+
+Equivalent to: Phi_ref/M_Pl > sqrt(eps_g * |eps_y| * Phi_N * R/b / 4.6e-5)
+
+At target zone (eps_g=0.15, eps_y=-0.021): Phi_ref/M_Pl > 0.0095
+
+### Key results (computed May 29, 2026)
+
+Option 2 (r_coh suppression): r_coh_solar = 109 R_sun >> b_cassini = 1.6 R_sun.
+No suppression available. Full path coherent.
+
+Option A (missing source terms): Complete V2 Phi equation analyzed.
+No missing source explains amplitude gap. Source shape (matter density,
+1/(1+z)^3) is physically correct. Amplitude set by initial conditions.
+Amplitude matching gives c_y ~ 2.1, Phi_ref/M_Pl ~ 0.010.
+
+Option B (parameter space): Allowed window: 0.01 < Phi_ref/M_Pl < 1 (non-empty).
+
+### Cassini check at amplitude-matched point
+
+```
+Phi_ref/M_Pl = 0.010
+c_g = 15.0,  c_y = 2.1
+c_g * c_y * Phi_N * R/b = 4.17e-5
+Cassini bound             = 4.6e-5
+Margin: 1.10x  PASS
+```
+
+### Honest status
+
+- Cassini does NOT rule out the framework
+- Framework marginally compatible at Phi_ref/M_Pl ~ 0.010
+- Cassini margin: ~10%
+- Phi_ref/M_Pl is an initial condition, not derived from V2 action
+- Gap 4 (V(Phi) derivation) is critical path for Gap 8 (Phi_ref)
+- Gap 8 resolution will verify or improve the Cassini margin
+
+### Outreach statement
+
+"The framework is marginally compatible with Cassini solar system constraints.
+The scalar field reference value Phi_ref/M_Pl is bounded by Cassini (lower:
+> 0.0095) and EFT validity (upper: < 1). The amplitude-matched value
+Phi_ref/M_Pl ~ 0.010 passes Cassini with ~10% margin. Definitive verification
+requires deriving Phi_ref from V(Phi) (work in progress, Gap 4/8).
+Cassini does not rule out the framework."
+
+---
 ## 9. Open Gaps
 
 | Gap | Description | Status |
 |-----|-------------|--------|
-| Gap 3 | Cassini solar profile | Open — not started |
+| Gap 3 | Cassini solar profile | SUBSTANTIALLY COMPLETE — marginally satisfiable, Phi_ref undetermined |
 | Gap 4 | Parameter derivation (beta, gamma, alpha) | beta working derivation; gamma and alpha open |
 | Gap 5 | F_self formal theory | Partially developed |
 | Gap 6 | BH QNM exact computation (S2) | Blocked on Z(Phi) formalization |
 | Gap 7 | Horndeski mapping | COMPLETE — May 29, 2026 |
+| Gap 8 | Phi_ref/M_Pl from first principles | NEW — opened May 29, 2026; critical path via Gap 4 |
 
 ---
 
@@ -229,4 +288,5 @@ The following paragraph is suitable for outreach to relativists and cosmologists
 
 *V2 Canonical. May 29, 2026. Supersedes all prior ZPhi versions.*
 *All claims at the level of confidence the work supports.*
-*Gap 7 closed May 29, 2026. Next: Cassini solar profile (Gap 3).*
+*Gap 7 closed May 29, 2026. Gap 3 substantially complete May 29, 2026.*
+*Gap 8 opened May 29, 2026. Next: V(Phi) from memory kernel (Gap 4/8).*
