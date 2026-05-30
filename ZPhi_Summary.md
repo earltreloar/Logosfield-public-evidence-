@@ -19,7 +19,7 @@ where:
 - `U(x,x')`: parallel transport operator
 - `D_mu'`: standard covariant derivative at x'
 
-**Conservative limit:** gamma → 0 recovers D_mu exactly. As gamma → 0, the kernel K vanishes and D_mem,mu psi(x) → D_mu psi(x). The limit gamma → infinity does NOT recover standard physics; it maximizes the memory contribution. The conservative limit is gamma → 0.
+**Conservative limit:** gamma -> 0 recovers D_mu exactly. As gamma -> 0, the kernel K vanishes and D_mem,mu psi(x) -> D_mu psi(x). The limit gamma -> infinity does NOT recover standard physics; it maximizes the memory contribution. The conservative limit is gamma -> 0.
 
 ---
 
@@ -53,12 +53,12 @@ Note: A_g was previously assumed to be 1. The correct analytical value is 1/2. P
 
 ## 4. Force Coupling Table (V2)
 
-| Force   | Group        | Memory Coupling | Basis                  |
-|---------|--------------|-----------------|------------------------|
-| EM      | U(1)         | 0 exactly       | Conformal invariance   |
-| Strong  | SU(3)        | < 0 in IR       | Asymptotic freedom     |
-| Weak    | SU(2) broken | ~408 at 1 fm    | Proca propagator       |
-| Gravity | Diff. inv.   | → 0             | Background independence|
+| Force   | Group        | Memory Coupling | Basis                   |
+|---------|--------------|-----------------|-------------------------|
+| EM      | U(1)         | 0 exactly       | Conformal invariance    |
+| Strong  | SU(3)        | < 0 in IR       | Asymptotic freedom      |
+| Weak    | SU(2) broken | ~408 at 1 fm    | Proca propagator        |
+| Gravity | Diff. inv.   | -> 0            | Background independence |
 
 ---
 
@@ -86,7 +86,7 @@ where DeltaPhi_solar is the field excursion of Phi across the solar system.
 
 **Status: HIGH confidence. Presentable externally.**
 
-The framework predicts that quasinormal mode frequencies for black hole ringdown match GR predictions to the precision of current LIGO observations. Memory coupling to gravity → 0 (background independence), so the QNM spectrum is unmodified at leading order. This is a consistency result, not a new prediction.
+The framework predicts that quasinormal mode frequencies for black hole ringdown match GR predictions to the precision of current LIGO observations. Memory coupling to gravity -> 0 (background independence), so the QNM spectrum is unmodified at leading order. This is a consistency result, not a new prediction.
 
 Testable by LIGO O5.
 
@@ -147,25 +147,31 @@ sigma_8 tension target:            epsilon_y ~ -0.021
 ```
 
 LCDM: ratio undefined (eta = 1). Single-effect models: 0 or infinity.
-Logosfield: 0.13–0.25, constrained by frozen parameters.
-This is the unique framework fingerprint. Euclid joint measurement: expected 2027–2029.
+Logosfield: 0.13-0.25, constrained by frozen parameters.
+This is the unique framework fingerprint. Euclid joint measurement: expected 2027-2029.
 
 ---
 
-## 8. Horndeski Mapping
+## 8. Horndeski Mapping (Gap 7 — NOT YET DONE)
 
-The V2 framework must be located within the Horndeski classification before outreach to relativists or cosmologists.
+**Status: OPEN. Required before outreach to relativists or cosmologists.**
 
-**Preliminary classification:**
+The Horndeski mapping has not yet been formally derived. This section
+is a placeholder. No classification should be cited externally until
+this work is complete.
 
-The V2 action contains a canonical scalar kinetic term, a potential V(Phi), and EFT completion functions Z(Phi) and Y(Phi) acting on the gauge and Yukawa sectors respectively. It does not contain f(Phi)R, xi*Phi^2*R, or any non-minimal geometric coupling. The memory structure enters through the matter sector (psi coupling), not through modification of the gravitational sector.
+What is known structurally:
+- The V2 gravitational sector contains no f(Phi)R or xi*Phi^2*R
+- The memory-covariant derivative is a non-local operator acting on matter
+- The memory structure does not enter through metric-scalar modifications
 
-The gravitational sector is Einstein gravity with a minimally coupled scalar, placing it within the Horndeski class with G4 = M_Pl^2/2 (minimal). The novel physics enters through memory-modified matter couplings, which are distinct from and complementary to Horndeski structure. The memory kernel is a non-local operator and does not map to any Horndeski subclass directly.
+What remains to be done:
+- Formal location of V2 within or outside the Horndeski class
+- Classification of the memory operator relative to non-local extensions
+- A paragraph suitable for inclusion in outreach and specialist communication
 
-**For outreach purposes, the correct framing is:**
-> "The gravitational sector is standard GR with a minimally coupled scalar (minimal Horndeski). The novel physics enters through memory-modified matter couplings, which are outside standard Horndeski classification and represent a non-local extension in the matter sector."
-
-Formal classification of the memory operator's relationship to non-local extensions of Horndeski (DHOST, Galileon-memory hybrids) remains open and should be noted as such in any specialist communication.
+This is the first question any relativist will ask. It must be completed
+before any external evaluation or outreach proceeds.
 
 ---
 
@@ -177,7 +183,7 @@ Formal classification of the memory operator's relationship to non-local extensi
 | Gap 4 | Parameter derivation (beta, gamma, alpha) | beta has working derivation; gamma and alpha open |
 | Gap 5 | F_self formal theory | Partially developed |
 | Gap 6 | BH QNM exact computation (S2) | Blocked on Z(Phi) formalization |
-| Gap 7 | Horndeski mapping formal statement | Working draft above — needs review |
+| Gap 7 | Horndeski mapping | OPEN — not yet done; required before outreach |
 
 ---
 
@@ -187,7 +193,7 @@ Formal classification of the memory operator's relationship to non-local extensi
 |------------|------------|-------------|
 | CDDR eta(z) < 1 | MEDIUM-HIGH | Euclid, Rubin |
 | sigma_8 suppression -4% to -8% | MEDIUM | Euclid, Rubin |
-| Signature ratio 0.13–0.25 | MEDIUM | Joint survey |
+| Signature ratio 0.13-0.25 | MEDIUM | Joint survey |
 | S1: QNMs = GR | HIGH | LIGO O5 |
 | S2: delta_f = 21.7 Hz | LOW | LIGO O5 (exact computation needed first) |
 
@@ -195,4 +201,5 @@ Formal classification of the memory operator's relationship to non-local extensi
 
 *V2 Canonical. May 29, 2026. Supersedes all prior ZPhi versions.*
 *All claims at the level of confidence the work supports.*
+*Horndeski mapping (Gap 7) must be completed before outreach.*
 
