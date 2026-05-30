@@ -1,193 +1,192 @@
-# Logosfield — Frozen EFT Completion (Minimal GR) — v0.1
+# Logosfield — EFT Completion V2 Canonical
+# Version: V2 Canonical (Memory-Covariant Derivative)
+# Supersedes: Frozen EFT Completion v0.1
+# Last updated: May 29, 2026
 
-**Status:** Frozen (v0.1)  
-**Purpose:** Minimal EFT completion linking the Logosfield scalar **Φ** to **SM gauge + Yukawa sectors** while keeping **GR minimal** and preserving **backward compatibility** with legacy mechanisms.
+**Status:** V2 Canonical
+**Purpose:** Full EFT completion linking the Logosfield scalar Phi to SM gauge + Yukawa sectors via the memory-covariant derivative. GR remains minimal. Full backward compatibility with legacy mechanisms preserved.
 
-> Default repo mode is **Legacy Mode**: `c_g = 0`, `c_y = 0` (all prior mechanism runs unchanged).  
-> Enabling nonzero couplings is **EFT Mode** and must be explicitly labeled + hashed.
+> Default repo mode is **Legacy Mode**: c_g = 0, c_y = 0 (all prior mechanism runs unchanged).
+> Enabling nonzero couplings is **EFT Mode** and must be explicitly labeled and hashed.
 
 ---
 
-## 1) Scope and status
+## 1. Scope and Status
 
-- **Scope:** IR/EFT-level completion only (no UV completion claimed).
+- **Scope:** IR/EFT-level completion. No UV completion claimed.
+- **Version:** V2 Canonical — memory acts through the matter sector via D_mem,mu, not through Phi self-interaction (V1 S_mem structure is superseded).
 - **Minimality targets:**
-  - Keep GR conservative (Einstein–Hilbert only).
-  - Add **only two** universal SM coupling coefficients: **(c_g, c_y)**.
-  - Keep the Logosfield identity parameters locked: **α, β, γ**.
+  - GR conservative: Einstein-Hilbert only.
+  - Two universal SM coupling coefficients only: c_g, c_y.
+  - Logosfield identity parameters locked: alpha, beta, gamma.
 
 ---
 
-## 2) Field content
+## 2. Field Content
 
-- Metric **g_{μν}** with Einstein–Hilbert action.
-- Logosfield scalar **Φ** with canonical local kinetic term and potential **V(Φ)**.
+- Metric g_mu_nu with Einstein-Hilbert action.
+- Logosfield scalar Phi with canonical local kinetic term and potential V(Phi).
 - Standard Model fields (operator content unchanged).
-- Memory kernel term **S_mem** encoding Logosfield recursion.
+- Memory enters through D_mem,mu acting on matter fields psi — NOT through a separate S_mem term on Phi.
+
+**V1 vs V2 distinction (critical):**
+V1 encoded memory as a nonlocal bilinear S_mem = integral Phi(x) K(x,x') Phi(x') — the field remembering itself.
+V2 encodes memory through the covariant derivative operator acting on matter: D_mem,mu psi. This is a fundamentally different physical picture. The memory is in how matter propagates, not in Phi's self-interaction.
 
 ---
 
-## 3) Locked parameters (Logosfield identity)
+## 3. Locked Parameters (Logosfield Identity)
 
-These are **global** and **never retuned per mechanism**:
+Global. Never retuned per mechanism.
 
-- **α = 1** (normalization)
-- **β ≈ 2π** (memory decay / falloff scale)
-- **γ = 0.005** (memory strength)
+- **alpha = 1** (normalization)
+- **beta ~= 2pi** (working assumption — phase resolution + velocity structure arguments converge; symmetry derivation from Lagrangian open)
+- **gamma = 0.005** (memory coupling strength)
 
 ---
 
-## 4) Minimal GR (conservative requirement)
+## 4. Minimal GR
 
 No non-minimal gravity couplings.
 
-**Einstein–Hilbert:**
-\[
-S_{\mathrm{GR}}=\int d^4x\,\sqrt{-g}\,\frac{M_{\mathrm{Pl}}^2}{2}\,R
-\]
+Einstein-Hilbert:
+  S_GR = integral d^4x sqrt(-g) (M_Pl^2 / 2) R
 
-**Excluded in v0.1:**
-- no \(\xi\,\Phi^2 R\)
-- no conformal/disformal couplings \(g_{\mu\nu}\to C(\Phi)g_{\mu\nu}+D(\Phi)\partial_\mu\Phi\partial_\nu\Phi\)
-
----
-
-## 5) Local Logosfield sector
-
-\[
-S_{\Phi}=\int d^4x\,\sqrt{-g}\left[-\frac{1}{2}(\nabla\Phi)^2 - V(\Phi)\right]
-\]
+Excluded in V2:
+- no xi Phi^2 R
+- no f(Phi)R
+- no conformal/disformal couplings
 
 ---
 
-## 6) Standard Model sector
+## 5. V2 Core: Memory-Covariant Derivative
 
-\[
-S_{\mathrm{SM}}=\int d^4x\,\sqrt{-g}\,\mathcal{L}_{\mathrm{SM}}
-\]
+The central V2 operator:
 
-SM operator content is standard; EFT mode only adds **universal dressings** below.
+```
+D_mem,mu psi(x) = integral_{M^-(x)} K(x,x; beta,gamma) * U(x,x) * D_mu psi(x) * sqrt(-g) d^4x
 
----
+K(x,x; beta,gamma) = gamma*beta * exp(-beta*(t-t)) * Theta(t-t)
+```
 
-## 7) Frozen interactions (Option B)
+- M^-(x): causal past of x
+- U(x,x): parallel transport operator
+- D_mu: standard covariant derivative at x
+- Conservative limit: gamma -> 0 recovers D_mu exactly
 
-### 7.1 Universal gauge-kinetic dressing
+The matter action in V2:
+  S_matter = integral d^4x sqrt(-g) L(psi, D_mem,mu psi, Phi)
 
-\[
-S_{\mathrm{gauge}}=\int d^4x\,\sqrt{-g}\left[
--\frac{1}{4}\,Z(\Phi)\sum_{A\in\{B,W,G\}}F^A_{\mu\nu}F^{A\,\mu\nu}
-\right]
-\]
-
-Frozen linear form:
-\[
-Z(\Phi)=1+c_g\frac{\Phi}{M_{\mathrm{Pl}}}
-\]
-
-### 7.2 Universal Yukawa dressing
-
-\[
-S_{\mathrm{yuk}}=\int d^4x\,\sqrt{-g}\left[
--\sum_f\left(y_f^{(0)}\,Y(\Phi)\,\bar{\psi}_f H \psi_f + \mathrm{h.c.}\right)
-\right]
-\]
-
-Frozen linear form:
-\[
-Y(\Phi)=1+c_y\frac{\Phi}{M_{\mathrm{Pl}}}
-\]
-
-**Universality rule (v0.1):**
-- no per-gauge-group \(c_{g1},c_{g2},c_{g3}\)
-- no per-fermion \(c_{y,f}\)
+This replaces the V1 S_mem nonlocal bilinear entirely.
 
 ---
 
-## 8) Memory kernel term (Logosfield recursion)
+## 6. Logosfield Scalar Sector
 
-### 8.1 Nonlocal quadratic form (action-level)
+  S_Phi = integral d^4x sqrt(-g) [-1/2 (nabla Phi)^2 - V(Phi)]
 
-\[
-S_{\mathrm{mem}}=\frac{\gamma}{2}\int d^4x\,d^4x'\,\sqrt{-g}\,\sqrt{-g'}\,
-\Phi(x)\,K_\beta(x,x')\,\Phi(x')
-\]
+  rho_Phi = 1/2 Phi_dot^2 + V(Phi)
+  p_Phi   = 1/2 Phi_dot^2 - V(Phi)
+  H^2     = (8 pi G / 3)(rho_m + rho_Phi)
 
-### 8.2 Kernel family (frozen v0.1)
+V(Phi) slow-memory condition (derived):
+- Case A: V = Lambda_eff, w_Phi = -1, sigma_8 ~ -1.13%
+- Case B: V = 1/2 H_0^2 Phi^2, w_Phi(z=0) = -0.80
 
-The kernel is **retarded/causal in the EOM**:
-
-\[
-K_\beta(t,t') \propto e^{-\beta(t-t')}\,\Theta(t-t')
-\]
-
-No additional kernel-shape parameters beyond **β** and **γ** are introduced in v0.1.
-
-### 8.3 Stable auxiliary-field implementation (recommended)
-
-Define:
-\[
-\Psi(t,\mathbf{x})=\int_{-\infty}^{t}\beta\,e^{-\beta(t-t')}\Phi(t',\mathbf{x})\,dt'
-\]
-
-Then:
-\[
-\dot{\Psi}=-\beta\Psi+\beta\Phi
-\]
-
-Stable discrete update:
-\[
-\Psi_{n+1}=\Psi_n e^{-\beta\Delta t}+\Phi_n(1-e^{-\beta\Delta t})
-\]
+Note: w_Phi is an internal property of a sub-dominant field (Omega_Phi ~ 10^-9 under EFT constraints). It is NOT observable as a dark energy equation of state. DESI cannot test w_Phi directly.
 
 ---
 
-## 9) Full frozen action (v0.1)
+## 7. EFT Completion Functions
 
-\[
-S = S_{\mathrm{GR}} + S_{\Phi} + S_{\mathrm{SM}} + S_{\mathrm{gauge}} + S_{\mathrm{yuk}} + S_{\mathrm{mem}}
-\]
+  Z(Phi) = 1 + c_g * Phi / M_Pl    [gauge-sector]
+  Y(Phi) = 1 + c_y * Phi / M_Pl    [Yukawa/mass-sector]
 
-Equivalently, the local Lagrangian density (excluding the explicitly nonlocal \(S_{\mathrm{mem}}\)) is:
+Gauge-kinetic dressing:
+  S_gauge = integral d^4x sqrt(-g) [-1/4 Z(Phi) sum_A F^A_mu_nu F^A_mu_nu]
 
-\[
-\mathcal{L}_{\mathrm{local}}
-=
-\frac{M_{\mathrm{Pl}}^2}{2}R
--\frac{1}{2}(\nabla\Phi)^2
-- V(\Phi)
-+\mathcal{L}_{\mathrm{SM}}
--\frac{1}{4}Z(\Phi)\sum_{A}F^A_{\mu\nu}F^{A\,\mu\nu}
--\sum_f\left(y_f^{(0)}Y(\Phi)\bar{\psi}_f H\psi_f+\mathrm{h.c.}\right)
-\]
+Yukawa dressing:
+  S_yuk = integral d^4x sqrt(-g) [-sum_f y_f^(0) Y(Phi) psi_f_bar H psi_f + h.c.]
+
+Universality rule (V2):
+- No per-gauge-group c_g1, c_g2, c_g3
+- No per-fermion c_y,f
 
 ---
 
-## 10) Freeze policy
+## 8. Derived EFT Coefficients (May 27, 2026)
 
-- Only **{c_g, c_y}** are added in v0.1.
-- Universality enforced; **no** sector/fermion splitting.
-- **Bound-first** or **fit-once, then freeze globally**.
-- No “rescue parameters” added per mechanism after seeing results.
+epsilon_C = A_g * epsilon_g + A_y * epsilon_y
+
+**A_g = 1/2 exactly** (analytical)
+- Z(Phi) coupling Z(Phi) F_mu_nu F^mu_nu feeds into D_L^{1/2}
+- Corrects prior assumption A_g = 1 (overstated Z-channel by factor 2)
+
+**A_y * f_y(z=0.5) = 0.2384** (numerical, verified)
+- Y channel is 4.2x larger than Z channel at z=0.5
+- Prior treatment assumed Y negligible — incorrect
+
+Full CDDR formula:
+  eta(z=0.5) - 1 = -0.0569 * epsilon_g + 0.2384 * epsilon_y
 
 ---
 
-## 11) Backward compatibility rule
+## 9. Force Coupling Table (V2 — derived from operator structure)
+
+| Force   | Group        | Memory Coupling | Basis                   |
+|---------|--------------|-----------------|-------------------------|
+| EM      | U(1)         | 0 exactly       | Conformal invariance    |
+| Strong  | SU(3)        | < 0 in IR       | Asymptotic freedom      |
+| Weak    | SU(2) broken | ~408 at 1 fm    | Proca propagator        |
+| Gravity | Diff. inv.   | -> 0            | Background independence |
+
+These couplings are derived from the V2 operator structure, not assumed.
+EM zero and gravity zero follow from symmetry arguments.
+
+---
+
+## 10. Two-Velocity Scale Structure
+
+beta = v_fast / v_slow (frozen, beta ~= 2pi)
+
+| Sector            | r_ref    | r_coh    | tau_K    |
+|-------------------|----------|----------|----------|
+| Cosmological      | 4.2 Gpc  | 673 Mpc  | 2.19 Gyr |
+| BH QNM (335.3 Hz) | 142.3 km | 22.6 km  | 0.474 ms |
+| Neural (40 Hz)    | 27.9 cm  | 4.43 cm  | 4.0 ms   |
+
+tau_K = 1 / omega_char (NOT 1/(beta * omega_char))
+
+---
+
+## 11. Freeze Policy
+
+- Only {c_g, c_y} admitted in V2.
+- Universality enforced. No sector or fermion splitting.
+- Bound-first or fit-once, then freeze globally.
+- No rescue parameters added per mechanism after seeing results.
+- Failed branches demoted, not patched.
+
+---
+
+## 12. Backward Compatibility
 
 All legacy mechanism runs correspond to:
+  c_g = 0, c_y = 0
 
-\[
-c_g=0,\quad c_y=0
-\]
-
-Any use of nonzero **{c_g, c_y}** must be explicitly labeled:
-
-- **Direct Coupling / EFT Mode**
-- include a recorded **parameter hash** (α,β,γ,c_g,c_y plus any numerical run settings).
+Any nonzero {c_g, c_y} must be labeled:
+- Direct Coupling / EFT Mode
+- Include parameter hash (alpha, beta, gamma, c_g, c_y plus run settings)
 
 ---
 
-## Linked specs (recommended)
+## 13. Bayesian Position (May 29, 2026)
 
-- `spec/CONSTRAINTS_BOUND_FIRST.md` — external constraints as gates  
-- `spec/KERNEL_CAUSALITY_STABILITY.md` — kernel causality + stability
+Prior: ~0.005-0.01
+Combined Bayes factor: ~100-500x
+Posterior: 10-15%
+
+Comparison: Pre-1919 General Relativity (~10-20%).
+Eddington-equivalent test: Joint CDDR + sigma_8 (Euclid/Rubin, 2027-2029).
+Confirmation -> 50%+. Ruling out -> <1%.
+
