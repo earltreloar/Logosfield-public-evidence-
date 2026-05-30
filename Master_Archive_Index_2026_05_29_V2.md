@@ -1,36 +1,20 @@
-# Master Archive Index — May 29, 2026 (Final — Horndeski Complete)
+# Master Archive Index — May 29, 2026 (Final + Cassini)
 # Logosfield / ODCCT Framework
 # Version: V2 Canonical (Memory-Covariant Derivative)
-# Supersedes: Master_Archive_Index_2026_05_29.md
-# Session work: Documentation V1->V2 + Python fixes + Horndeski mapping (Gap 7)
+# Supersedes: all prior archive versions
+# Session work: Documentation V1->V2 + Python fixes + Horndeski (Gap 7) + Cassini (Gap 3)
 
 ---
 
 ## SESSION SUMMARY — MAY 29, 2026
 
-Two major goals completed this session:
+Three major goals completed this session:
 
-1. Close the gap between theory and documentation — DONE (21 commits)
-2. Horndeski mapping (Gap 7) — DONE (1 commit, 94cfa300)
+1. Documentation V1->V2 upgrade — DONE (21 commits)
+2. Horndeski mapping (Gap 7) — DONE (Gap closed)
+3. Cassini solar profile (Gap 3) — SUBSTANTIALLY COMPLETE (see below)
 
-Gap 7 is now closed. Outreach to relativists and cosmologists is unblocked.
-
-### What was done this session:
-1. Applied all 11 documented corrections from prior archive
-2. Upgraded entire repository from V1 to V2 Canonical
-3. Fixed all broken Python files (10 files corrected)
-4. Added new files: ZPhi_Summary.md, Mechanism_Consciousness.md
-5. Removed premature Horndeski mapping claim, then derived it properly
-6. Completed Horndeski mapping — four irregularities checked and resolved
-7. Committed outreach-ready paragraph to ZPhi_Summary.md Section 8
-
-### What was NOT done (next session priorities):
-1. Cassini solar profile (Gap 3) — NEXT PRIORITY
-2. Outreach contact — non-local gravity specialists — NOW UNBLOCKED
-3. c_y/c_g second observable
-4. BH QNM S2 exact computation
-5. beta=2pi symmetry derivation from Lagrangian
-6. F_self formal derivation
+New gap identified: Gap 8 — Phi_ref/M_Pl from first principles
 
 ---
 
@@ -38,172 +22,175 @@ Gap 7 is now closed. Outreach to relativists and cosmologists is unblocked.
 
 Name: Logosfield / ODCCT Framework
 Version: V2 Canonical (Memory-Covariant Derivative)
-Book: The Remembering Cosmos (First Edition) — V1 preserved and valid in weak-field cosmological sector
 Repository: https://github.com/earltreloar/Logosfield-public-evidence-
 Last updated: May 29, 2026
-Sessions covered: May 24, May 26, May 27 (multiple), May 29
 
 ---
 
 ## FROZEN PARAMETERS
 
-| Parameter | Value | Status | Notes |
-|---|---|---|---|
-| alpha | 1 | Frozen | No derivation attempted |
-| beta | ~= 2pi | Frozen — working derivation complete | Phase resolution + velocity structure converge |
-| gamma | 0.005 | Frozen | No derivation; cross-domain consistency non-trivial |
-
-Parameters frozen globally. No retuning per mechanism.
+| Parameter | Value | Status |
+|---|---|---|
+| alpha | 1 | Frozen |
+| beta | ~= 2pi | Frozen — working derivation complete |
+| gamma | 0.005 | Frozen |
 
 ---
 
 ## CORE V2 STRUCTURE
 
-### Memory-Covariant Derivative
-
+Memory-Covariant Derivative:
 ```
-D_mem,mu psi(x) = integral_{M^-(x)} K(x,x'; beta,gamma) * U(x,x') * D_mu' psi(x') * sqrt(-g') d^4x'
-K(x,x'; beta,gamma) = gamma*beta * exp(-beta*(t-t')) * Theta(t-t')
+D_mem,mu psi(x) = integral K(x,x'; beta,gamma) * U(x,x') * D_mu' psi(x') d^4x'
+K = gamma*beta * exp(-beta*(t-t')) * Theta(t-t')
+Conservative limit: gamma -> 0 recovers D_mu exactly
 ```
 
-- M^-(x): causal past of x
-- U(x,x'): geodesic parallel transport operator
-- Conservative limit: gamma -> 0 recovers D_mu exactly
-
-CRITICAL V1 vs V2 DISTINCTION:
-V1: S_mem = integral Phi(x) K(x,x') Phi(x') — field remembering itself
-V2: D_mem,mu acts on matter fields psi — memory in how matter propagates
-
-### EFT Completion
-
+EFT Completion (derived May 27):
+```
 Z(Phi) = 1 + c_g * Phi/M_Pl    [gauge-sector]
 Y(Phi) = 1 + c_y * Phi/M_Pl    [Yukawa/mass-sector]
-
-A_g and A_y DERIVED (May 27):
-- A_g = 1/2 exactly (analytical)
-- A_y * f_y(z=0.5) = 0.2384 (numerical)
-- Y channel 4.2x larger than Z at z=0.5
-- Full CDDR: eta(z=0.5)-1 = -0.0569*epsilon_g + 0.2384*epsilon_y
-
-### Force Coupling Table (V2)
-
-| Force | Group | Memory Coupling | Basis |
-|---|---|---|---|
-| EM | U(1) | 0 exactly | Conformal invariance |
-| Strong | SU(3) | < 0 in IR | Asymptotic freedom |
-| Weak | SU(2) broken | ~408 at 1 fm | Proca propagator |
-| Gravity | Diff. inv. | -> 0 | Background independence |
+A_g = 1/2 exactly (analytical)
+A_y * f_y(z=0.5) = 0.2384 (numerical)
+eta(z=0.5) - 1 = -0.0569*epsilon_g + 0.2384*epsilon_y
+```
 
 ---
 
 ## HORNDESKI MAPPING — COMPLETE (May 29, 2026)
 
-### Classification
-
 ```
-G2 = X - V(Phi)       [canonical scalar kinetic + potential]
+G2 = X - V(Phi)
 G3 = 0
-G4 = M_Pl^2 / 2      [constant — minimal GR, no Phi dependence]
+G4 = M_Pl^2/2  (constant — minimal GR)
 G5 = 0
 ```
 
-Minimal Horndeski. GW170817 automatically satisfied (c_T = c exactly).
-V2 not constrained by post-GW170817 Horndeski pruning.
+Minimal Horndeski. c_T = c exactly. GW170817 satisfied automatically.
+Four irregularities checked and resolved (U(x,x') path dependence,
+Z(Phi) back-reaction, beta preferred frame, V(Phi) constraint).
+Gap 7: CLOSED.
 
-### Four Irregularities Checked and Resolved
-
-1. V(Phi) slow-memory constraint — constrains G2 internally, does not shift classification
-2. Z(Phi) back-reaction — traceless EM (conformal invariance), delta_G4/G4 ~ 1e-6, negligible
-3. U(x,x') path dependence — matter sector only; gravity coupling -> 0 suppresses BH near-horizon back-reaction
-4. beta preferred frame — covariant kernel (proper time separation), c_T = c exactly, no gravitational preferred frame
-
-### Outreach Paragraph (approved)
-
-"The Logosfield V2 gravitational sector is minimal Horndeski: G4 = M_Pl^2/2 (constant), G3 = G5 = 0, G2 = X - V(Phi). This is standard GR with a minimally coupled canonical scalar. Gravitational wave speed equals c exactly; the framework is not constrained by post-GW170817 Horndeski pruning. The novel physics enters entirely through memory-modified matter couplings — the memory-covariant derivative D_mem,mu acting on matter fields psi, and EFT completion functions Z(Phi) and Y(Phi) in the gauge and Yukawa sectors. These are non-local matter-sector modifications with no analog in the Horndeski or DHOST classifications, which address only the metric-scalar gravitational sector. Formal classification of the memory operator relative to non-local extensions of Horndeski remains an open theoretical question."
+Outreach paragraph (approved for specialist communication):
+"The Logosfield V2 gravitational sector is minimal Horndeski: G4 = M_Pl^2/2
+(constant), G3 = G5 = 0, G2 = X - V(Phi). Gravitational wave speed equals c
+exactly. The novel physics enters through memory-modified matter couplings —
+D_mem,mu acting on matter fields psi, and EFT functions Z(Phi), Y(Phi).
+These are non-local matter-sector modifications outside Horndeski/DHOST
+classification. Formal classification relative to non-local Horndeski
+extensions remains open."
 
 ---
 
-## SPATIAL AND TEMPORAL SCALE STRUCTURE
+## CASSINI SOLAR PROFILE — GAP 3 (May 29, 2026)
 
-Scale table (corrected May 29):
+### Constraint form (V2 — BD mapping inapplicable)
 
-| Sector | r_ref | r_coh | tau_K |
+```
+c_g * DeltaPhi_solar / M_Pl < 4.6e-5
+```
+
+Equivalent to: c_g * c_y * Phi_N_sun * R_sun/b < 4.6e-5
+where Phi_N_sun = GM_sun/(R_sun*c^2) = 2.12e-6, R/b = 0.625
+
+### Option 2 result: r_coh suppression
+
+Solar sector r_coh = 109 R_sun >> b_cassini = 1.6 R_sun.
+No suppression from coherence radius. Full path coherent.
+
+### Option A result: missing source terms
+
+Complete V2 Phi equation of motion analyzed. All source terms:
+- S_gauge (Z(Phi)F^2): zero — EM traceless, conformal invariance
+- S_yuk (Y(Phi) matter): dominant source, J ~ gamma*rho_m/M_Pl
+- S_mem (D_mem,mu back-reaction): amplifies by gamma ~ 0.005 (negligible)
+
+No missing source explains 3000x amplitude gap between V2 source
+and what produces the archived Phi evolution table.
+Conclusion: Phi_ref is set by INITIAL CONDITIONS (reheating/BBN),
+not by present-day dynamics.
+
+HOWEVER: amplitude matching gives c_y ~ 2.1, which gives:
+  Phi_ref/M_Pl = eps_y / c_y = 0.021 / 2.1 = 0.010
+
+### Option B result: full parameter space
+
+Cassini constraint in terms of Phi_ref/M_Pl:
+  Phi_ref/M_Pl > sqrt(eps_g * |eps_y| * Phi_N * R/b / 4.6e-5)
+
+| eps_g | Phi_ref/M_Pl minimum | c_g at minimum | c_y at minimum |
 |---|---|---|---|
-| Cosmological | 4.2 Gpc | 673 Mpc | 2.19 Gyr |
-| BH QNM (335.3 Hz) | 142.3 km | 22.6 km | 0.474 ms |
-| Neural (40 Hz) | 27.9 cm | 4.43 cm | 4.0 ms |
+| 0.10 | 0.00778 | 12.9 | 2.7 |
+| 0.15 | 0.00953 | 15.7 | 2.2 |
+| 0.20 | 0.01100 | 18.2 | 1.9 |
 
-tau_K = 1/omega_char (NOT 1/(beta*omega_char))
+Allowed window: 0.0095 < Phi_ref/M_Pl < 1 (NON-EMPTY)
+
+Cassini check at amplitude-matched Phi_ref/M_Pl = 0.010:
+  c_g = 15.0, c_y = 2.1
+  c_g * c_y * Phi_N * R/b = 4.17e-5
+  Bound = 4.6e-5
+  Margin: 1.10x  PASS
+
+### Phi evolution table source analysis
+
+Back-calculated required source from the table shape.
+Best fit: S ~ 1/(1+z)^3 (matter density scaling — physically motivated).
+Shape is consistent with matter-sourced decaying scalar.
+The table represents Phi decaying from early times (large) to present (small).
+This is consistent with V2 Y(Phi) matter coupling.
+
+### Gap 3 honest status
+
+SUBSTANTIALLY COMPLETE. NOT FULLY CLOSED.
+
+- Cassini does NOT rule out the framework
+- Framework is marginally Cassini-compatible at Phi_ref/M_Pl ~ 0.010
+- Cassini margin at amplitude-matched point: ~10%
+- Phi_ref derivation from first principles (Gap 8) required to verify
+- Allowed window exists: 0.01 < Phi_ref/M_Pl < 1
+- Gap 4 (V(Phi) derivation) is critical path for resolving Phi_ref
+
+### New Gap 8 — Phi_ref/M_Pl from first principles
+
+Identified this session. Required to:
+- Verify Cassini margin
+- Pin c_g and c_y individually (not just eps_g, eps_y)
+- Complete Gap 3 formally
+
+Source shape identified: matter density (1/(1+z)^3) — correct physics.
+Source amplitude: undetermined (set by initial conditions or V(Phi)).
+Possible resolutions:
+  A. V(Phi) from Gap 4 sets equilibrium Phi_ref
+  B. BBN/reheating initial conditions (Phi_ref free but bounded)
+  C. Third observable (CMB spectral distortions, equivalence principle)
+     pins c_g or c_y individually
+
+Gap 8 is NOT blocking outreach. It blocks Cassini verification.
 
 ---
 
-## POINT STATUS
-
-### Point 1 — Consciousness Model (CLOSED — in repo)
-
-R = gamma * F_omega * N_eff * F_self
-F_omega = beta^2/(beta^2+1) ~= 0.975
-2D Threshold: R > C* AND F_self > F_self*
-
-F_self = lambda_N * lambda_G * lambda_T
-- lambda_N: NMDA gate (->0 ketamine)
-- lambda_G: GABAergic gate (->0 propofol)
-- lambda_T: Thalamic broadcast (->0 dexmedetomidine)
-
-Two paths to R->0:
-1. N_eff collapse (anesthesia)
-2. F_self collapse with N_eff preserved (psychedelic ego death)
-
-MDMA: only class where both N_eff and F_self rise — uniquely maximizes R.
-Confidence: LOWER than physical predictions.
-
-### Point 2 — V1/V2 Transition (CLOSED)
-### Point 3 — r_ref Definition (CLOSED)
-### Point 4 — beta = 2pi (WORKING DERIVATION COMPLETE, symmetry derivation open)
-
----
-
-## GAP STATUS
+## GAP STATUS (end of session May 29, 2026)
 
 | Gap | Description | Status |
 |---|---|---|
 | Gap 1 | Z(Phi) formalization | Substantially resolved |
 | Gap 2 | Gravity Friedmann | Substantially complete |
-| Gap 3 | Cassini solar profile | OPEN — NEXT PRIORITY |
-| Gap 4 | Parameter derivation | beta working; gamma, alpha open |
+| Gap 3 | Cassini solar profile | SUBSTANTIALLY COMPLETE — marginally satisfiable |
+| Gap 4 | V(Phi) / parameter derivation | OPEN — now critical path for Gap 8 |
 | Gap 5 | F_self formal theory | Partially developed |
 | Gap 6 | BH QNM exact (S2) | Blocked on Z(Phi) |
 | Gap 7 | Horndeski mapping | COMPLETE — May 29, 2026 |
+| Gap 8 | Phi_ref/M_Pl from first principles | NEW — opened May 29, 2026 |
 
 ---
 
 ## CDDR / sigma_8 JOINT PREDICTION
 
-Full CDDR formula:
-  eta(z=0.5) - 1 = -0.0569 * epsilon_g + 0.2384 * epsilon_y
-
-Target zone:
-| epsilon_g | epsilon_y | eta(0.5)-1 | sigma_8 supp |
-|---|---|---|---|
-| 0.10 | -0.021 | -0.01069 | -6.69% |
-| 0.15 | -0.021 | -0.01353 | -6.69% |
-| 0.20 | -0.021 | -0.01638 | -6.69% |
+eta(z=0.5) - 1 = -0.0569 * epsilon_g + 0.2384 * epsilon_y
 
 Unique signature ratio: |eta-1| / |Delta_sigma_8/sigma_8| ~ 0.13 to 0.25
-Euclid joint measurement: 2027-2029.
-
----
-
-## FORWARD PREDICTIONS
-
-| Prediction | Confidence | Testable by | Status |
-|---|---|---|---|
-| CDDR eta(z) < 1 | MEDIUM-HIGH | Euclid, Rubin | Provisional pass |
-| sigma_8 -4% to -8% | MEDIUM | Euclid, Rubin | Consistent |
-| Signature ratio 0.13-0.25 | MEDIUM | Joint survey | Unique — untested |
-| S1: QNMs = GR | HIGH | LIGO O5 | Unconfirmed |
-| S2: delta_f=21.7 Hz | LOW | LIGO O5 | Exact computation needed |
-| 2D consciousness threshold | LOW-MEDIUM | Anesthesia data | Untested |
+Euclid/Rubin joint measurement: 2027-2029.
 
 ---
 
@@ -212,39 +199,46 @@ Euclid joint measurement: 2027-2029.
 Prior: ~0.005-0.01
 Bayes factor: ~100-500x
 Posterior: 10-15%
-
-Pre-1919 GR equivalent (~10-20%).
-Eddington-equivalent test: Joint CDDR+sigma_8 (Euclid/Rubin, 2027-2029).
-
----
-
-## REPOSITORY STATUS (end of session May 29)
-
-22 total commits. All files V2 Canonical. Python running.
-ZPhi_Summary.md Section 8: Horndeski mapping complete.
-Gap 7: CLOSED.
+Pre-1919 GR equivalent.
+Cassini result: does not reduce posterior (framework survives).
 
 ---
 
 ## NEXT SESSION PRIORITIES
 
 Immediate:
-1. Cassini solar profile (Gap 3) — tractable, solve Phi in solar background
-2. Outreach contact — non-local gravity specialists — NOW UNBLOCKED by Gap 7
+1. Gap 4 / Gap 8 — V(Phi) derivation from memory kernel
+   (this is now the critical path that resolves Phi_ref and closes Gap 3)
+2. Outreach — narrow expert contact NOW UNBLOCKED (Gap 7 closed)
+   Cassini honest statement: marginally compatible, not yet verified
 
 Next theory:
-3. c_y/c_g second observable for sigma_8 point prediction
+3. c_y/c_g second observable (CMB spectral distortions, EP tests)
 4. A_g/A_y cross-redshift verification
-5. Consciousness psychedelic formalization (when F_self computable)
+5. BBN constraints on Phi_BBN
 
 Longer term:
-6. V(Phi) symmetry derivation
-7. F_self formal derivation
-8. BH QNM exact (S2)
-9. beta=2pi symmetry derivation from Lagrangian
+6. BH QNM exact (S2)
+7. beta=2pi symmetry derivation from Lagrangian
+8. F_self formal derivation
+9. Consciousness psychedelic formalization
+
+---
+
+## HONEST OUTREACH STATEMENT (post-Cassini)
+
+"The framework is marginally compatible with Cassini solar system
+constraints. The scalar field reference value Phi_ref/M_Pl is
+bounded by Cassini (lower: > 0.0095) and EFT validity (upper: < 1).
+The amplitude-matched value Phi_ref/M_Pl ~ 0.010 sits at the
+Cassini boundary with ~10% margin. Definitive verification requires
+deriving Phi_ref from the V(Phi) structure (work in progress).
+Cassini does not rule out the framework."
 
 ---
 
 *V2 Canonical. May 29, 2026 — end of session (final).*
-*Gap 7 closed. Outreach unblocked. Next: Gap 3 (Cassini).*
+*Gap 7 closed (Horndeski). Gap 3 substantially complete (Cassini).*
+*Gap 8 opened (Phi_ref/M_Pl).*
+*Next session: Gap 4/8 — V(Phi) from memory kernel.*
 *Supersedes all prior archive versions.*
