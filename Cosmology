@@ -1,13 +1,100 @@
-# Cosmology Modules — CDDR & SMBH
+# Cosmology — V2 Canonical
+# Logosfield / ODCCT Framework
+# Last updated: May 29, 2026
 
-**CDDR (Etherington distance duality)**  
-η(z) = D_L / [(1+z)² D_A] using Pantheon+, SH0ES, DESI BAO (with Lyα caution).  
-**Result (conservative)**: best-fit η ≈ **0.95–0.98**.
+---
 
-**SMBH high-z feasibility**  
-Feasibility surface over (ε, λ_Edd, duty) under ΛCDM vs Logosfield t(z).  
-**Result**: all seed scenarios feasible under Logosfield timing (strict ΛCDM tighter).
+## CDDR (Etherington Distance Duality)
 
-**Reproduce**  
-`python run.py --cosmo cddr`   or   `python run.py --cosmo smbh`  
-(See Release bundles for prereg files, inputs, and expected outputs.)
+eta(z) = D_L / [(1+z)^2 D_A]
+
+Using: Pantheon+, SH0ES, DESI BAO (Lyman-alpha with caution).
+
+### V2 Derived Formula (May 27, 2026)
+
+Full two-channel CDDR prediction:
+
+  eta(z=0.5) - 1 = -0.0569 * epsilon_g + 0.2384 * epsilon_y
+
+Derived coefficients:
+- A_g = 1/2 exactly (analytical — Z(Phi) -> D_L^{1/2} coupling)
+- A_y * f_y(z=0.5) = 0.2384 (numerical — verified)
+- Y channel is 4.2x larger than Z channel at z=0.5
+
+Phi evolution (verified):
+| z   | Phi(z)/Phi(0) |
+|-----|---------------|
+| 0.3 | 1.0792        |
+| 0.5 | 1.1137        |
+| 1.0 | 1.1624        |
+| 2.0 | 1.1948        |
+
+Detection windows:
+  Euclid threshold  |eta-1| > 0.005:  epsilon_g > 0.088
+  Current bound     |eta-1| < 0.025:  epsilon_g < 0.440
+  sigma_8 target:                      epsilon_y ~ -0.021
+
+Target zone:
+| epsilon_g | epsilon_y | eta(0.5)-1 | sigma_8 suppression |
+|-----------|-----------|------------|---------------------|
+| 0.10      | -0.021    | -0.01069   | -6.69%              |
+| 0.15      | -0.021    | -0.01353   | -6.69%              |
+| 0.20      | -0.021    | -0.01638   | -6.69%              |
+
+**Unique signature ratio:**
+  |eta-1| / |Delta_sigma_8/sigma_8| ~ 0.13 to 0.25
+
+LCDM: ratio undefined (eta = 1 exactly).
+Single-effect models: ratio is 0 or infinity.
+Logosfield V2: 0.13-0.25, constrained by frozen parameters.
+This is the unique framework fingerprint.
+
+**Status:** Provisional pass. Euclid/Rubin joint measurement expected 2027-2029.
+
+---
+
+## sigma_8 Suppression (Mechanism 16)
+
+Gravity Friedmann V2:
+
+  delta' + (2 + d ln H/dx) delta' - (3/2) Omega_m(a) (G_eff/G) delta = 0
+  G_eff/G ~= 1 + c_y * Phi / M_Pl
+
+Numerical results (SuperGrok prototype):
+- Phi stress-energy only:          -1.13%
+- Y(Phi) G_eff (G_eff/G = 0.98):  -6.82%
+- Combined:                         3-8% (DES/KiDS consistent)
+
+Constrained range: -1% to -8% (NOT tunable — frozen parameters).
+Point prediction requires c_y/c_g from second observable.
+
+**Status:** Consistent with DES/KiDS. Child branch of CDDR path.
+
+---
+
+## SMBH High-z Feasibility (Mechanism 21)
+
+Logosfield damping reduces cluster dispersal by 29.5%, enabling
+standard stellar seeds to form 10^8 M_sun SMBHs in <700 Myr.
+
+Simulation result:
+  LCDM final mean dist:       3871.1 (normalized)
+  Logosfield final mean dist: 2727.9 (normalized)
+  Damping:                    29.5%
+
+Testable predictions:
+| Experiment        | Forecast                              | Falsifiability        |
+|-------------------|---------------------------------------|-----------------------|
+| JWST Cycle 3/4    | 20-35% more compact proto-clusters    | >35% dispersal = fail |
+| Euclid/Rubin 2027 | 15-30% tighter sigma_8               | No bias = fail        |
+| Bayesian fit      | >3 sigma preference over LCDM         | <2 sigma = fail       |
+
+**Status:** Feasibility demonstrated. Not part of current locked public challenge path.
+
+---
+
+## Reproduce
+
+  python run.py --mode cddr
+  python run.py --mode mech16
+
