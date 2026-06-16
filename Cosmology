@@ -1,100 +1,57 @@
-# Cosmology — V2 Canonical
+# Cosmology — V3 Canonical
 # Logosfield / ODCCT Framework
-# Last updated: May 29, 2026
 
 ---
 
-## CDDR (Etherington Distance Duality)
+## Status: SUSPENDED pending Gap 8 (Phi_ref)
 
+The CDDR (Etherington distance-duality) and Mechanism 16 (sigma8 response) predictions in this file are **suspended**. They were previously computed (V2) using a linear EFT completion (`Z(Phi) = 1 + c_g*Phi/M_Pl`, `Y(Phi) = 1 + c_y*Phi/M_Pl`) that has since been removed after an audit found an eight-order-of-magnitude conflict with precision measurements (see `EFT_couplings.md` and `THEORY.md` Section 6).
+
+The replacement, conformally-protected coupling form is:
+
+```
+f(Phi/M_Pl) = g(Phi/M_Pl) = h(Phi/M_Pl) = 1 + O(gamma) * (Phi/M_Pl)^2
+```
+
+This is quadratic in `Phi/M_Pl`, not linear, and reduces to exactly 1 at `Phi = 0`. The scalar potential has been derived:
+
+```
+V(Phi) = (1/2)*gamma*beta^2*Phi^2 + (gamma^2/16*pi^2)*Phi^4
+```
+
+Its classical minimum is at `Phi = 0` — meaning that without an external cosmological input (an initial condition setting `Phi_ref != 0`, not derivable from `V(Phi)` alone), the corrected couplings give **no observable deviation from GR/SM** in the cosmological sector. This is Gap 8, and it remains open.
+
+**The formulas below are retained for historical/reproducibility reference only.** They do not currently represent an active prediction of the framework.
+
+---
+
+## CDDR (Etherington Distance Duality) — historical V2 formula, SUPERSEDED
+
+```
 eta(z) = D_L / [(1+z)^2 D_A]
+```
 
-Using: Pantheon+, SH0ES, DESI BAO (Lyman-alpha with caution).
+V2 formula (depended on the now-removed linear EFT completion):
 
-### V2 Derived Formula (May 27, 2026)
+```
+eta(z=0.5) - 1 = -0.0569 * epsilon_g + 0.2384 * epsilon_y
+```
 
-Full two-channel CDDR prediction:
+where `epsilon_g = c_g * Phi_ref/M_Pl`, `epsilon_y = c_y * Phi_ref/M_Pl`. Since `c_g`, `c_y` no longer exist as independent coefficients under the V3 conformal-protection completion, **this formula does not apply as written** and should not be used for new predictions. A V3-consistent CDDR prediction would need to be rederived using the quadratic coupling form and an independently-justified `Phi_ref`, neither of which is currently available.
 
-  eta(z=0.5) - 1 = -0.0569 * epsilon_g + 0.2384 * epsilon_y
+## Mechanism 16 — sigma8 response — historical V2 formula, SUPERSEDED
 
-Derived coefficients:
-- A_g = 1/2 exactly (analytical — Z(Phi) -> D_L^{1/2} coupling)
-- A_y * f_y(z=0.5) = 0.2384 (numerical — verified)
-- Y channel is 4.2x larger than Z channel at z=0.5
-
-Phi evolution (verified):
-| z   | Phi(z)/Phi(0) |
-|-----|---------------|
-| 0.3 | 1.0792        |
-| 0.5 | 1.1137        |
-| 1.0 | 1.1624        |
-| 2.0 | 1.1948        |
-
-Detection windows:
-  Euclid threshold  |eta-1| > 0.005:  epsilon_g > 0.088
-  Current bound     |eta-1| < 0.025:  epsilon_g < 0.440
-  sigma_8 target:                      epsilon_y ~ -0.021
-
-Target zone:
-| epsilon_g | epsilon_y | eta(0.5)-1 | sigma_8 suppression |
-|-----------|-----------|------------|---------------------|
-| 0.10      | -0.021    | -0.01069   | -6.69%              |
-| 0.15      | -0.021    | -0.01353   | -6.69%              |
-| 0.20      | -0.021    | -0.01638   | -6.69%              |
-
-**Unique signature ratio:**
-  |eta-1| / |Delta_sigma_8/sigma_8| ~ 0.13 to 0.25
-
-LCDM: ratio undefined (eta = 1 exactly).
-Single-effect models: ratio is 0 or infinity.
-Logosfield V2: 0.13-0.25, constrained by frozen parameters.
-This is the unique framework fingerprint.
-
-**Status:** Provisional pass. Euclid/Rubin joint measurement expected 2027-2029.
+Same status as CDDR above: the V2 sigma8 suppression formula depended on the linear `Y(Phi)` coupling and does not carry over to the V3 quadratic form without rederivation.
 
 ---
 
-## sigma_8 Suppression (Mechanism 16)
+## What is NOT suspended
 
-Gravity Friedmann V2:
+The structural results that do not depend on `Phi_ref` are unaffected by the above:
 
-  delta' + (2 + d ln H/dx) delta' - (3/2) Omega_m(a) (G_eff/G) delta = 0
-  G_eff/G ~= 1 + c_y * Phi / M_Pl
+- Force Coupling Table (EM, gravity, weak sector couplings) — see `THEORY.md` Section 5
+- Gap 3 (Cassini / alpha variation) — depends on the kernel parameters directly, not on `Phi_ref`
+- Gap 7 (Horndeski / GW speed) — a symmetry statement, independent of `Phi`'s value
+- Gap 12 (baryogenesis / c_W) — depends on `T* = gamma/beta`, not on `Phi_ref`
 
-Numerical results (SuperGrok prototype):
-- Phi stress-energy only:          -1.13%
-- Y(Phi) G_eff (G_eff/G = 0.98):  -6.82%
-- Combined:                         3-8% (DES/KiDS consistent)
-
-Constrained range: -1% to -8% (NOT tunable — frozen parameters).
-Point prediction requires c_y/c_g from second observable.
-
-**Status:** Consistent with DES/KiDS. Child branch of CDDR path.
-
----
-
-## SMBH High-z Feasibility (Mechanism 21)
-
-Logosfield damping reduces cluster dispersal by 29.5%, enabling
-standard stellar seeds to form 10^8 M_sun SMBHs in <700 Myr.
-
-Simulation result:
-  LCDM final mean dist:       3871.1 (normalized)
-  Logosfield final mean dist: 2727.9 (normalized)
-  Damping:                    29.5%
-
-Testable predictions:
-| Experiment        | Forecast                              | Falsifiability        |
-|-------------------|---------------------------------------|-----------------------|
-| JWST Cycle 3/4    | 20-35% more compact proto-clusters    | >35% dispersal = fail |
-| Euclid/Rubin 2027 | 15-30% tighter sigma_8               | No bias = fail        |
-| Bayesian fit      | >3 sigma preference over LCDM         | <2 sigma = fail       |
-
-**Status:** Feasibility demonstrated. Not part of current locked public challenge path.
-
----
-
-## Reproduce
-
-  python run.py --mode cddr
-  python run.py --mode mech16
-
+See `THEORY.md` for the full, current technical summary.
