@@ -1,192 +1,48 @@
-# Logosfield — EFT Completion V2 Canonical
-# Version: V2 Canonical (Memory-Covariant Derivative)
-# Supersedes: Frozen EFT Completion v0.1
-# Last updated: May 29, 2026
+# Logosfield — Conformal Coupling Completion (V3 Canonical)
+# Supersedes: Frozen EFT Completion V2 (linear Z(Phi)/Y(Phi) layer)
+# Last updated: V3 update
 
-**Status:** V2 Canonical
-**Purpose:** Full EFT completion linking the Logosfield scalar Phi to SM gauge + Yukawa sectors via the memory-covariant derivative. GR remains minimal. Full backward compatibility with legacy mechanisms preserved.
-
-> Default repo mode is **Legacy Mode**: c_g = 0, c_y = 0 (all prior mechanism runs unchanged).
-> Enabling nonzero couplings is **EFT Mode** and must be explicitly labeled and hashed.
+**Status:** V3 Canonical
+**Purpose:** Document how the Logosfield scalar `Phi` couples to the SM gauge and Yukawa sectors via the memory-covariant derivative `D_mem,mu`, and why the previous linear EFT completion was removed.
 
 ---
 
-## 1. Scope and Status
+## 1. What changed from V2
 
-- **Scope:** IR/EFT-level completion. No UV completion claimed.
-- **Version:** V2 Canonical — memory acts through the matter sector via D_mem,mu, not through Phi self-interaction (V1 S_mem structure is superseded).
-- **Minimality targets:**
-  - GR conservative: Einstein-Hilbert only.
-  - Two universal SM coupling coefficients only: c_g, c_y.
-  - Logosfield identity parameters locked: alpha, beta, gamma.
-
----
-
-## 2. Field Content
-
-- Metric g_mu_nu with Einstein-Hilbert action.
-- Logosfield scalar Phi with canonical local kinetic term and potential V(Phi).
-- Standard Model fields (operator content unchanged).
-- Memory enters through D_mem,mu acting on matter fields psi — NOT through a separate S_mem term on Phi.
-
-**V1 vs V2 distinction (critical):**
-V1 encoded memory as a nonlocal bilinear S_mem = integral Phi(x) K(x,x') Phi(x') — the field remembering itself.
-V2 encodes memory through the covariant derivative operator acting on matter: D_mem,mu psi. This is a fundamentally different physical picture. The memory is in how matter propagates, not in Phi's self-interaction.
-
----
-
-## 3. Locked Parameters (Logosfield Identity)
-
-Global. Never retuned per mechanism.
-
-- **alpha = 1** (normalization)
-- **beta ~= 2pi** (working assumption — phase resolution + velocity structure arguments converge; symmetry derivation from Lagrangian open)
-- **gamma = 0.005** (memory coupling strength)
-
----
-
-## 4. Minimal GR
-
-No non-minimal gravity couplings.
-
-Einstein-Hilbert:
-  S_GR = integral d^4x sqrt(-g) (M_Pl^2 / 2) R
-
-Excluded in V2:
-- no xi Phi^2 R
-- no f(Phi)R
-- no conformal/disformal couplings
-
----
-
-## 5. V2 Core: Memory-Covariant Derivative
-
-The central V2 operator:
+V2 used a linear EFT completion:
 
 ```
-D_mem,mu psi(x) = integral_{M^-(x)} K(x,x; beta,gamma) * U(x,x) * D_mu psi(x) * sqrt(-g) d^4x
-
-K(x,x; beta,gamma) = gamma*beta * exp(-beta*(t-t)) * Theta(t-t)
+Z(Phi) = 1 + c_g * Phi/M_Pl
+Y(Phi) = 1 + c_y * Phi/M_Pl
 ```
 
-- M^-(x): causal past of x
-- U(x,x): parallel transport operator
-- D_mu: standard covariant derivative at x
-- Conservative limit: gamma -> 0 recovers D_mu exactly
+with `c_g`, `c_y` as free coefficients fit or bounded against cosmological data. An internal audit found this conflicts with precision electroweak and equivalence-principle measurements by approximately eight orders of magnitude. **This completion has been removed.**
 
-The matter action in V2:
-  S_matter = integral d^4x sqrt(-g) L(psi, D_mem,mu psi, Phi)
+## 2. The V3 conformal-protection completion [DERIVED]
 
-This replaces the V1 S_mem nonlocal bilinear entirely.
+The replacement is not a free EFT layer — it is *derived* from conformal weight counting applied to the action under a Weyl rescaling `g_munu -> Omega^2 g_munu`:
 
----
+```
+f(Phi/M_Pl) = 1 + O(gamma) * (Phi/M_Pl)^2     [gauge kinetic sector]
+g(Phi/M_Pl) = 1 + O(gamma) * (Phi/M_Pl)^2     [Yukawa sector, above EW scale]
+h(Phi/M_Pl) = 1 + O(gamma) * (Phi/M_Pl)^2     [Yukawa sector, below EW scale]
+```
 
-## 6. Logosfield Scalar Sector
+Conformal invariance forces the leading-order coupling to be exactly 1 (gamma_EM = 0 exactly, no free coefficient). The first correction, at order gamma, is required by a Z_2 symmetry (`Phi -> -Phi`) inherited from the memory kernel's bilinear coupling structure (`D_mem` always couples `Phi(t) * K * Phi(t')`, a quadratic and therefore automatically even combination) to be **quadratic**, not linear, in `Phi/M_Pl`.
 
-  S_Phi = integral d^4x sqrt(-g) [-1/2 (nabla Phi)^2 - V(Phi)]
+There are no free coefficients analogous to `c_g`, `c_y` in this completion — the functional form and its leading correction are fixed by symmetry, with `gamma` (see THEORY.md) the only remaining unconstrained input.
 
-  rho_Phi = 1/2 Phi_dot^2 + V(Phi)
-  p_Phi   = 1/2 Phi_dot^2 - V(Phi)
-  H^2     = (8 pi G / 3)(rho_m + rho_Phi)
+## 3. Below-EW-scale continuity [DERIVED — Gap 13]
 
-V(Phi) slow-memory condition (derived):
-- Case A: V = Lambda_eff, w_Phi = -1, sigma_8 ~ -1.13%
-- Case B: V = 1/2 H_0^2 Phi^2, w_Phi(z=0) = -0.80
+`h(Phi/M_Pl)` is continuous across the electroweak phase transition because `Phi` is an independent scalar field — the EW transition is the Higgs field's phase transition, not Phi's, and `D_mem` carries no chiral/flavor structure that would distinguish the two regimes. This validates an assumption used in the Gap 12 (baryogenesis) CP-phase calculation, rather than merely asserting it.
 
-Note: w_Phi is an internal property of a sub-dominant field (Omega_Phi ~ 10^-9 under EFT constraints). It is NOT observable as a dark energy equation of state. DESI cannot test w_Phi directly.
+## 4. Scope and status
 
----
+- **Scope:** IR/EFT-level. No UV completion claimed.
+- **Minimality:** gauge kinetic and Yukawa sector corrections are fixed functional forms (quadratic in `Phi/M_Pl`, coefficient of order `gamma`), not independently free coefficients.
+- **Field content:** metric `g_munu` (Einstein-Hilbert, minimal Horndeski — see THEORY.md Section 1), Logosfield scalar `Phi` with potential `V(Phi)` (see THEORY.md Section 9), Standard Model fields with operator content unchanged.
+- Memory enters through `D_mem,mu` acting on matter fields — not through a separate free-standing EFT dressing layer.
 
-## 7. EFT Completion Functions
+## 5. Downstream consequence for cosmology predictions
 
-  Z(Phi) = 1 + c_g * Phi / M_Pl    [gauge-sector]
-  Y(Phi) = 1 + c_y * Phi / M_Pl    [Yukawa/mass-sector]
-
-Gauge-kinetic dressing:
-  S_gauge = integral d^4x sqrt(-g) [-1/4 Z(Phi) sum_A F^A_mu_nu F^A_mu_nu]
-
-Yukawa dressing:
-  S_yuk = integral d^4x sqrt(-g) [-sum_f y_f^(0) Y(Phi) psi_f_bar H psi_f + h.c.]
-
-Universality rule (V2):
-- No per-gauge-group c_g1, c_g2, c_g3
-- No per-fermion c_y,f
-
----
-
-## 8. Derived EFT Coefficients (May 27, 2026)
-
-epsilon_C = A_g * epsilon_g + A_y * epsilon_y
-
-**A_g = 1/2 exactly** (analytical)
-- Z(Phi) coupling Z(Phi) F_mu_nu F^mu_nu feeds into D_L^{1/2}
-- Corrects prior assumption A_g = 1 (overstated Z-channel by factor 2)
-
-**A_y * f_y(z=0.5) = 0.2384** (numerical, verified)
-- Y channel is 4.2x larger than Z channel at z=0.5
-- Prior treatment assumed Y negligible — incorrect
-
-Full CDDR formula:
-  eta(z=0.5) - 1 = -0.0569 * epsilon_g + 0.2384 * epsilon_y
-
----
-
-## 9. Force Coupling Table (V2 — derived from operator structure)
-
-| Force   | Group        | Memory Coupling | Basis                   |
-|---------|--------------|-----------------|-------------------------|
-| EM      | U(1)         | 0 exactly       | Conformal invariance    |
-| Strong  | SU(3)        | < 0 in IR       | Asymptotic freedom      |
-| Weak    | SU(2) broken | ~408 at 1 fm    | Proca propagator        |
-| Gravity | Diff. inv.   | -> 0            | Background independence |
-
-These couplings are derived from the V2 operator structure, not assumed.
-EM zero and gravity zero follow from symmetry arguments.
-
----
-
-## 10. Two-Velocity Scale Structure
-
-beta = v_fast / v_slow (frozen, beta ~= 2pi)
-
-| Sector            | r_ref    | r_coh    | tau_K    |
-|-------------------|----------|----------|----------|
-| Cosmological      | 4.2 Gpc  | 673 Mpc  | 2.19 Gyr |
-| BH QNM (335.3 Hz) | 142.3 km | 22.6 km  | 0.474 ms |
-| Neural (40 Hz)    | 27.9 cm  | 4.43 cm  | 4.0 ms   |
-
-tau_K = 1 / omega_char (NOT 1/(beta * omega_char))
-
----
-
-## 11. Freeze Policy
-
-- Only {c_g, c_y} admitted in V2.
-- Universality enforced. No sector or fermion splitting.
-- Bound-first or fit-once, then freeze globally.
-- No rescue parameters added per mechanism after seeing results.
-- Failed branches demoted, not patched.
-
----
-
-## 12. Backward Compatibility
-
-All legacy mechanism runs correspond to:
-  c_g = 0, c_y = 0
-
-Any nonzero {c_g, c_y} must be labeled:
-- Direct Coupling / EFT Mode
-- Include parameter hash (alpha, beta, gamma, c_g, c_y plus run settings)
-
----
-
-## 13. Bayesian Position (May 29, 2026)
-
-Prior: ~0.005-0.01
-Combined Bayes factor: ~100-500x
-Posterior: 10-15%
-
-Comparison: Pre-1919 General Relativity (~10-20%).
-Eddington-equivalent test: Joint CDDR + sigma_8 (Euclid/Rubin, 2027-2029).
-Confirmation -> 50%+. Ruling out -> <1%.
-
+Because the corrected coupling functions are quadratic (not linear) in `Phi/M_Pl`, and because they reduce to exactly 1 at `Phi=0`, any cosmological prediction built on these couplings (CDDR, sigma8 response) requires a non-zero cosmological background value of `Phi` (`Phi_ref`) to produce an observable signal. `Phi_ref` is not yet derived from `V(Phi)` (Gap 8 — see THEORY.md Section 9). **These predictions are therefore suspended** — see `Cosmology` and `THEORY.md` Section 10.
