@@ -1,110 +1,65 @@
-# Reproduce the Logosfield V2 Public Path
-# Last updated: May 29, 2026
+# Reproduce the Logosfield/ODCCT Public Path — V3
+# Last updated: V3 update
 
-This repository maintains a **narrowed frozen V2 public test path**.
+This repository's previous (V2) reproduction path centered on CDDR and Mechanism 16 (sigma8). **Both are now suspended** (see `THEORY.md` Section 10 and `Cosmology.md`) because they depended on a linear EFT completion that has since been removed for conflicting with precision measurements.
 
-The active public path currently includes only:
-1. CDDR (anchor)
-2. Mechanism 16 — sigma_8 response (child branch)
+This does not mean there is nothing to reproduce. It means the reproduction priority has shifted to the framework's closed structural results, which do not depend on the suspended cosmology layer.
+
+---
+
+## What you can currently reproduce
+
+### 1. Weak-sector Force Coupling Table check
+
+Verify `gamma(r) = M*r` gives `gamma_weak ~ 408` at `r = 1 fm`:
+
+```python
+M_W = 80.4       # GeV
+hbar_c = 0.1973  # GeV*fm
+r_fm = 1.0
+gamma_weak = M_W * (r_fm / hbar_c)
+print(gamma_weak)  # expect ~407.5
+```
+
+### 2. Gap 3 — Cassini / alpha variation margins
+
+See `tools/cddr_runner_fullcov.py` for the historical CDDR runner (now superseded — retained for reference). A standalone margin-check script for Gap 3 is planned; in the meantime the formulas are given explicitly in `THEORY.md` Section 7 and can be reproduced directly:
+
+```
+delta_alpha/alpha = gamma * (t_Pl/t_Hub)^2 / beta^2
+delta_gamma_PPN    = gamma * (t_Pl/t_Hub)   / beta
+```
+
+with `gamma = 0.003122`, `beta = 2*pi` (current default parameters, `THEORY.md` Section 4).
+
+### 3. Gap 10 — auxiliary field kernel verification
+
+The Ornstein-Uhlenbeck Monte Carlo check (causal kernel response vs. symmetric kernel correlator matching) referenced in `THEORY.md` Section 2 can be reproduced with a standard OU-process simulation at `beta=2*pi`, `gamma=0.003122` (or the original `gamma=0.005` used in the initial check) and comparing the simulated stationary autocorrelation against `K_full(tau) = gamma*beta*exp(-beta*tau)`.
+
+---
+
+## Historical (suspended) reproduction commands — retained for reference only
+
+```bash
+python run.py --mode cddr     # SUSPENDED — uses removed linear EFT completion
+python run.py --mode mech16   # SUSPENDED — uses removed linear EFT completion
+```
+
+These commands still execute against the historical formulas in `Cosmology.md` but do **not** represent a current, active prediction of the V3 framework. Results from these runners should not be cited as validating or testing the current framework without first confirming whether the linear-completion-dependent formulas have been superseded by a V3-consistent rederivation (not yet available).
 
 ---
 
 ## Requirements
 
-Recommended environment:
 - Python 3.10+
 - NumPy, Pandas, Matplotlib
 
----
+## Status summary
 
-## Active Reproduction Commands
-
-Run CDDR:
-    python run.py --mode cddr
-
-Run Mechanism 16:
-    python run.py --mode mech16
-
-Or via Makefile:
-    make mech16
-
----
-
-## Expected Outputs
-
-**CDDR run should:**
-- Compute eta(z) = D_L / ((1+z)^2 D_A)
-- Print eta mean and std
-- V2 prediction: eta(z=0.5) - 1 = -0.0569*epsilon_g + 0.2384*epsilon_y
-
-**Mechanism 16 run should:**
-- Compute downstream sigma_8 response
-- Print sigma_8 value and benchmark comparison
-- V2 prediction: -3% to -8% suppression range
-
-**Joint signature to compute:**
-  |eta-1| / |Delta_sigma_8/sigma_8| ~ 0.13 to 0.25
-
-This ratio is the unique V2 fingerprint. Please report it explicitly.
-
----
-
-## V2 Framework Notes
-
-The V2 Canonical framework uses the memory-covariant derivative:
-
-  D_mem,mu psi(x) = integral K(x,x; beta,gamma) * U(x,x) * D_mu psi(x) d^4x
-  K = gamma*beta * exp(-beta*(t-t)) * Theta(t-t)
-
-Conservative limit: gamma -> 0 recovers D_mu exactly.
-
-Frozen parameters:
-  alpha = 1
-  beta ~= 2pi  (working assumption)
-  gamma = 0.005
-
-EFT coefficients (constrained, not tunable per mechanism):
-  c_g: epsilon_g > 0.088 for Euclid threshold
-  c_y: epsilon_y ~ -0.021 for sigma_8 tension target
-
----
-
-## Other Mechanisms
-
-Additional mechanisms are in the repository but are not part of the
-current locked public test path:
-
-| Mechanism | Domain              | Status              |
-|-----------|---------------------|---------------------|
-| 15        | Ly-alpha escape z=13 | Provisional         |
-| 17        | H0 reconciliation   | Under review        |
-| 21        | SMBH seeding        | Feasibility shown   |
-| 25        | Baryon asymmetry    | Directional         |
-| Consciousness | Neural domain   | Framework complete  |
-
----
-
-## Current Cautions
-
-This repository does **not** currently claim:
-- Confirmed discovery of a new force
-- Validated galaxy rotation curve solutions
-- Full empirical separation of c_g and c_y
-- Inheritance of all mechanisms from the frozen path
-
-Bayesian position: 10-15% posterior.
-Definitive test: Euclid/Rubin 2027-2029.
-
----
-
-## Key Files
-
-README.md — project overview
-THEORY.md — canonical V2 model summary (Sections 10-11 critical)
-ZPhi_Summary.md — full V2 technical derivation
-EFT couplings — V2 operator structure
-CHALLENGE.md — replication challenge
-Cosmology — CDDR and sigma_8 modules
-Mechanism_Consciousness.md — consciousness domain (Point 1)
-run.py — public execution runner
-
+| Test | V2 status | V3 status |
+|---|---|---|
+| CDDR | provisional pass | SUSPENDED (Gap 8) |
+| Mechanism 16 (sigma8) | provisional pass | SUSPENDED (Gap 8) |
+| Weak-sector coupling formula | not previously tested | reproducible, DERIVED |
+| Gap 3 margins | present, different parameter pair | reproducible, DERIVED, margins improve under V3 parameters |
+| Gap 10 kernel verification | not previously documented | reproducible, DERIVED |
