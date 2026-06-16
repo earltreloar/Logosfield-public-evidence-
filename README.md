@@ -1,134 +1,96 @@
-# Logosfield — Public Evidence & Reproducibility
+# Logosfield / ODCCT — Public Evidence & Reproducibility (V3)
 
-Public research repository for the Logosfield program and its reproducibility artifacts.
+Public research repository for the Logosfield / ODCCT program and its reproducibility artifacts.
 
-This repository currently presents a **narrowed, frozen public test path** rather than a broad claim of completed discovery. The goal is to determine whether one fixed Logosfield structure can survive contact with data across multiple observables without branch-specific retuning.
+This repository presents a **Level 2 theoretical framework** — internally consistent, recovering known physics in its conservative limit, not independently replicated — with explicit gap tracking and honest classification of every claim. It is not presented as a completed discovery.
 
 ## Technical entry point
 
-For the current canonical technical summary of the model, frozen parameters, coupling interpretation, and active public test path, see [THEORY.md](THEORY.md).
+For the canonical technical summary — the memory-covariant derivative, parameter status, Force Coupling Table, conformal protection, and which predictions are currently suspended — see [THEORY.md](THEORY.md).
 
 ## Why this repository exists
 
-The Logosfield program explores whether a single fixed underlying structure can produce repeatable, non-random coherence across otherwise disconnected physical domains.
+The Logosfield/ODCCT program explores whether a single non-local scalar field structure, built around a memory-covariant derivative, can produce repeatable signals across multiple physical domains without retuning per domain. The program is organized around three principles:
 
-This repository is organized around three principles:
-
-1. **Freeze the core**
-2. **Test with public data**
-3. **Prune failed branches instead of rescuing them**
-
-The current public emphasis is therefore on the strongest surviving reproducible path, not on maximizing the number of claimed mechanisms.
+1. **Freeze the structural core; track gaps explicitly**
+2. **Test against public data wherever possible**
+3. **Demote or suspend failed/incomplete branches rather than patching them ad hoc**
 
 ---
 
-## Current model stance
+## Current model stance (V3)
 
-### Minimal GR
-General Relativity is kept in its minimal Einstein–Hilbert form.
+### Gravity
+General Relativity's gravitational sector is **derived as minimal Horndeski** from diffeomorphism invariance:
 
-- No `f(Phi) R`
-- No `xi Phi^2 R`
-- No conformal or disformal metric dressing
+```
+G2 = X - V(Phi),  G3 = 0,  G4 = M_Pl^2/2 (constant),  G5 = 0
+```
 
-### Standard Model preserved
-Standard Model operator content is left intact. Logosfield enters, if enabled, only through universal effective dressings.
+`c_T = c` exactly. GW170817 is satisfied automatically. [DERIVED]
 
-### Logosfield identity
-The current working reduction treats the Logosfield as an effective scalar sector `Phi` with a retarded exponential memory kernel and locked core parameters:
+### Standard Model
+SM operator content is preserved. The Logosfield enters only through the memory-covariant derivative `D_mem,mu`, with each sector's coupling fixed by that sector's own symmetry (see Force Coupling Table in THEORY.md) — not through an independently free EFT layer.
 
-- `alpha = 1`
-- `beta ~= 2 pi` (working assumption — supported by phase resolution and velocity structure arguments; full symmetry derivation from Lagrangian is open)
-- `gamma = 0.005`
+### Parameters
 
-These locked core parameters are part of the public freeze policy and are not retuned per mechanism.
+| Parameter | Value | Status |
+|---|---|---|
+| `alpha` | 1 | Postulated |
+| `beta` | `2*pi` | IDENTIFIED (Matsubara lead), not derived |
+| `gamma` | `~0.003122` | IDENTIFIED (baryogenesis line + Matsubara), not derived |
 
----
-
-## Frozen EFT completion (public working form)
-
-This repository uses a minimal EFT-style completion whose purpose is to make "couples to the four forces" explicit in a conservative and attackable way while avoiding parameter sprawl.
-
-### Interaction sector
-Only two universal coefficients are admitted in the current public EFT layer:
-
-- `c_g`
-- `c_y`
-
-Universal dressing functions:
-
-- `Z(Phi) = 1 + c_g * Phi / M_Pl`
-- `Y(Phi) = 1 + c_y * Phi / M_Pl`
-
-Interpretation:
-
-- Gauge-sector response is carried through `Z(Phi)`
-- Yukawa / mass-sector response is carried through `Y(Phi)`
-
-### Important public caution
-The current narrowed cosmology path does **not** yet separately measure `c_g` and `c_y`.
-
-At present, the public two-test path only constrains an **effective cosmology response combination**, not fully separated couplings.
-
-That effective response should be treated operationally as something like:
-
-- `epsilon_g = c_g * Phi_ref / M_Pl`
-- `epsilon_y = c_y * Phi_ref / M_Pl`
-- `epsilon_C = A_g * epsilon_g + A_y * epsilon_y`
-
-where `A_g = 1/2` exactly (analytical) and `A_y * f_y(z=0.5) = 0.2384` (numerical). Only the downstream effective cosmology response is presently constrained in the public path.
+**Note:** the parameter values changed from the V2 working values (`gamma = 0.005`) after a systematic reverse-engineering pass against the framework's own validated structure. The new pair was checked against every closed result in the framework (Cassini, alpha variation, baryogenesis, conformal protection) and preserves every margin. Full reasoning is in THEORY.md Section 4.
 
 ---
 
-## Freeze policy
+## What changed from V2
 
-This repository is only credible if coupling freedom remains minimal and global.
+The previous public version of this repository used a linear EFT completion (`Z(Phi) = 1 + c_g*Phi/M_Pl`, `Y(Phi) = 1 + c_y*Phi/M_Pl`). That completion has been **removed**: an internal audit found an eight-order-of-magnitude conflict with precision measurements. It has been replaced by a **derived, conformally-protected** coupling form:
 
-The public freeze rules are:
+```
+f(Phi/M_Pl) = g(Phi/M_Pl) = h(Phi/M_Pl) = 1 + O(gamma) * (Phi/M_Pl)^2
+```
 
-- only two EFT coefficients are admitted in the current layer: `c_g` and `c_y`
-- universality is enforced
-- no split coefficients by gauge group
-- no per-fermion Yukawa coefficients
-- no branch-specific rescue parameters
-- fit once or bound once, then freeze globally
-- if a branch fails under the frozen public structure, it is demoted rather than patched ad hoc
+This is quadratic in `Phi/M_Pl`, not linear, and follows from conformal weight counting plus a Z_2 symmetry inherent to the memory kernel's bilinear structure — it is not an independently free EFT layer with fitted coefficients.
+
+**Direct consequence:** the CDDR and Mechanism 16 (sigma8) formulas published under V2 depended on the now-removed linear completion and no longer apply as written. These predictions are now correctly labeled **SUSPENDED**, not "provisional pass." See "Current status of public tests" below.
 
 ---
 
-## Legacy compatibility
+## Force Coupling Table
 
-All previously released legacy mechanisms remain preserved under the default legacy setting:
+| Sector | Result | Status |
+|---|---|---|
+| EM | `gamma_EM = 0` exactly | DERIVED (U(1) conformal invariance) |
+| Gravity | `gamma_g -> 0` | DERIVED (diffeomorphism invariance) |
+| Weak | `gamma_weak ~ 408` at 1 fm | DERIVED (Proca propagator, 0.12% match) |
+| Strong | sign only (asymptotic freedom) | IDENTIFIED (sign) + OPEN (magnitude) |
 
-- `c_g = 0`
-- `c_y = 0`
-
-This means:
-
-- legacy results remain legacy results
-- nonzero EFT-mode couplings must be labeled explicitly
-- legacy success does **not** automatically validate later nonzero-coupling claims
+The strong-sector magnitude was previously mislabeled DERIVED in V2. Corrected here — see THEORY.md Section 5 for why the weak-sector formula is a category mismatch for the confining strong sector.
 
 ---
 
-## Current verified public path
+## Current status of public tests
 
-The repository currently maintains a **frozen two-test public path**.
+### CDDR and Mechanism 16 (sigma8) — SUSPENDED
 
-### Active Test 1
-**CDDR diagnostic**
-Distance-duality / Etherington-style diagnostic used as the current anchor branch.
+These predictions require `Phi != 0` in some cosmological background to produce any observable signal (the corrected couplings give `f=g=h=1` exactly at `Phi=0`). The scalar potential `V(Phi)` has been derived and its classical minimum is at `Phi=0` — meaning the reference value `Phi_ref` needed for these predictions is not determined by the framework alone and requires an external cosmological input not yet derived (Gap 8). **These tests are suspended pending that derivation**, not passing under a provisional formula. This is a correction from the V2 state of this repository, which reported "provisional pass" using formulas tied to the now-removed linear EFT completion.
 
-### Active Test 2
-**Mechanism 16 sigma8 response**
-Treated only as a child branch of the same cosmology path.
+### What remains active
 
-### Public status
-- CDDR: provisional pass
-- Mechanism 16: provisional pass under the patched weak-response default
-- Direct force branches: not current flagship claims
-- Mechanism 17: under review / not part of the frozen public path
-- SMBH feasibility: separate lane unless a shared bridge is explicitly derived and survives
+- The structural results in the Force Coupling Table (EM, gravity, weak) and the Cassini/alpha-variation margins (Gap 3) hold independent of `Phi_ref` and are not affected by the suspension above.
+- Mechanism-specific files (`Mechanism15/`, `Mechanism17/`) retain their own independent status; see each mechanism's README.
+
+---
+
+## Freeze and honesty policy
+
+- Core structural parameters (`alpha`, `beta`, `gamma`) are frozen at the values in THEORY.md Section 4 and are not retuned per mechanism.
+- Every claim is labeled DERIVED / IDENTIFIED / SPECULATIVE / SUSPENDED / OPEN / RULED OUT.
+- Errors and retractions are documented explicitly in THEORY.md rather than silently corrected.
+- Negative results (ruled-out derivation attempts) are recorded on the same footing as positive ones.
+- If a branch fails or becomes suspended under the frozen structure, it is labeled as such rather than patched ad hoc.
 
 ---
 
@@ -136,27 +98,30 @@ Treated only as a child branch of the same cosmology path.
 
 This repository does **not** currently claim:
 
-- confirmed new-force discovery
-- completed fifth-force validation
-- separated empirical measurement of `c_g` and `c_y`
-- a validated direct rotation-curve force detection
-- a validated universal bridge from the current CDDR path into every other mechanism
+- a first-principles derivation of `alpha`, `beta`, or `gamma`
+- confirmed new-force discovery or a validated fifth-force detection
+- a working CDDR or sigma8 prediction (suspended, see above)
+- independent replication by any party outside this project
 
-This repository should be read as a **narrowed candidate-framework and reproducibility program**, not a completed coronation of the theory.
+This repository should be read as a narrowed, honestly-labeled candidate framework and reproducibility program.
 
 ---
 
 ## Reproducibility
 
-The current public reproduction priority is the frozen two-test path only.
+See [REPRODUCE.md](REPRODUCE.md) for current reproduction status. Because CDDR and Mechanism 16 are suspended, their runners remain in the repository for historical reference but are not currently part of an active validated public test path.
 
-### Run CDDR
-```bash
-python run.py --mode cddr
-```
+## Repository layout
 
-### Run Mechanism 16
-```bash
-python run.py --mode mech16
-```
+- `THEORY.md` — canonical technical summary (start here)
+- `CHALLENGE.md` — replication challenge, updated for V3 status
+- `REPRODUCE.md` — reproduction instructions
+- `CITATIONS.md` — how to cite this work
+- `Cosmology`, `EFT couplings`, `ZPhi_Summary.md` — sector-specific technical detail
+- `Mechanism15/`, `Mechanism16/`, `Mechanism17/` — individual mechanism implementations
+- `archive_pre_freeze/` — historical record, not current evidentiary status
+- `manuscript/` — *The Remembering Cosmos*, the originating manuscript
 
+## License
+
+See [LICENSE](LICENSE).
