@@ -1,5 +1,0 @@
-Archive folder.
-
-Older mechanisms and exploratory work are moved here so the repository root reflects the current frozen public test path.
-
-Nothing in this folder is deleted; it is preserved for project history.
