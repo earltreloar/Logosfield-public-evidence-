@@ -1,35 +1,30 @@
 """
-Mechanism 16 — null test (V2 Canonical)
-Verifies the signature ratio is not produced by random eta fluctuations.
+Mechanism 16 — null test (V3)
+The original null test compared the V2 signature ratio against random
+eta fluctuations. Since the V2 prediction is suspended (predict.py,
+THEORY.md Section 10), there is currently no active signal to null-test
+against. This file verifies that the suspension is correctly enforced
+and is retained as a placeholder for a V3-consistent null test once
+Gap 8 is resolved and a rederived prediction exists.
 """
-import numpy as np
-import random
-from predict import predict_sigma8, signature_ratio, SIGMA8_REF
+from predict import predict_sigma8, signature_ratio, SUSPENDED_NOTICE
 
-def run_null(n=1000, seed=42):
-    random.seed(seed)
-    np.random.seed(seed)
 
-    ratios = []
-    diffs = []
+def run_null():
+    print("Mechanism 16's active prediction is SUSPENDED — no null test to run.")
+    print(SUSPENDED_NOTICE)
+    try:
+        predict_sigma8()
+        raise AssertionError("predict_sigma8 should be suspended")
+    except NotImplementedError:
+        print("Confirmed: predict_sigma8 correctly raises NotImplementedError.")
+    try:
+        signature_ratio(1.0, 0.8)
+        raise AssertionError("signature_ratio should be suspended")
+    except NotImplementedError:
+        print("Confirmed: signature_ratio correctly raises NotImplementedError.")
 
-    for _ in range(n):
-        # Null: random eta drawn from noise around 1.0 (no Logosfield signal)
-        eta_null = random.gauss(1.0, 0.02)
-        s8_null = predict_sigma8(eta=eta_null, mode="conservative")
-        diff = s8_null - SIGMA8_REF
-        diffs.append(diff)
-
-        # Null signature ratio (should be near 0 for conservative k=0)
-        r = signature_ratio(eta_null, s8_null)
-        if r is not None:
-            ratios.append(r)
-
-    print(f"Null sigma_8 diff mean = {np.mean(diffs):.5f} +/- {np.std(diffs):.5f}")
-    print(f"Null signature ratio mean = {np.mean(ratios):.4f} +/- {np.std(ratios):.4f}")
-    print(f"(V2 prediction: ratio in 0.13-0.25 from real signal)")
 
 if __name__ == "__main__":
-    print("=== Mechanism 16 Null Test ===")
+    print("=== Mechanism 16 Null Test (V3 — suspension check) ===")
     run_null()
-
