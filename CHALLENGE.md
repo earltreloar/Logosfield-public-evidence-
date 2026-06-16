@@ -1,98 +1,56 @@
-# Logosfield Replication Challenge — V2 Canonical
-# Last updated: May 29, 2026
+# Logosfield / ODCCT Replication Challenge — V3
+# Last updated: V3 update
 
-The current public replication challenge tests whether a single frozen V2
-Logosfield structure survives across more than one observable without
-branch-specific retuning.
+The current public replication challenge tests whether the framework's **closed structural results** survive independent scrutiny — not the suspended cosmology predictions, which require further derivation before they can be meaningfully challenged.
 
 ---
 
-## Active Public Challenge Targets
+## What changed from V2
 
-### 1. CDDR (Anchor Branch)
+V2's challenge was built around the CDDR and Mechanism 16 formulas, which depended on a linear EFT completion (`Z(Phi)`, `Y(Phi)` with free coefficients `c_g`, `c_y`) that has since been removed for conflicting with precision measurements by ~8 orders of magnitude. Those two predictions are now **SUSPENDED** pending Gap 8 (derivation of `Phi_ref`) — see `THEORY.md` Sections 9–10.
 
-Reproduce the Etherington distance-duality diagnostic using the public runner.
-
-**V2 prediction to replicate:**
-  eta(z=0.5) - 1 = -0.0569 * epsilon_g + 0.2384 * epsilon_y
-
-Both channels (Z and Y) must be included. Y channel is 4.2x larger than
-Z at z=0.5 — single-channel treatments are incomplete.
-
-Targets:
-- Recover the eta-pattern under the frozen V2 pipeline
-- Confirm both channels contribute as predicted
-- Report robustness under covariance/interpolation checks
-- Provide code, environment, and outputs
-
-### 2. Mechanism 16 — sigma_8 Response (Child Branch)
-
-Reproduce the sigma_8 suppression as a child branch of the same frozen
-V2 cosmology path.
-
-**V2 prediction to replicate:**
-  sigma_8 suppression: -3% to -8% (DES/KiDS range)
-  G_eff/G ~= 1 + c_y * Phi / M_Pl
-
-**Unique joint signature to verify:**
-  |eta-1| / |Delta_sigma_8/sigma_8| ~ 0.13 to 0.25
-
-This ratio is the V2 framework fingerprint. LCDM cannot produce it.
-Single-effect models produce 0 or infinity. Replication should confirm
-this ratio is in the 0.13-0.25 range.
-
-Targets:
-- Use the same CDDR anchor
-- Report sigma_8 value and ratio
-- Provide code, environment, outputs
+This is not a weakening of the challenge — it is a correction. Challenging a suspended, not-yet-rederived prediction would not be a meaningful test.
 
 ---
 
-## Not Currently Part of the Active Locked Challenge
+## Active challenge targets (V3)
 
-The following are not current flagship locked-coupling challenge targets:
+### 1. Force Coupling Table — weak sector formula
 
-- Mechanism 15 (Ly-alpha escape)
-- Mechanism 17 (H0 reconciliation)
-- Mechanism 21 (SMBH seeding)
-- Mechanism 25 (baryon asymmetry)
-- Consciousness domain
-- BH QNM S2 (LOW confidence — WKB only)
-- Direct force / rotation-curve claims
+**Claim:** `gamma(r) = M*r` (the exponent of a Proca/Yukawa propagator) gives `gamma_weak ~ 408` at `r = 1 fm`, matching `M_W * (1 fm)/(hbar*c)` to better than 0.2%.
 
-These may remain scientifically relevant but are not part of the minimal
-locked public replication path.
+**Challenge:** verify this numerical match independently, and check whether the same functional form can or cannot be extended to other known massive-boson sectors as a consistency check.
 
-BH QNM S1 (QNMs match GR) is HIGH confidence and presentable, but is a
-consistency check rather than a new prediction.
+### 2. Gap 3 — Cassini / alpha variation margins
 
----
+**Claim:** at the current default parameters (`beta=2*pi`, `gamma=0.003122`), the predicted PPN-gamma deviation and laboratory alpha-variation are suppressed by ~59 and ~116 orders of magnitude respectively below current bounds.
 
-## What to Submit
+**Challenge:** independently verify the suppression-scaling argument (`(t_kernel/t_Hubble)` and its square) and check whether the margins remain large under reasonable variation of the parameter pair (see `THEORY.md` Section 4 for the range of internally-motivated candidate pairs).
 
-- Effect sizes
-- Uncertainty estimates
-- Code and environment details
-- Robustness notes
-- The signature ratio |eta-1| / |Delta_sigma_8/sigma_8|
-- Any deviations from the public runner
+### 3. Gap 7 — Horndeski mapping
+
+**Claim:** diffeomorphism invariance forces `G3=G5=0`, `G4=M_Pl^2/2` (constant), giving `c_T=c` exactly.
+
+**Challenge:** verify the mapping from the memory-covariant matter sector to this minimal-Horndeski gravity sector, and confirm no residual non-minimal coupling survives.
+
+### 4. Gap 10 — auxiliary field derivation
+
+**Claim:** the causal and symmetric memory kernels both arise from a single auxiliary field `chi` obeying `(d/dt+beta)*chi = beta*sqrt(gamma)*psi + xi(t)`; the symmetric kernel matches `chi`'s stationary correlator under a fluctuation-dissipation relation.
+
+**Challenge:** reproduce the Monte Carlo Ornstein-Uhlenbeck verification of this correlator matching, and check the claimed retraction of an earlier ("kernel collapse") hypothesis.
 
 ---
 
-## Evaluation Standard
+## Suspended — not currently active challenge targets
 
-- Closeness to frozen V2 outputs
-- Robustness under sensitivity checks
-- Confirmation of the joint CDDR + sigma_8 signature ratio
-- Clarity and completeness of reproduction materials
+- CDDR (Etherington distance-duality)
+- Mechanism 16 (sigma8 response)
+- Galaxy rotation mechanism
+
+These require an independently-derived `Phi_ref != 0`, which the framework does not currently provide (Gap 8). Reproducing the historical V2 formulas for these (retained in `Cosmology.md` for reference) is not a meaningful test of the current framework, since those formulas depended on a coupling structure that has been removed.
 
 ---
 
-## Current Public Posture
+## How to submit a challenge result
 
-This challenge tests the current narrowed V2 path. It is not a claim
-that the Logosfield has been established as a discovered force.
-
-Bayesian position: 10-15% posterior (pre-1919 GR equivalent).
-Definitive test: Euclid/Rubin joint measurement, 2027-2029.
-
+Provide code, environment, and outputs as in previous versions of this challenge (see `REPRODUCE.md`). Results should specify clearly which V3 claim (1–4 above) is being addressed.
