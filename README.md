@@ -1,8 +1,26 @@
-# Logosfield / ODCCT — Public Evidence & Reproducibility (V3)
+# Logosfield / ODCCT — V3 Reproducibility Archive: Active Mechanisms, Suspended Cosmology Tests, and Gap Tracking
 
 Public research repository for the Logosfield / ODCCT program and its reproducibility artifacts.
 
 This repository presents a **Level 2 theoretical framework** — internally consistent, recovering known physics in its conservative limit, not independently replicated — with explicit gap tracking and honest classification of every claim. It is not presented as a completed discovery.
+
+## V3 claim boundary
+
+Under V3, this framework currently claims **structural consistency and constrained coupling behavior**, not empirical confirmation of a new field or force. Every public test below is classified by whether it survives the V3 coupling correction (see "What changed from V2"). CDDR and the sigma8 prediction do not currently survive as active predictions, because the cosmological reference value `Phi_ref` they require is not derived (Gap 8, open). This is a property of the current theory, not a temporary omission — see "Active vs. suspended test paths" immediately below for the full picture at a glance.
+
+## Active vs. suspended test paths
+
+| Path | Status | Why |
+|---|---|---|
+| Force Coupling Table (EM, gravity, weak) | Active — structural result | Independent of `Phi_ref`; derived from symmetry |
+| Cassini / alpha-variation margins (Gap 3) | Active — constraint check | Survives conformal protection; large margin |
+| Mechanism 15 (Ly-alpha escape, z=13) | Active / exploratory | See `Mechanism15/README.md` — flags a superseded mechanism description pending rederivation |
+| Mechanism 17 (H0 reconciliation) | Active / under review | See `Mechanism17/README.md` — not part of the locked challenge path |
+| CDDR (distance duality) | **Suspended** | Requires non-zero `Phi_ref`, not yet derived (Gap 8) |
+| Mechanism 16 (sigma8 response) | **Suspended** | Relied on removed V2 linear EFT completion; no V3-consistent rederivation yet |
+| Mechanism 21 (SMBH seeding/damping) | **Open / diagnostic** | High-z SMBH growth remains a target tension zone; prior relief tests were distribution-sensitive and do not yet constitute an active V3 prediction. Needs an explicit V3-compatible rerun using the frozen parameters and corrected coupling form before it can be called active. |
+
+These branches are suspended because the corrected theory removes the mechanism that generated their previous signal. **They are not failures of the entire framework; they are failures of a now-retracted completion.**
 
 ## Technical entry point
 
@@ -40,7 +58,9 @@ SM operator content is preserved. The Logosfield enters only through the memory-
 | `beta` | `2*pi` | IDENTIFIED (Matsubara lead), not derived |
 | `gamma` | `~0.003122` | IDENTIFIED (baryogenesis line + Matsubara), not derived |
 
-**Note:** the parameter values changed from the V2 working values (`gamma = 0.005`) after a systematic reverse-engineering pass against the framework's own validated structure. The new pair was checked against every closed result in the framework (Cassini, alpha variation, baryogenesis, conformal protection) and preserves every margin. Full reasoning is in 00_THEORY.md Section 4.
+The model has a frozen three-parameter structural core. These parameters are not retuned per mechanism. Current work tests whether that frozen core remains consistent across domains; first-principles derivation of `alpha`, `beta`, and `gamma` remains an open problem (Gap 4) and should not be described as solved.
+
+**Note:** the parameter values changed from the V2 working values (`gamma = 0.005`) after a systematic consistency pass against the framework's surviving closed structural constraints. The new pair was checked against every closed result in the framework (Cassini, alpha variation, baryogenesis, conformal protection) and preserves every margin. Full reasoning is in 00_THEORY.md Section 4.
 
 ---
 
@@ -54,7 +74,7 @@ f(Phi/M_Pl) = g(Phi/M_Pl) = h(Phi/M_Pl) = 1 + O(gamma) * (Phi/M_Pl)^2
 
 This is quadratic in `Phi/M_Pl`, not linear, and follows from conformal weight counting plus a Z_2 symmetry inherent to the memory kernel's bilinear structure — it is not an independently free EFT layer with fitted coefficients.
 
-**Direct consequence:** the CDDR and Mechanism 16 (sigma8) formulas published under V2 depended on the now-removed linear completion and no longer apply as written. These predictions are now correctly labeled **SUSPENDED**, not "provisional pass." See "Current status of public tests" below.
+**Direct consequence:** the CDDR and Mechanism 16 (sigma8) formulas published under V2 depended on the now-removed linear completion and no longer apply as written. These predictions are now correctly labeled **SUSPENDED**, not "provisional pass." See the status table above.
 
 ---
 
@@ -67,20 +87,7 @@ This is quadratic in `Phi/M_Pl`, not linear, and follows from conformal weight c
 | Weak | `gamma_weak ~ 408` at 1 fm | DERIVED (Proca propagator, 0.12% match) |
 | Strong | sign only (asymptotic freedom) | IDENTIFIED (sign) + OPEN (magnitude) |
 
-The strong-sector magnitude was previously mislabeled DERIVED in V2. Corrected here — see 00_THEORY.md Section 5 for why the weak-sector formula is a category mismatch for the confining strong sector.
-
----
-
-## Current status of public tests
-
-### CDDR and Mechanism 16 (sigma8) — SUSPENDED
-
-These predictions require `Phi != 0` in some cosmological background to produce any observable signal (the corrected couplings give `f=g=h=1` exactly at `Phi=0`). The scalar potential `V(Phi)` has been derived and its classical minimum is at `Phi=0` — meaning the reference value `Phi_ref` needed for these predictions is not determined by the framework alone and requires an external cosmological input not yet derived (Gap 8). **These tests are suspended pending that derivation**, not passing under a provisional formula. This is a correction from the V2 state of this repository, which reported "provisional pass" using formulas tied to the now-removed linear EFT completion.
-
-### What remains active
-
-- The structural results in the Force Coupling Table (EM, gravity, weak) and the Cassini/alpha-variation margins (Gap 3) hold independent of `Phi_ref` and are not affected by the suspension above.
-- Mechanism-specific files (`Mechanism15/`, `Mechanism17/`) retain their own independent status; see each mechanism's README.
+The strong-sector magnitude was previously mislabeled DERIVED in V2. Corrected here — see 00_THEORY.md Section 5 for why the weak-sector formula is a category mismatch for the confining strong sector. This table is also reproduced in `00_THEORY.md` and `06_CHALLENGE.md` (where its weak-sector entry is an active challenge target).
 
 ---
 
@@ -100,7 +107,8 @@ This repository does **not** currently claim:
 
 - a first-principles derivation of `alpha`, `beta`, or `gamma`
 - confirmed new-force discovery or a validated fifth-force detection
-- a working CDDR or sigma8 prediction (suspended, see above)
+- a working CDDR or sigma8 prediction (suspended, see status table above)
+- a validated SMBH seeding/damping signature (open/diagnostic, see status table above)
 - independent replication by any party outside this project
 
 This repository should be read as a narrowed, honestly-labeled candidate framework and reproducibility program.
@@ -119,7 +127,9 @@ See [07_REPRODUCE.md](07_REPRODUCE.md) for current reproduction status. Because 
 - `08_CITATIONS.md` — how to cite this work
 - `05_Cosmology.md`, `04_EFT_couplings.md`, `03_ZPhi_Summary.md` — sector-specific technical detail
 - `Mechanism15/`, `Mechanism16/`, `Mechanism17/` — individual mechanism implementations
-- `archive/pre_freeze/` — historical record, not current evidentiary status
+- `Mechanism21_SMBH_Seeding_Damping/` — SMBH seeding/damping exploration; status: open/diagnostic, see table above
+- `Mechanism25-BaryonAsymmetry` — baryon asymmetry exploration; status not yet formally classified under V3
+- `archive/` — historical record, including the V2 master archive index and pre-freeze mechanisms; not current evidentiary status
 - `manuscript/` — *The Remembering Cosmos*, the originating manuscript
 
 ## License
