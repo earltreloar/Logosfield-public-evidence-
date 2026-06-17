@@ -30,7 +30,7 @@ h(Phi/M_Pl) = 1 + O(gamma) * (Phi/M_Pl)^2     [Yukawa sector, below EW scale]
 
 Conformal invariance forces the leading-order coupling to be exactly 1 (gamma_EM = 0 exactly, no free coefficient). The first correction, at order gamma, is required by a Z_2 symmetry (`Phi -> -Phi`) inherited from the memory kernel's bilinear coupling structure (`D_mem` always couples `Phi(t) * K * Phi(t')`, a quadratic and therefore automatically even combination) to be **quadratic**, not linear, in `Phi/M_Pl`.
 
-There are no free coefficients analogous to `c_g`, `c_y` in this completion — the functional form and its leading correction are fixed by symmetry, with `gamma` (see THEORY.md) the only remaining unconstrained input.
+There are no free coefficients analogous to `c_g`, `c_y` in this completion — the functional form and its leading correction are fixed by symmetry, with `gamma` (see 00_THEORY.md) the only remaining unconstrained input.
 
 ## 3. Below-EW-scale continuity [DERIVED — Gap 13]
 
@@ -40,9 +40,9 @@ There are no free coefficients analogous to `c_g`, `c_y` in this completion — 
 
 - **Scope:** IR/EFT-level. No UV completion claimed.
 - **Minimality:** gauge kinetic and Yukawa sector corrections are fixed functional forms (quadratic in `Phi/M_Pl`, coefficient of order `gamma`), not independently free coefficients.
-- **Field content:** metric `g_munu` (Einstein-Hilbert, minimal Horndeski — see THEORY.md Section 1), Logosfield scalar `Phi` with potential `V(Phi)` (see THEORY.md Section 9), Standard Model fields with operator content unchanged.
+- **Field content:** metric `g_munu` (Einstein-Hilbert, minimal Horndeski — see 00_THEORY.md Section 1), Logosfield scalar `Phi` with potential `V(Phi)` (see 00_THEORY.md Section 9), Standard Model fields with operator content unchanged.
 - Memory enters through `D_mem,mu` acting on matter fields — not through a separate free-standing EFT dressing layer.
 
 ## 5. Downstream consequence for cosmology predictions
 
-Because the corrected coupling functions are quadratic (not linear) in `Phi/M_Pl`, and because they reduce to exactly 1 at `Phi=0`, any cosmological prediction built on these couplings (CDDR, sigma8 response) requires a non-zero cosmological background value of `Phi` (`Phi_ref`) to produce an observable signal. `Phi_ref` is not yet derived from `V(Phi)` (Gap 8 — see THEORY.md Section 9). **These predictions are therefore suspended** — see `Cosmology` and `THEORY.md` Section 10.
+Because the corrected coupling functions are quadratic (not linear) in `Phi/M_Pl`, and because they reduce to exactly 1 at `Phi=0`, any cosmological prediction built on these couplings (CDDR, sigma8 response) requires a non-zero cosmological background value of `Phi` (`Phi_ref`) to produce an observable signal. `Phi_ref` is not yet derived from `V(Phi)` (Gap 8 — see 00_THEORY.md Section 9). **These predictions are therefore suspended** — see `05_Cosmology.md` and `00_THEORY.md` Section 10.
