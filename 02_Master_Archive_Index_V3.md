@@ -33,7 +33,7 @@ Status: Level 2 — internally consistent, recovers known physics in conservativ
 | `beta` | `2*pi` | IDENTIFIED (Matsubara lead) |
 | `gamma` | `0.003122` | IDENTIFIED (baryogenesis line + Matsubara) |
 
-See `THEORY.md` Section 4 for the full derivation-attempt history, including every ruled-out path (naive-equipartition error, joint loop-factor closure, strong-CP kernel-topology route, c_W self-consistency route).
+See `00_THEORY.md` Section 4 for the full derivation-attempt history, including every ruled-out path (naive-equipartition error, joint loop-factor closure, strong-CP kernel-topology route, c_W self-consistency route).
 
 ---
 
@@ -66,10 +66,10 @@ All three require Gap 8 resolution before they can be meaningfully rederived and
 
 ## NAVIGATION
 
-- `THEORY.md` — full technical detail and derivation history (start here)
+- `00_THEORY.md` — full technical detail and derivation history (start here)
 - `README.md` — project overview
-- `CHALLENGE.md` — current active replication targets
-- `REPRODUCE.md` — reproduction instructions and status table
-- `CITATIONS.md` — citation guidance
-- `EFT_couplings.md`, `Cosmology.md`, `ZPhi_Summary.md` — sector-specific detail
-- `Master_Archive_Index_2026_05_29_V2.md` — prior version, retained for historical reference
+- `06_CHALLENGE.md` — current active replication targets
+- `07_REPRODUCE.md` — reproduction instructions and status table
+- `08_CITATIONS.md` — citation guidance
+- `04_EFT_couplings.md`, `05_Cosmology.md`, `03_ZPhi_Summary.md` — sector-specific detail
+- `archive/Master_Archive_Index_2026_05_29_V2.md` — prior version, retained for historical reference
