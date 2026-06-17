@@ -1,4 +1,4 @@
-# THEORY.md
+# 00_THEORY.md
 
 ## Logosfield / ODCCT: current public technical summary (V3 Canonical)
 
@@ -184,13 +184,13 @@ This repository does **not** currently claim:
 ## 12. How to navigate the repo
 
 - `README.md` — project overview
-- `CHALLENGE.md` — active replication challenge
-- `REPRODUCE.md` — reproduction instructions
-- `Cosmology` — cosmology-sector structure (now reflecting suspended status)
-- `EFT couplings` — coupling definitions, V3 conformal-protection form
-- `ZPhi_Summary.md` — compact technical summary
+- `06_CHALLENGE.md` — active replication challenge
+- `07_REPRODUCE.md` — reproduction instructions
+- `05_Cosmology.md` — cosmology-sector structure (now reflecting suspended status)
+- `04_EFT_couplings.md` — coupling definitions, V3 conformal-protection form
+- `03_ZPhi_Summary.md` — compact technical summary
 - `Mechanism15/`, `Mechanism16/`, `Mechanism17/` — individual mechanism implementations (status varies; see each README)
-- `archive_pre_freeze/` — historical record, not current evidentiary status
+- `archive/pre_freeze/` — historical record, not current evidentiary status
 
 ---
 
