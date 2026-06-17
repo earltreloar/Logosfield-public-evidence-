@@ -5,7 +5,7 @@
 
 ## Status: SUSPENDED pending Gap 8 (Phi_ref)
 
-The CDDR (Etherington distance-duality) and Mechanism 16 (sigma8 response) predictions in this file are **suspended**. They were previously computed (V2) using a linear EFT completion (`Z(Phi) = 1 + c_g*Phi/M_Pl`, `Y(Phi) = 1 + c_y*Phi/M_Pl`) that has since been removed after an audit found an eight-order-of-magnitude conflict with precision measurements (see `EFT_couplings.md` and `THEORY.md` Section 6).
+The CDDR (Etherington distance-duality) and Mechanism 16 (sigma8 response) predictions in this file are **suspended**. They were previously computed (V2) using a linear EFT completion (`Z(Phi) = 1 + c_g*Phi/M_Pl`, `Y(Phi) = 1 + c_y*Phi/M_Pl`) that has since been removed after an audit found an eight-order-of-magnitude conflict with precision measurements (see `04_EFT_couplings.md` and `00_THEORY.md` Section 6).
 
 The replacement, conformally-protected coupling form is:
 
@@ -49,9 +49,9 @@ Same status as CDDR above: the V2 sigma8 suppression formula depended on the lin
 
 The structural results that do not depend on `Phi_ref` are unaffected by the above:
 
-- Force Coupling Table (EM, gravity, weak sector couplings) — see `THEORY.md` Section 5
+- Force Coupling Table (EM, gravity, weak sector couplings) — see `00_THEORY.md` Section 5
 - Gap 3 (Cassini / alpha variation) — depends on the kernel parameters directly, not on `Phi_ref`
 - Gap 7 (Horndeski / GW speed) — a symmetry statement, independent of `Phi`'s value
 - Gap 12 (baryogenesis / c_W) — depends on `T* = gamma/beta`, not on `Phi_ref`
 
-See `THEORY.md` for the full, current technical summary.
+See `00_THEORY.md` for the full, current technical summary.
