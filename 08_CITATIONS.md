@@ -11,7 +11,7 @@ Treloar, E. (2026). *The Logosfield/ODCCT Framework: Public Evidence & Reproduci
 GitHub repository: https://github.com/earltreloar/Logosfield-public-evidence-
 (Associated manuscript: *The Remembering Cosmos*, First Edition, 2025.)
 
-**Version note:** V3 Canonical supersedes V2. V2's linear EFT completion (`Z(Phi)`, `Y(Phi)` with coefficients `c_g`, `c_y`) has been removed after an internal audit found an eight-order-of-magnitude conflict with precision measurements, and replaced with a derived conformal-protection completion. V2's CDDR and Mechanism 16 predictions, which depended on the removed completion, are now suspended pending further derivation (Gap 8). See `THEORY.md` for full detail.
+**Version note:** V3 Canonical supersedes V2. V2's linear EFT completion (`Z(Phi)`, `Y(Phi)` with coefficients `c_g`, `c_y`) has been removed after an internal audit found an eight-order-of-magnitude conflict with precision measurements, and replaced with a derived conformal-protection completion. V2's CDDR and Mechanism 16 predictions, which depended on the removed completion, are now suspended pending further derivation (Gap 8). See `00_THEORY.md` for full detail.
 
 ---
 
@@ -21,7 +21,7 @@ If citing the memory-covariant derivative, the auxiliary-field derivation of the
 
   Treloar, E. (2026). *Logosfield/ODCCT V3 Canonical: Memory-Covariant Derivative,
   Auxiliary-Field Kernel Derivation, and Conformal Coupling Protection*.
-  THEORY.md and ZPhi_Summary.md, this repository.
+  00_THEORY.md and 03_ZPhi_Summary.md, this repository.
 
 Key V3 results to cite:
 
@@ -35,8 +35,8 @@ Key V3 results to cite:
 
 ## What is explicitly NOT validated and should not be cited as such
 
-- CDDR and Mechanism 16 sigma8 predictions — suspended (Gap 8), see `Cosmology.md`
-- A first-principles derivation of `alpha`, `beta`, or `gamma` — open (Gap 4/9), see `THEORY.md` Section 4
+- CDDR and Mechanism 16 sigma8 predictions — suspended (Gap 8), see `05_Cosmology.md`
+- A first-principles derivation of `alpha`, `beta`, or `gamma` — open (Gap 4/9), see `00_THEORY.md` Section 4
 - Independent replication by any party outside this project
 
 ## Manuscript
