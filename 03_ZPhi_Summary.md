@@ -1,7 +1,7 @@
 # ZPhi Summary — V3 Canonical
 # Logosfield / ODCCT Framework
 
-This file is a compact technical summary. For full derivations and gap-by-gap status, see `THEORY.md`.
+This file is a compact technical summary. For full derivations and gap-by-gap status, see `00_THEORY.md`.
 
 ---
 
@@ -42,7 +42,7 @@ beta  = 2*pi          [IDENTIFIED — Matsubara lead]
 gamma = 0.003122      [IDENTIFIED — baryogenesis line + Matsubara]
 ```
 
-See `THEORY.md` Section 4 for the full derivation-attempt history, including ruled-out paths.
+See `00_THEORY.md` Section 4 for the full derivation-attempt history, including ruled-out paths.
 
 ## 5. Force Coupling Table
 
@@ -64,7 +64,7 @@ gamma_strong: sign only          [IDENTIFIED (sign) + OPEN (magnitude)]
 
 ## 7. Open
 
-- Gap 4/9 (first-principles derivation of gamma, beta): open — see THEORY.md Section 4 for what has been tried and ruled out
+- Gap 4/9 (first-principles derivation of gamma, beta): open — see 00_THEORY.md Section 4 for what has been tried and ruled out
 - Gap 8 (Phi_ref): open, not blocking the above, but blocking CDDR/sigma8 (suspended)
 - gamma_strong magnitude at Lambda_QCD: open
 
