@@ -13,6 +13,19 @@ This is not a weakening of the challenge — it is a correction. Challenging a s
 
 ---
 
+## Force Coupling Table (full, for reference)
+
+| Sector | Result | Status |
+|---|---|---|
+| EM | `gamma_EM = 0` exactly | DERIVED (U(1) conformal invariance) |
+| Gravity | `gamma_g -> 0` | DERIVED (diffeomorphism invariance) |
+| Weak | `gamma_weak ~ 408` at 1 fm | DERIVED (Proca propagator, 0.12% match) |
+| Strong | sign only (asymptotic freedom) | IDENTIFIED (sign) + OPEN (magnitude) |
+
+Challenge target 1 below addresses the weak-sector entry specifically. The strong-sector magnitude (currently OPEN) is itself a standing challenge: a derivation of `gamma_strong`'s value at the confinement scale, not just its sign, would close a genuine gap. See `00_THEORY.md` Section 5 for why the weak-sector formula is a category mismatch for the confining strong-sector regime and cannot simply be reused there.
+
+---
+
 ## Active challenge targets (V3)
 
 ### 1. Force Coupling Table — weak sector formula
@@ -47,7 +60,9 @@ This is not a weakening of the challenge — it is a correction. Challenging a s
 - Mechanism 16 (sigma8 response)
 - Galaxy rotation mechanism
 
-These require an independently-derived `Phi_ref != 0`, which the framework does not currently provide (Gap 8). Reproducing the historical V2 formulas for these (retained in `05_Cosmology.md` for reference) is not a meaningful test of the current framework, since those formulas depended on a coupling structure that has been removed.
+Additionally, Mechanism 21 (SMBH seeding/damping) is **open/diagnostic**, not suspended for the same reason as CDDR/Mechanism 16 — it has not yet been run under the V3 frozen parameters and corrected coupling form, so its status is currently unclear rather than known-suspended. It is also not an active challenge target until that V3-compatible rerun exists.
+
+CDDR, Mechanism 16, and the galaxy rotation mechanism require an independently-derived `Phi_ref != 0`, which the framework does not currently provide (Gap 8). Reproducing the historical V2 formulas for these (retained in `05_Cosmology.md` for reference) is not a meaningful test of the current framework, since those formulas depended on a coupling structure that has been removed.
 
 ---
 
