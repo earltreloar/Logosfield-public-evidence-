@@ -6,7 +6,7 @@ This repository presents a **Level 2 theoretical framework** — internally cons
 
 ## Technical entry point
 
-For the canonical technical summary — the memory-covariant derivative, parameter status, Force Coupling Table, conformal protection, and which predictions are currently suspended — see [THEORY.md](THEORY.md).
+For the canonical technical summary — the memory-covariant derivative, parameter status, Force Coupling Table, conformal protection, and which predictions are currently suspended — see [00_THEORY.md](00_THEORY.md).
 
 ## Why this repository exists
 
@@ -30,7 +30,7 @@ G2 = X - V(Phi),  G3 = 0,  G4 = M_Pl^2/2 (constant),  G5 = 0
 `c_T = c` exactly. GW170817 is satisfied automatically. [DERIVED]
 
 ### Standard Model
-SM operator content is preserved. The Logosfield enters only through the memory-covariant derivative `D_mem,mu`, with each sector's coupling fixed by that sector's own symmetry (see Force Coupling Table in THEORY.md) — not through an independently free EFT layer.
+SM operator content is preserved. The Logosfield enters only through the memory-covariant derivative `D_mem,mu`, with each sector's coupling fixed by that sector's own symmetry (see Force Coupling Table in 00_THEORY.md) — not through an independently free EFT layer.
 
 ### Parameters
 
@@ -40,7 +40,7 @@ SM operator content is preserved. The Logosfield enters only through the memory-
 | `beta` | `2*pi` | IDENTIFIED (Matsubara lead), not derived |
 | `gamma` | `~0.003122` | IDENTIFIED (baryogenesis line + Matsubara), not derived |
 
-**Note:** the parameter values changed from the V2 working values (`gamma = 0.005`) after a systematic reverse-engineering pass against the framework's own validated structure. The new pair was checked against every closed result in the framework (Cassini, alpha variation, baryogenesis, conformal protection) and preserves every margin. Full reasoning is in THEORY.md Section 4.
+**Note:** the parameter values changed from the V2 working values (`gamma = 0.005`) after a systematic reverse-engineering pass against the framework's own validated structure. The new pair was checked against every closed result in the framework (Cassini, alpha variation, baryogenesis, conformal protection) and preserves every margin. Full reasoning is in 00_THEORY.md Section 4.
 
 ---
 
@@ -67,7 +67,7 @@ This is quadratic in `Phi/M_Pl`, not linear, and follows from conformal weight c
 | Weak | `gamma_weak ~ 408` at 1 fm | DERIVED (Proca propagator, 0.12% match) |
 | Strong | sign only (asymptotic freedom) | IDENTIFIED (sign) + OPEN (magnitude) |
 
-The strong-sector magnitude was previously mislabeled DERIVED in V2. Corrected here — see THEORY.md Section 5 for why the weak-sector formula is a category mismatch for the confining strong sector.
+The strong-sector magnitude was previously mislabeled DERIVED in V2. Corrected here — see 00_THEORY.md Section 5 for why the weak-sector formula is a category mismatch for the confining strong sector.
 
 ---
 
@@ -86,9 +86,9 @@ These predictions require `Phi != 0` in some cosmological background to produce 
 
 ## Freeze and honesty policy
 
-- Core structural parameters (`alpha`, `beta`, `gamma`) are frozen at the values in THEORY.md Section 4 and are not retuned per mechanism.
+- Core structural parameters (`alpha`, `beta`, `gamma`) are frozen at the values in 00_THEORY.md Section 4 and are not retuned per mechanism.
 - Every claim is labeled DERIVED / IDENTIFIED / SPECULATIVE / SUSPENDED / OPEN / RULED OUT.
-- Errors and retractions are documented explicitly in THEORY.md rather than silently corrected.
+- Errors and retractions are documented explicitly in 00_THEORY.md rather than silently corrected.
 - Negative results (ruled-out derivation attempts) are recorded on the same footing as positive ones.
 - If a branch fails or becomes suspended under the frozen structure, it is labeled as such rather than patched ad hoc.
 
@@ -109,17 +109,17 @@ This repository should be read as a narrowed, honestly-labeled candidate framewo
 
 ## Reproducibility
 
-See [REPRODUCE.md](REPRODUCE.md) for current reproduction status. Because CDDR and Mechanism 16 are suspended, their runners remain in the repository for historical reference but are not currently part of an active validated public test path.
+See [07_REPRODUCE.md](07_REPRODUCE.md) for current reproduction status. Because CDDR and Mechanism 16 are suspended, their runners remain in the repository for historical reference but are not currently part of an active validated public test path.
 
 ## Repository layout
 
-- `THEORY.md` — canonical technical summary (start here)
-- `CHALLENGE.md` — replication challenge, updated for V3 status
-- `REPRODUCE.md` — reproduction instructions
-- `CITATIONS.md` — how to cite this work
-- `Cosmology`, `EFT couplings`, `ZPhi_Summary.md` — sector-specific technical detail
+- `00_THEORY.md` — canonical technical summary (start here)
+- `06_CHALLENGE.md` — replication challenge, updated for V3 status
+- `07_REPRODUCE.md` — reproduction instructions
+- `08_CITATIONS.md` — how to cite this work
+- `05_Cosmology.md`, `04_EFT_couplings.md`, `03_ZPhi_Summary.md` — sector-specific technical detail
 - `Mechanism15/`, `Mechanism16/`, `Mechanism17/` — individual mechanism implementations
-- `archive_pre_freeze/` — historical record, not current evidentiary status
+- `archive/pre_freeze/` — historical record, not current evidentiary status
 - `manuscript/` — *The Remembering Cosmos*, the originating manuscript
 
 ## License
