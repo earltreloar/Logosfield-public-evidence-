@@ -1,7 +1,7 @@
 # Reproduce the Logosfield/ODCCT Public Path — V3
 # Last updated: V3 update
 
-This repository's previous (V2) reproduction path centered on CDDR and Mechanism 16 (sigma8). **Both are now suspended** (see `THEORY.md` Section 10 and `Cosmology.md`) because they depended on a linear EFT completion that has since been removed for conflicting with precision measurements.
+This repository's previous (V2) reproduction path centered on CDDR and Mechanism 16 (sigma8). **Both are now suspended** (see `00_THEORY.md` Section 10 and `05_Cosmology.md`) because they depended on a linear EFT completion that has since been removed for conflicting with precision measurements.
 
 This does not mean there is nothing to reproduce. It means the reproduction priority has shifted to the framework's closed structural results, which do not depend on the suspended cosmology layer.
 
@@ -23,18 +23,18 @@ print(gamma_weak)  # expect ~407.5
 
 ### 2. Gap 3 — Cassini / alpha variation margins
 
-See `tools/cddr_runner_fullcov.py` for the historical CDDR runner (now superseded — retained for reference). A standalone margin-check script for Gap 3 is planned; in the meantime the formulas are given explicitly in `THEORY.md` Section 7 and can be reproduced directly:
+See `tools/cddr_runner_fullcov.py` for the historical CDDR runner (now superseded — retained for reference). A standalone margin-check script for Gap 3 is planned; in the meantime the formulas are given explicitly in `00_THEORY.md` Section 7 and can be reproduced directly:
 
 ```
 delta_alpha/alpha = gamma * (t_Pl/t_Hub)^2 / beta^2
 delta_gamma_PPN    = gamma * (t_Pl/t_Hub)   / beta
 ```
 
-with `gamma = 0.003122`, `beta = 2*pi` (current default parameters, `THEORY.md` Section 4).
+with `gamma = 0.003122`, `beta = 2*pi` (current default parameters, `00_THEORY.md` Section 4).
 
 ### 3. Gap 10 — auxiliary field kernel verification
 
-The Ornstein-Uhlenbeck Monte Carlo check (causal kernel response vs. symmetric kernel correlator matching) referenced in `THEORY.md` Section 2 can be reproduced with a standard OU-process simulation at `beta=2*pi`, `gamma=0.003122` (or the original `gamma=0.005` used in the initial check) and comparing the simulated stationary autocorrelation against `K_full(tau) = gamma*beta*exp(-beta*tau)`.
+The Ornstein-Uhlenbeck Monte Carlo check (causal kernel response vs. symmetric kernel correlator matching) referenced in `00_THEORY.md` Section 2 can be reproduced with a standard OU-process simulation at `beta=2*pi`, `gamma=0.003122` (or the original `gamma=0.005` used in the initial check) and comparing the simulated stationary autocorrelation against `K_full(tau) = gamma*beta*exp(-beta*tau)`.
 
 ---
 
@@ -45,7 +45,7 @@ python run.py --mode cddr     # SUSPENDED — uses removed linear EFT completion
 python run.py --mode mech16   # SUSPENDED — uses removed linear EFT completion
 ```
 
-These commands still execute against the historical formulas in `Cosmology.md` but do **not** represent a current, active prediction of the V3 framework. Results from these runners should not be cited as validating or testing the current framework without first confirming whether the linear-completion-dependent formulas have been superseded by a V3-consistent rederivation (not yet available).
+These commands still execute against the historical formulas in `05_Cosmology.md` but do **not** represent a current, active prediction of the V3 framework. Results from these runners should not be cited as validating or testing the current framework without first confirming whether the linear-completion-dependent formulas have been superseded by a V3-consistent rederivation (not yet available).
 
 ---
 
