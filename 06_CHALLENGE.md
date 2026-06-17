@@ -7,7 +7,7 @@ The current public replication challenge tests whether the framework's **closed 
 
 ## What changed from V2
 
-V2's challenge was built around the CDDR and Mechanism 16 formulas, which depended on a linear EFT completion (`Z(Phi)`, `Y(Phi)` with free coefficients `c_g`, `c_y`) that has since been removed for conflicting with precision measurements by ~8 orders of magnitude. Those two predictions are now **SUSPENDED** pending Gap 8 (derivation of `Phi_ref`) — see `THEORY.md` Sections 9–10.
+V2's challenge was built around the CDDR and Mechanism 16 formulas, which depended on a linear EFT completion (`Z(Phi)`, `Y(Phi)` with free coefficients `c_g`, `c_y`) that has since been removed for conflicting with precision measurements by ~8 orders of magnitude. Those two predictions are now **SUSPENDED** pending Gap 8 (derivation of `Phi_ref`) — see `00_THEORY.md` Sections 9–10.
 
 This is not a weakening of the challenge — it is a correction. Challenging a suspended, not-yet-rederived prediction would not be a meaningful test.
 
@@ -25,7 +25,7 @@ This is not a weakening of the challenge — it is a correction. Challenging a s
 
 **Claim:** at the current default parameters (`beta=2*pi`, `gamma=0.003122`), the predicted PPN-gamma deviation and laboratory alpha-variation are suppressed by ~59 and ~116 orders of magnitude respectively below current bounds.
 
-**Challenge:** independently verify the suppression-scaling argument (`(t_kernel/t_Hubble)` and its square) and check whether the margins remain large under reasonable variation of the parameter pair (see `THEORY.md` Section 4 for the range of internally-motivated candidate pairs).
+**Challenge:** independently verify the suppression-scaling argument (`(t_kernel/t_Hubble)` and its square) and check whether the margins remain large under reasonable variation of the parameter pair (see `00_THEORY.md` Section 4 for the range of internally-motivated candidate pairs).
 
 ### 3. Gap 7 — Horndeski mapping
 
@@ -47,10 +47,10 @@ This is not a weakening of the challenge — it is a correction. Challenging a s
 - Mechanism 16 (sigma8 response)
 - Galaxy rotation mechanism
 
-These require an independently-derived `Phi_ref != 0`, which the framework does not currently provide (Gap 8). Reproducing the historical V2 formulas for these (retained in `Cosmology.md` for reference) is not a meaningful test of the current framework, since those formulas depended on a coupling structure that has been removed.
+These require an independently-derived `Phi_ref != 0`, which the framework does not currently provide (Gap 8). Reproducing the historical V2 formulas for these (retained in `05_Cosmology.md` for reference) is not a meaningful test of the current framework, since those formulas depended on a coupling structure that has been removed.
 
 ---
 
 ## How to submit a challenge result
 
-Provide code, environment, and outputs as in previous versions of this challenge (see `REPRODUCE.md`). Results should specify clearly which V3 claim (1–4 above) is being addressed.
+Provide code, environment, and outputs as in previous versions of this challenge (see `07_REPRODUCE.md`). Results should specify clearly which V3 claim (1–4 above) is being addressed.
