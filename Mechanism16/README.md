@@ -3,9 +3,9 @@
 
 ## Status
 
-**SUSPENDED.** This mechanism's prediction depended on a linear EFT completion (`Z(Phi) = 1 + c_g*Phi/M_Pl`, `Y(Phi) = 1 + c_y*Phi/M_Pl`) that has been removed after an audit found an eight-order-of-magnitude conflict with precision measurements (see repository `THEORY.md` Section 6 and `EFT couplings`).
+**SUSPENDED.** This mechanism's prediction depended on a linear EFT completion (`Z(Phi) = 1 + c_g*Phi/M_Pl`, `Y(Phi) = 1 + c_y*Phi/M_Pl`) that has been removed after an audit found an eight-order-of-magnitude conflict with precision measurements (see repository `00_THEORY.md` Section 6 and `04_EFT_couplings.md`).
 
-The replacement, conformally-protected coupling form is quadratic in `Phi/M_Pl` and reduces to exactly 1 at `Phi=0`. The scalar potential `V(Phi)` has since been derived and its classical minimum is at `Phi=0`. Producing a non-trivial sigma_8 response requires a cosmological reference value `Phi_ref != 0` that is not currently derivable (Gap 8, open — see `THEORY.md` Section 9). **There is therefore currently no V3-consistent prediction to test.**
+The replacement, conformally-protected coupling form is quadratic in `Phi/M_Pl` and reduces to exactly 1 at `Phi=0`. The scalar potential `V(Phi)` has since been derived and its classical minimum is at `Phi=0`. Producing a non-trivial sigma_8 response requires a cosmological reference value `Phi_ref != 0` that is not currently derivable (Gap 8, open — see `00_THEORY.md` Section 9). **There is therefore currently no V3-consistent prediction to test.**
 
 `predict.py`'s active entry points now raise `NotImplementedError` rather than returning a number, so that running this mechanism cannot be mistaken for a current, validated prediction. `test.py` and `null_test.py` verify this suspension is correctly enforced.
 
