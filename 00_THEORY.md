@@ -1,3 +1,17 @@
+# 00_THEORY.md — Redirected to V4
+
+> **This file documents V3 theory (superseded). The current framework is V4.**
+> See `/V4/Logosfield_V4_Vision_17_Final_Q4b_Baryon.docx` for the current master document.
+> See `README.md` for the current program overview.
+
+The V3 technical summary below is preserved as historical record only.
+All V3 results are superseded by V4. V4 is a genuinely pregeometric framework —
+it does not presuppose the spacetime and gauge structure it claims to generate.
+
+---
+
+## V3 Technical Summary (Historical — Superseded)
+
 # 00_THEORY.md
 
 ## Logosfield / ODCCT: current public technical summary (V3 Canonical)
