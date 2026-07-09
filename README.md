@@ -1,137 +1,105 @@
-# Logosfield / ODCCT — V3 Reproducibility Archive: Active Mechanisms, Suspended Cosmology Tests, and Gap Tracking
+# Logosfield V4 — A Pregeometric Framework for Physics
 
-Public research repository for the Logosfield / ODCCT program and its reproducibility artifacts.
-
-This repository presents a **Level 2 theoretical framework** — internally consistent, recovering known physics in its conservative limit, not independently replicated — with explicit gap tracking and honest classification of every claim. It is not presented as a completed discovery.
-
-## V3 claim boundary
-
-Under V3, this framework currently claims **structural consistency and constrained coupling behavior**, not empirical confirmation of a new field or force. Every public test below is classified by whether it survives the V3 coupling correction (see "What changed from V2"). CDDR and the sigma8 prediction do not currently survive as active predictions, because the cosmological reference value `Phi_ref` they require is not derived (Gap 8, open). This is a property of the current theory, not a temporary omission — see "Active vs. suspended test paths" immediately below for the full picture at a glance.
-
-## Active vs. suspended test paths
-
-| Path | Status | Why |
-|---|---|---|
-| Force Coupling Table (EM, gravity, weak) | Active — structural result | Independent of `Phi_ref`; derived from symmetry |
-| Cassini / alpha-variation margins (Gap 3) | Active — constraint check | Survives conformal protection; large margin |
-| Mechanism 15 (Ly-alpha escape, z=13) | Active / exploratory | See `Mechanism15/README.md` — flags a superseded mechanism description pending rederivation |
-| Mechanism 17 (H0 reconciliation) | Active / under review | See `Mechanism17/README.md` — not part of the locked challenge path |
-| CDDR (distance duality) | **Suspended** | Requires non-zero `Phi_ref`, not yet derived (Gap 8) |
-| Mechanism 16 (sigma8 response) | **Suspended** | Relied on removed V2 linear EFT completion; no V3-consistent rederivation yet |
-| Mechanism 21 (SMBH seeding/damping) | **Open / diagnostic** | High-z SMBH growth remains a target tension zone; prior relief tests were distribution-sensitive and do not yet constitute an active V3 prediction. Needs an explicit V3-compatible rerun using the frozen parameters and corrected coupling form before it can be called active. |
-
-These branches are suspended because the corrected theory removes the mechanism that generated their previous signal. **They are not failures of the entire framework; they are failures of a now-retracted completion.**
-
-## Technical entry point
-
-For the canonical technical summary — the memory-covariant derivative, parameter status, Force Coupling Table, conformal protection, and which predictions are currently suspended — see [00_THEORY.md](00_THEORY.md).
-
-## Why this repository exists
-
-The Logosfield/ODCCT program explores whether a single non-local scalar field structure, built around a memory-covariant derivative, can produce repeatable signals across multiple physical domains without retuning per domain. The program is organized around three principles:
-
-1. **Freeze the structural core; track gaps explicitly**
-2. **Test against public data wherever possible**
-3. **Demote or suspend failed/incomplete branches rather than patching them ad hoc**
+**Earl Treloar · Independent researcher · Southeast Technical Institute · Sioux Falls, SD**
+**Public evidence repository · GitHub: earltreloar/Logosfield-public-evidence-**
 
 ---
 
-## Current model stance (V3)
+## What This Is
 
-### Gravity
-General Relativity's gravitational sector is **derived as minimal Horndeski** from diffeomorphism invariance:
+Logosfield V4 is a foundational physics framework that derives key structures of reality from a single generative constraint — the Founding Principle:
+
+> *"All potential is realized before it began. It cannot over-realize that maximum."*
+
+The theory begins with three minimal primitives (a set of bare events, a locally finite partial order encoding causal precedence, and a composable memory relation) and derives from them — without importing Standard Model, General Relativity, or continuum geometry:
+
+- The exponential memory kernel M = exp(−βL) via composability and self-bounding
+- K-chain homogeneity N_k(e,e') = N_k(τ) at the discrete level [DERIVED]
+- The Poisson form N_k(τ) = (ρτ)^k/k! purely combinatorially [DERIVED]
+- Spacetime dimensionality d = 4 as the unique integer satisfying Huygens + full potential [DERIVED — fully closed]
+- A two-observer structure: Logos-observer (outside sequence) and inside observer (emergent at d=4)
+- The necessity of an iterating sequence converging toward unity
+
+**Current status:** Foundation clean at every level. Layer 2 (discrete causal architecture) fully closed. Sole remaining gate: the continuum limit of S = ρ·(exp(τ·exp(−β)) − 1) to derive β = 2π and recover Lorentzian geometry from below.
+
+**External peer review (Grok expert, June 2026):** "Among the more coherent and self-critical foundational programs in this style. The discrete-layer derivations represent genuine technical progress."
+
+---
+
+## Repository Structure
 
 ```
-G2 = X - V(Phi),  G3 = 0,  G4 = M_Pl^2/2 (constant),  G5 = 0
+V4/                          ← Current framework (V4 Vision 17)
+  Logosfield_V4_Vision_17_Final_Q4b_Baryon.docx   ← Master document (most current)
+  Logosfield_V4_Session_Handoff_Q4b.docx           ← Session handoff for next session
+  Logosfield_V4_Abstract_Final.docx                ← Publication-ready abstract
+  V4_Session_Record_2026-06-22.md                  ← Session record
+  V4_Q4b_Session_Record_2026-06-22.md              ← Continuum limit session record
+  V4_Baryon_Observation_2026-06-22.md              ← Baryon asymmetry observation
+
+manuscript/                  ← The Remembering Cosmos (KDP, 2025)
+  The_Remembering_Cosmos.docx / .md / .pdf
+
+archive/                     ← V1–V3 developmental history (superseded)
+  V1_V2_V3/                  ← Historical record — kept for priority documentation
 ```
 
-`c_T = c` exactly. GW170817 is satisfied automatically. [DERIVED]
+---
 
-### Standard Model
-SM operator content is preserved. The Logosfield enters only through the memory-covariant derivative `D_mem,mu`, with each sector's coupling fixed by that sector's own symmetry (see Force Coupling Table in 00_THEORY.md) — not through an independently free EFT layer.
+## V4 Status Table
 
-### Parameters
-
-| Parameter | Value | Status |
-|---|---|---|
-| `alpha` | 1 | Postulated |
-| `beta` | `2*pi` | IDENTIFIED (Matsubara lead), not derived |
-| `gamma` | `~0.003122` | IDENTIFIED (baryogenesis line + Matsubara), not derived |
-
-The model has a frozen three-parameter structural core. These parameters are not retuned per mechanism. Current work tests whether that frozen core remains consistent across domains; first-principles derivation of `alpha`, `beta`, and `gamma` remains an open problem (Gap 4) and should not be described as solved.
-
-**Note:** the parameter values changed from the V2 working values (`gamma = 0.005`) after a systematic consistency pass against the framework's surviving closed structural constraints. The new pair was checked against every closed result in the framework (Cassini, alpha variation, baryogenesis, conformal protection) and preserves every margin. Full reasoning is in 00_THEORY.md Section 4.
+| Result | Status |
+|--------|--------|
+| Founding principle FP | [CONSTRAINT] — sole generative ground |
+| Events E | [AXIOM A1] |
+| Partial order ≺ | [AXIOM A2] — A1+A2 = causal set axioms |
+| Memory relation M | [AXIOM A3 — form derived] |
+| Exponential kernel exp(−βL) | [DERIVED] — strongest derivation in framework |
+| Grading + k-chain homogeneity | [CO-DERIVED] |
+| ρ > 0 | [DERIVED] |
+| Poisson form N_k(τ) = (ρτ)^k/k! | [DERIVED] — Q4b sub-problem 2 closed |
+| S = ρ·(exp(τ·exp(−β))−1) | [DERIVED — fully V4-native] |
+| d = 4 | [DERIVED — fully closed] |
+| β = Ω_past | [DERIVED — conditional] |
+| β = 2π | [OPEN — next target] |
+| Metric tensor recovery | [OPEN] |
+| Hauptvermutung | [OPEN — parallel track] |
+| Four forces | [IDENTIFIED/SPECULATIVE] |
 
 ---
 
-## What changed from V2
+## Relationship to Causal Set Theory (CST)
 
-The previous public version of this repository used a linear EFT completion (`Z(Phi) = 1 + c_g*Phi/M_Pl`, `Y(Phi) = 1 + c_y*Phi/M_Pl`). That completion has been **removed**: an internal audit found an eight-order-of-magnitude conflict with precision measurements. It has been replaced by a **derived, conformally-protected** coupling form:
+V4's axioms A1 + A2 are precisely the starting point of causal set theory. V4 diverges from CST at A3 (composable memory relation with derived exponential form) and FP (founding principle with self-bounding). Key advances beyond standard CST:
 
-```
-f(Phi/M_Pl) = g(Phi/M_Pl) = h(Phi/M_Pl) = 1 + O(gamma) * (Phi/M_Pl)^2
-```
-
-This is quadratic in `Phi/M_Pl`, not linear, and follows from conformal weight counting plus a Z_2 symmetry inherent to the memory kernel's bilinear structure — it is not an independently free EFT layer with fitted coefficients.
-
-**Direct consequence:** the CDDR and Mechanism 16 (sigma8) formulas published under V2 depended on the now-removed linear completion and no longer apply as written. These predictions are now correctly labeled **SUSPENDED**, not "provisional pass." See the status table above.
+- **Poisson form:** Derived from discrete primitives before any continuum is assumed. Stronger than CST's sprinkling construction (which assumes Poisson from a pre-existing manifold).
+- **d=4 selection:** Novel internal discrete mechanism — turning Huygens from a consequence into a selector. No direct CST analogue.
+- **k-chain homogeneity:** No exact CST counterpart. Potential contribution to CST order invariants literature.
 
 ---
 
-## Force Coupling Table
+## Prior Work — V1 through V3 (Archived)
 
-| Sector | Result | Status |
-|---|---|---|
-| EM | `gamma_EM = 0` exactly | DERIVED (U(1) conformal invariance) |
-| Gravity | `gamma_g -> 0` | DERIVED (diffeomorphism invariance) |
-| Weak | `gamma_weak ~ 408` at 1 fm | DERIVED (Proca propagator, 0.12% match) |
-| Strong | sign only (asymptotic freedom) | IDENTIFIED (sign) + OPEN (magnitude) |
+The V1–V3 framework (memory-covariant derivative 𝒟_mem,μ, frozen parameters α=1, β≈2π, γ=0.005) is preserved in the archive as the developmental record. V3 was superseded by V4 when a critical architectural finding was made: V1–V3 presupposes the spacetime and gauge structure it claims to generate, making it a correction-layer theory rather than a genuinely generative substrate. The V3 material is not discarded — it is the honest record of how the program developed. But V4 is the current framework.
 
-The strong-sector magnitude was previously mislabeled DERIVED in V2. Corrected here — see 00_THEORY.md Section 5 for why the weak-sector formula is a category mismatch for the confining strong sector. This table is also reproduced in `00_THEORY.md` and `06_CHALLENGE.md` (where its weak-sector entry is an active challenge target).
+The V1–V3 mechanisms (Mechanism 15–17, 21, 25), EFT couplings, Horndeski mapping, CDDR formula, and Cassini constraint work are archived under `archive/V1_V2_V3/` with honest status labels. They are historical record, not active predictions.
 
 ---
 
-## Freeze and honesty policy
+## Theological Context
 
-- Core structural parameters (`alpha`, `beta`, `gamma`) are frozen at the values in 00_THEORY.md Section 4 and are not retuned per mechanism.
-- Every claim is labeled DERIVED / IDENTIFIED / SPECULATIVE / SUSPENDED / OPEN / RULED OUT.
-- Errors and retractions are documented explicitly in 00_THEORY.md rather than silently corrected.
-- Negative results (ruled-out derivation attempts) are recorded on the same footing as positive ones.
-- If a branch fails or becomes suspended under the frozen structure, it is labeled as such rather than patched ad hoc.
+The philosophical and theological vision underlying this framework was published in *The Remembering Cosmos* (Earl Treloar, KDP, 2025) prior to the formal mathematical development. The physics is developed independently and is falsifiable on its own terms. The theological framing is not imported into the derivations.
+
+The framework's two-observer structure — Logos-observer (registers the complete realized structure from outside any sequence) and inside observer (emergent at d=4, traverses the order step by step, accumulates memory) — was anticipated in the book before the mathematics existed to express it. External reviewers working from the equations alone arrived at: *"The cosmos remembers because memory is fundamental to how the inside observer knows its own position and history."*
 
 ---
 
-## What is not currently being claimed
+## GitHub as Priority Record
 
-This repository does **not** currently claim:
+This repository serves as a public timestamped record of the research program. All results carry explicit status labels. Negative results are documented with equal rigor. No silent corrections.
 
-- a first-principles derivation of `alpha`, `beta`, or `gamma`
-- confirmed new-force discovery or a validated fifth-force detection
-- a working CDDR or sigma8 prediction (suspended, see status table above)
-- a validated SMBH seeding/damping signature (open/diagnostic, see status table above)
-- independent replication by any party outside this project
+**Key commits:**
+- June 22, 2026: V4 Vision 17 Final — k-chain homogeneity [DERIVED], Poisson form [DERIVED], Repairs 1-3, two external peer reviews incorporated, d=4 fully closed
+- June 22, 2026: Q4b continuum limit session — coupled pair (β, C₄) discovered, eight paths inventoried, bridge formula identified as next target
 
-This repository should be read as a narrowed, honestly-labeled candidate framework and reproducibility program.
-
----
-
-## Reproducibility
-
-See [07_REPRODUCE.md](07_REPRODUCE.md) for current reproduction status. Because CDDR and Mechanism 16 are suspended, their runners remain in the repository for historical reference but are not currently part of an active validated public test path.
-
-## Repository layout
-
-- `00_THEORY.md` — canonical technical summary (start here)
-- `06_CHALLENGE.md` — replication challenge, updated for V3 status
-- `07_REPRODUCE.md` — reproduction instructions
-- `08_CITATIONS.md` — how to cite this work
-- `05_Cosmology.md`, `04_EFT_couplings.md`, `03_ZPhi_Summary.md` — sector-specific technical detail
-- `Mechanism15/`, `Mechanism16/`, `Mechanism17/` — individual mechanism implementations
-- `Mechanism21_SMBH_Seeding_Damping/` — SMBH seeding/damping exploration; status: open/diagnostic, see table above
-- `Mechanism25-BaryonAsymmetry` — baryon asymmetry exploration; status not yet formally classified under V3
-- `archive/` — historical record, including the V2 master archive index and pre-freeze mechanisms; not current evidentiary status
-- `manuscript/` — *The Remembering Cosmos*, the originating manuscript
-
-## License
-
-See [LICENSE](LICENSE).
+*Earl Treloar · Logosfield / ODCCT · June 22, 2026*
