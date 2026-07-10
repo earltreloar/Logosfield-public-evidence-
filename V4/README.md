@@ -1,41 +1,40 @@
 # V4 Directory — Current Framework
 
-This directory contains all V4 Logosfield framework documents.
-
 ## Most Current Document
-
-**`Logosfield_V4_Vision_17_Final_Q4b_Baryon.docx`** — Master document.
-Contains: Sections 2.0-2.15 (full derivation program), Part 4 (external reviews),
-Part 5 (Q4b continuum limit session including coupled pair discovery and baryon asymmetry observation).
+**`Logosfield_V4_Vision_17_Final_Complete.docx`** — Master document.
+Contains: All derivations (Sections 2.0-2.15), Part 4 (external reviews),
+Part 5 (continuum limit sessions 5.1-5.15 including bidirectional observer
+analysis, harbor insight, complete honest status as of June 22, 2026).
 
 ## To Start a New Session
-
 Upload both:
-1. `Logosfield_V4_Vision_17_Final_Q4b_Baryon.docx`
-2. `Logosfield_V4_Session_Handoff_Q4b.docx`
+1. `Logosfield_V4_Vision_17_Final_Complete.docx`
+2. `Logosfield_V4_Handoff_Complete.docx`
 
-Tell Claude: *"Read Sections 2.0, 2.5, 2.7, 2.7b, Part 4, and Part 5 completely before we begin.
-Carry the V4 discipline line — flag any S² import or continuum geometry import immediately.
-The next target is the bridge formula: the V4-internal second condition on C₄ that closes the (β, C₄) system."*
+Say: *"Read Sections 2.0, 2.5, 2.7, 2.7b, Part 4, and all of Part 5
+(5.1-5.15) completely before we begin. Carry V4 discipline strictly.
+The next target is deriving the reference interval τ=1 from V4 primitives,
+then finding the second co-determination equation between β and τ*."*
 
 ## File Index
-
 | File | Description |
 |------|-------------|
-| `Logosfield_V4_Vision_17_Final_Q4b_Baryon.docx` | **Master document — most current** |
-| `Logosfield_V4_Session_Handoff_Q4b.docx` | Session handoff with coupled pair as lead finding |
+| `Logosfield_V4_Vision_17_Final_Complete.docx` | **MASTER DOCUMENT — most current** |
+| `Logosfield_V4_Handoff_Complete.docx` | Complete session handoff |
 | `Logosfield_V4_Abstract_Final.docx` | Publication-ready abstract |
-| `V4_Session_Record_2026-06-22.md` | Foundation session record (10 major results) |
-| `V4_Q4b_Session_Record_2026-06-22.md` | Q4b continuum limit session record |
-| `V4_Baryon_Observation_2026-06-22.md` | Baryon asymmetry observation [SPECULATIVE] |
+| `V4_Session_Record_2026-06-22.md` | Foundation session record |
+| `V4_Q4b_Session_Record_2026-06-22.md` | Q4b continuum limit session |
+| `V4_Baryon_Observation_2026-06-22.md` | Baryon observation [SPECULATIVE] |
+| `V4_Corrections_PathF_Record_2026-06-22.md` | Corrections + Path F |
+| `V4_PathL_Definitive_Record_2026-06-22.md` | Path L definitive negative |
+| `V4_Audit_Record_2026-06-22.md` | Ten-point audit record |
+| `V4_Final_Complete_Session_Record_2026-06-22.md` | This session complete record |
 
-## Key Results Summary
-
-- Foundation clean: 2 axioms, 1 partially axiomatized relation, chain of derived results
-- Layer 2 fully closed (confirmed by two external peer reviews)  
-- Q4b sub-problem 2 closed (Poisson form derived)
-- Coupled pair (β, C₄) discovered — one more V4-internal condition closes the system
-- Bridge formula = next derivation target
-- Baryon asymmetry numerical observation documented [SPECULATIVE — not a derivation]
+## Program Status
+- Foundation (Layer 1): Clean, audited, externally reviewed ✓
+- Scaffolding (Layer 2): Correctly labeled ✓
+- Speculative (Layer 3): Harbor insight + bidirectional observer
+- Ruled Out (Layer 4): Paths E, F(1), H, L, KMS analog
+- Next: Derive τ=1, find second co-determination equation
 
 *Earl Treloar · June 22, 2026*
