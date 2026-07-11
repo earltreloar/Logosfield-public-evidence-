@@ -38,3 +38,24 @@ then finding the second co-determination equation between β and τ*."*
 - Next: Derive τ=1, find second co-determination equation
 
 *Earl Treloar · June 22, 2026*
+
+## Numerical Verification
+
+All core numerical claims in the V4 program can be verified by running:
+
+```bash
+python V4/V4_numerical_verification.py
+```
+
+This script verifies 17 claims including:
+- Composability M(n) = M(1)^n to machine precision
+- Poisson form from discrete convolution
+- Fixed point equation C₄(β) values
+- Algebraic identity C₄·exp(−4β) = deficit ratio (exact)
+- Asymptotic identity ln(C₄) = −8exp(−β)
+- Foresight/memory ratio exp(−β)/2
+- Path F periodicity: 2π/β = 1 step when β = 2π
+- Baryon deficit (corrected normalization)
+- Co-determination τ* value [SPECULATIVE]
+
+Expected output: 17/17 checks passed.
