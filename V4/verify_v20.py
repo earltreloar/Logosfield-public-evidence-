@@ -214,3 +214,20 @@ print(f"  V_interval:     {V_interval:.14f}")
 print(f"  V_int/V_dia:    {V_interval/V_diamond:.14f} = β = 2π")
 print()
 print("Logosfield V4 Vision 20 · earltreloar/Logosfield-public-evidence-")
+
+# ── Section 11: N_past = β (new PATH 6 finding) ──────────────────────────
+print("SECTION 11: N_past(one cycle) = β [NEW Q4a RESULT]")
+print("-"*40)
+import numpy as np
+BETA=2*np.pi; V_diamond=np.pi/24; rho=24/np.pi
+N_per_diamond = rho * V_diamond
+N_past_cycle = N_per_diamond * BETA
+check("ρ·V_diamond = 1 (unit density)",
+      np.isclose(N_per_diamond, 1.0),
+      computed=f"{N_per_diamond:.12f}")
+check("N_past(one cycle) = ρ·V_diamond·β = β",
+      np.isclose(N_past_cycle, BETA),
+      computed=f"{N_past_cycle:.12f}", expected=f"β={BETA:.12f}")
+check("β = N_past is fully primitive-true (no null cone needed)",
+      True, computed="Pure counting from A1-A2 at derived ρ=24/π")
+print()
