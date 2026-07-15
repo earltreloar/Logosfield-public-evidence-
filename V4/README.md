@@ -1,56 +1,52 @@
-# V4 Directory — Current Framework
+# Logosfield V4 — Session Files
 
-## Most Current Documents
+Current session: **V4 Vision 22 · July 2026**
 
-**`Logosfield_V4_Vision_17_Final_Complete.docx`** — Master document (547 paragraphs).
-All derivations (Sections 2.0-2.15), Part 4 (five external reviews 4.1-4.11),
-Part 5 (continuum limit sessions 5.1-5.21).
+## Active Files
 
-**`Logosfield_V4_Handoff_Final_Complete.docx`** — Complete session handoff.
-Everything needed to continue without losing context.
+| File | Purpose |
+|------|---------|
+| `Logosfield_V4_Vision_22_Master.docx` | Current master document (Parts 1–15) |
+| `Logosfield_V4_Handoff_V22.docx` | Handoff for next session — upload with master |
+| `verify_v22.py` | Verification suite — 47/47 checks pass |
 
-## To Start a New Session
-Upload both files above. Say:
-*"Read Part 4 and Part 5 (Sections 5.1-5.21) completely before we begin.
-The primary target is formalizing 'V4-forced' to promote the Hamel basis
-exclusion argument (Section 5.21) from [IDENTIFIED] to [DERIVED].
-If successful, β=2π is derived without the Hauptvermutung."*
+## How to Start a New Session
 
-## Key Results Summary
+Upload both:
+1. `Logosfield_V4_Vision_22_Master.docx`
+2. `Logosfield_V4_Handoff_V22.docx`
 
-### DERIVED (Layer 1)
-- Exponential kernel, Poisson form, d=4, S fully V4-native
-- τ=1 [DERIVED] — A2+self-bounding force covering relation as minimum reference
-- β=Ω_past [DERIVED—conditional]
+Read the handoff first (Opening Protocol, Section 1).
 
-### IDENTIFIED (Layer 2)
-- Fixed point equation C₄=(1-u)⁴/(1+4u+u²) [conditional on shell-count]
-- Path F: 2π/β=1 step → β=2π [IDENTIFIED→DERIVED pending V4-forced formalization]
-- Discharge equation exp(-β)=(π/24)·T⁴ at τ=1 [capacitor result]
-- L_max ~ (ρτ)^{1/4} matches Myrheim-Meyer [Poisson/CST tension resolved]
+## Verification
 
-### SPECULATIVE (Layer 3)
-- Bidirectional inside observer, harbor/capacitor insight
-- Corrected co-determination: exp(τ*u)-1=2τ* [no solution at β=2π]
+```bash
+python3 verify_v22.py
+```
 
-### RULED OUT (Layer 4)
-- Paths E, F(1), H, L (definitive), KMS analog
-- Original co-determination τ*·exp(-β)=ln(3) [error corrected, obsolete]
+Expected output: `47/47 checks passed — All checks passed ✓`
 
-## Numerical Verification
-Run `python V4/V4_numerical_verification.py` — 17/17 checks pass.
+## Current Derived Results
 
-## External Reviews
-Five Grok expert reviews incorporated in Part 4 (Sections 4.1-4.11).
-Latest verdict: "Mature, highly self-audited. 8/10. Clean foundation +
-precisely located open problem + promising new conceptual tools."
+| Result | Value | Status |
+|--------|-------|--------|
+| β | 2π = 6.28318... | [DERIVED — within V4 standards] |
+| τ | 1 | [DERIVED] |
+| d | 4 | [DERIVED — fully closed] |
+| β > 0 | Forced by A3+FP-lower | [DERIVED — V22] |
+| FP-minimal | No weakening cost-free | [DERIVED — V22] |
 
-## Path F Major Result (Section 5.21)
-The Hamel basis exclusion argument:
-- Self-bounding excludes non-measurable composability solutions
-- Unique analytic extension exp(-βL) to ℂ is V4-forced
-- Imaginary period 2π/β = 1 step (τ=1 derived) → β=2π
-- One formalization needed: define "V4-forced" precisely
-- If accepted: β=2π [DERIVED] without Hauptvermutung
+## Session History
 
-*Earl Treloar · June 22, 2026*
+| Session | Master | Handoff | Key Results |
+|---------|--------|---------|-------------|
+| V17 | V17_Final_Q4b_Baryon.docx | — | d=4, τ=1, Poisson form |
+| V18 | V18_Master.docx | V18.docx | β=2π [DERIVED] |
+| V19 | V19_Master.docx | V19.docx | Q4a: chain clock, epistemic limit |
+| V20 | V20_Master.docx | V20.docx | HV-1, FF-1–4c, MF-1–4, ρ=24/π |
+| V21 | V21_Master.docx | V21.docx | A2-irred, FP-W2, Q4a Layer A/B |
+| V22 | V22_Master.docx | V22.docx | β>0, FP-minimal [DERIVED], exist/spec |
+
+## Next Session Target (V23)
+
+**PATH 1:** Derive V_interval(R) from V4 primitives. Highest leverage — closes HV-4c, Layer B of Q4a, ρ=24/π [DERIVED], and N_past=β [DERIVED] simultaneously. HIGH difficulty. 2–4 sessions.
