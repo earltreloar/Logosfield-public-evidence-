@@ -1,52 +1,60 @@
 # Logosfield V4 — Session Files
 
-Current session: **V4 Vision 22 · July 2026**
+Current session: **V4 Vision 23 · July 2026**
 
 ## Active Files
 
 | File | Purpose |
 |------|---------|
-| `Logosfield_V4_Vision_22_Master.docx` | Current master document (Parts 1–15) |
-| `Logosfield_V4_Handoff_V22.docx` | Handoff for next session — upload with master |
+| `Logosfield_V4_Vision_23_Master.docx` | Current master document (Parts 1–16) |
+| `Logosfield_V4_Handoff_V23.docx` | Handoff for next session — upload with master |
 | `verify_v22.py` | Verification suite — 47/47 checks pass |
 
 ## How to Start a New Session
 
 Upload both:
-1. `Logosfield_V4_Vision_22_Master.docx`
-2. `Logosfield_V4_Handoff_V22.docx`
+1. `Logosfield_V4_Vision_23_Master.docx`
+2. `Logosfield_V4_Handoff_V23.docx`
 
-Read the handoff first (Opening Protocol, Section 1).
-
-## Verification
-
-```bash
-python3 verify_v22.py
-```
-
-Expected output: `47/47 checks passed — All checks passed ✓`
+Read Part 16 of the master first (V23 results — all of it, in order). Then the handoff.
 
 ## Current Derived Results
 
-| Result | Value | Status |
-|--------|-------|--------|
-| β | 2π = 6.28318... | [DERIVED — within V4 standards] |
-| τ | 1 | [DERIVED] |
-| d | 4 | [DERIVED — fully closed] |
-| β > 0 | Forced by A3+FP-lower | [DERIVED — V22] |
-| FP-minimal | No weakening cost-free | [DERIVED — V22] |
+| Result | Status | Session |
+|--------|--------|---------|
+| β = 2π | [DERIVED — within V4 standards] | V18 |
+| τ = 1 | [DERIVED] | V17/V21 |
+| d = 4 | [DERIVED — fully closed] | V17 |
+| β > 0 | [DERIVED] | V22 |
+| FP-minimal | [DERIVED] | V22 |
+
+## V23 Key Results
+
+| Result | Status |
+|--------|--------|
+| Interval reframe: density across I(e,f) is correct PATH 1 entry | [IDENTIFIED — PATH1-reframe] |
+| Four negative results ruling out point-density approaches | [ESTABLISHED] |
+| Relay density mechanism | [RULED OUT] |
+| Sign constraint: V_interval must decrease near irreducible events | [IDENTIFIED — PATH1-sign-constraint] |
+| In-degree/out-degree of irreducible events | [OPEN] |
+| Global-to-local FP passage | [OPEN — load-bearing] |
+| Entropy mechanism for PATH 1 | [OPEN — primary candidate] |
+
+## Next Session Target (V24)
+
+**Priority 1:** Global-to-local FP passage — is S locally definable as S(e)?
+If yes: entropy mechanism for PATH 1 becomes tractable.
+If no: PATH 1 requires scoping alternatives.
+This single question unlocks PATH 1, HV-4c, and FP formalization simultaneously.
 
 ## Session History
 
-| Session | Master | Handoff | Key Results |
-|---------|--------|---------|-------------|
-| V17 | V17_Final_Q4b_Baryon.docx | — | d=4, τ=1, Poisson form |
-| V18 | V18_Master.docx | V18.docx | β=2π [DERIVED] |
-| V19 | V19_Master.docx | V19.docx | Q4a: chain clock, epistemic limit |
-| V20 | V20_Master.docx | V20.docx | HV-1, FF-1–4c, MF-1–4, ρ=24/π |
-| V21 | V21_Master.docx | V21.docx | A2-irred, FP-W2, Q4a Layer A/B |
-| V22 | V22_Master.docx | V22.docx | β>0, FP-minimal [DERIVED], exist/spec |
-
-## Next Session Target (V23)
-
-**PATH 1:** Derive V_interval(R) from V4 primitives. Highest leverage — closes HV-4c, Layer B of Q4a, ρ=24/π [DERIVED], and N_past=β [DERIVED] simultaneously. HIGH difficulty. 2–4 sessions.
+| Session | Key Results |
+|---------|-------------|
+| V17 | d=4, τ=1, Poisson form |
+| V18 | β=2π [DERIVED] |
+| V19 | Q4a: chain clock, epistemic limit, forward extrapolation |
+| V20 | HV-1, FF-1–4c, MF-1–4, ρ=24/π |
+| V21 | A2-irred, FP-W2, Q4a Layer A/B |
+| V22 | β>0 [DERIVED], FP-minimal [DERIVED], existence/specificity stratification |
+| V23 | PATH1-reframe, four negatives, sign constraint, global-to-local FP passage |
