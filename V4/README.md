@@ -1,22 +1,24 @@
 # Logosfield V4 — Session Files
 
-Current session: **V4 Vision 25 · July 2026**
+Current session: **V4 Vision 26 · July 2026**
 
 ## Active Files
 
 | File | Purpose |
 |------|---------|
-| `Logosfield_V4_Vision_25_Master.docx` | Current master (Parts 1–18) |
-| `Logosfield_V4_Handoff_V25.docx` | Handoff for V26 — upload with master |
+| `Logosfield_V4_Vision_26_Master.docx` | Current master (Parts 1–19) |
+| `Logosfield_V4_Handoff_V26.docx` | Handoff for V27 — upload with master |
 | `verify_v22.py` | Verification suite — 61/61 checks pass |
+| `V4_in_CST_language.md` | Translation document for external engagement |
+| `External_Review_Submission_V26.md` | Ready-to-submit review document |
 
-## How to Start V26
+## How to Start V27
 
 Upload both:
-1. `Logosfield_V4_Vision_25_Master.docx`
-2. `Logosfield_V4_Handoff_V25.docx`
+1. `Logosfield_V4_Vision_26_Master.docx`
+2. `Logosfield_V4_Handoff_V26.docx`
 
-Read Part 18 (V25 results) first. The two-observer structure (18.3) is essential context for 18.4.
+Read Part 19 (V26 results) first. Then the handoff.
 
 ## Current Derived Results
 
@@ -29,24 +31,34 @@ Read Part 18 (V25 results) first. The two-observer structure (18.3) is essential
 | FP-minimal | [DERIVED] | V22 |
 | f_MM(d)=1/60 → d=4 unique | [DERIVED — PATH2-L1] | V24 |
 
-## V25 Key Results
+## PATH 2 Status
 
-| Result | Status |
-|--------|--------|
-| Global-to-local FP passage via memory completeness + two-observer structure | [IDENTIFIED — V25] |
-| N_past(f)=β pointwise at every event | [IDENTIFIED — V25] |
-| V_interval constant → R=0 (flatness) | [IDENTIFIED — conditional on HV] |
-| Statistical flatness at large scales (1/√β ≈ 40% Planck fluctuations) | [IDENTIFIED — prediction] |
-| De Sitter: not ruled out by FP global character | [RULED OUT as exclusion] |
-| Anti-de Sitter: FP-upper boundary argument | [IDENTIFIED — conditional] |
+| Layer | Status |
+|-------|--------|
+| L1 — Dimension forcing | [DERIVED — V24] |
+| L2 — Topology forcing | [IDENTIFIED — all HV-conditional — V26] |
+| L3 — Faithfulness | [OPEN — V27 primary target] |
 
-## V26 Priority Targets
+## Layer 2 Topology Rulings (V26)
 
-1. **Layer 2: Rule out de Sitter** — may already be excluded by R=0 consequence of memory completeness. Check carefully.
-2. **Layer 2: Rule out large compact topologies** — Poisson combinatorial argument candidate.
-3. **Anti-de Sitter formalization** — state boundary escape in A2 chain terms.
-4. **External review cycle 11** — submit PATH2-L1 immediately.
-5. **Volume 2 prose** — begin actual sentences.
+| Topology | Mechanism | Status |
+|----------|-----------|--------|
+| Small compact | PATH2-L1 chain statistics | [IDENTIFIED — primitive-true] |
+| Large compact | Global self-consistency | [IDENTIFIED — HV-conditional] |
+| De Sitter | V25 flatness result (R>0) | [IDENTIFIED — HV-conditional] |
+| Anti-de Sitter | FP-upper boundary escape | [IDENTIFIED — conditional] |
+| All curved R≠0 | V25 flatness → R=0 | [IDENTIFIED — HV-conditional] |
+| Flat Minkowski R⁴ | Unique survivor | [TARGET] |
+
+## Fluctuation Prediction
+
+At scale of k memory cycles: **δg/g ~ 1/√(2πk)**
+
+- k=1 cycle (~6 elements): 40% fluctuations
+- k=100 cycles (~628 elements): 4% fluctuations  
+- k=10⁶ cycles: 0.04% (near-classical)
+
+This is a specific, computable prediction not made by standard CST (which does not derive ρ).
 
 ## Session History
 
@@ -54,10 +66,11 @@ Read Part 18 (V25 results) first. The two-observer structure (18.3) is essential
 |---------|-------------|
 | V17 | d=4, τ=1, Poisson form |
 | V18 | β=2π [DERIVED] |
-| V19 | Q4a: chain clock, epistemic limit, forward extrapolation |
-| V20 | HV-1, FF-1–4c, MF-1–4, ρ=24/π |
+| V19 | Q4a |
+| V20 | HV-1, FF, MF, ρ=24/π |
 | V21 | A2-irred, FP-W2, Q4a Layer A/B |
-| V22 | β>0 [DERIVED], FP-minimal [DERIVED], existence/specificity |
-| V23 | PATH1: interval reframe, four negatives, sign constraint, global-to-local FP [OPEN] |
-| V24 | PATH2-L1 [DERIVED]: f_MM=1/60 forces d=4 uniquely |
-| V25 | Global-to-local FP passage [IDENTIFIED], flatness conditional, Layer 2 scan |
+| V22 | β>0, FP-minimal [DERIVED], existence/specificity |
+| V23 | PATH1 reframe, four negatives, global-to-local FP [OPEN] |
+| V24 | PATH2-L1 [DERIVED] |
+| V25 | Global-to-local FP passage, flatness conditional |
+| V26 | Layer 2 complete, CST translation, review submission, fluctuation prediction |
