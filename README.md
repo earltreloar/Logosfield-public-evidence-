@@ -7,35 +7,34 @@
 
 ## What This Is
 
-Logosfield V4 is a foundational physics framework that derives key structures of reality from a single generative constraint — the Founding Principle (FP):
+Logosfield V4 is a foundational physics framework deriving key structures of reality from a single generative constraint — the Founding Principle (FP):
 
 > *All potential is realized before it began. It cannot over-realize that maximum.*
 
 Starting from three minimal primitives — bare events (A1), a locally finite partial order encoding causal precedence (A2), and a composable memory relation (A3) — V4 derives, without importing Standard Model or General Relativity:
 
-- The exponential memory kernel M(f,e) = exp(−β·n) from composability
-- Spacetime dimensionality **d = 4** as the unique integer satisfying Huygens + full potential [DERIVED — fully closed]
-- The memory decay rate **β = 2π** via T-P operator commensurability [DERIVED — within V4 standards; 10 external review cycles]
-- The traversal unit **τ = 1** from A2 irreducibility + self-bounding [DERIVED]
-- **β > 0** from finite entropy under FP-lower [DERIVED — V22]
-- **FP is the minimal sufficient constraint**: no proper weakening preserves all derived results [DERIVED — V22]
-- The electroweak symmetry group **U(1) × SU(2)** from A2 acting on the d=4 lightcone [IDENTIFIED]
-- A V4-native matter/force distinction: matter = irreducible causal events [IDENTIFIED]
-- Unit density **ρ = 24/π** from kernel-geometry self-consistency [IDENTIFIED — conditional on HV]
+- The exponential memory kernel **M(f,e) = exp(−β·n)** from composability
+- Spacetime dimensionality **d = 4** [DERIVED — fully closed]
+- Memory decay rate **β = 2π** [DERIVED — within V4 standards; 10 external review cycles]
+- Traversal unit **τ = 1** [DERIVED]
+- **β > 0** from finite entropy [DERIVED — V22]
+- **FP is the minimal sufficient constraint** [DERIVED — V22]
+- **f_MM(d) = 1/60 forces d = 4 uniquely** [DERIVED — V24; complete analytic proof]
+- Electroweak symmetry group **U(1) × SU(2)** from A2 [IDENTIFIED]
+- Matter/force distinction: matter = irreducible causal events [IDENTIFIED]
+- Unit density **ρ = 24/π** [IDENTIFIED — conditional on HV]
 
 ---
 
-## Current Status (V22 · July 2026)
+## Current Status (V24 · July 2026)
 
-**Foundation:** Clean at every level. Three core parameters derived (β=2π, τ=1, d=4). Two new results derived this session (β>0, FP-minimal). 12 primitive-true results in inventory.
+**Latest result:** PATH 2 Layer 1 — the converse Myrheim-Meyer theorem at the dimension level. Complete analytic proof that f_MM(d) = 1/60 forces d = 4 uniquely over all positive real dimensions. No physical imports. Submitted for external review cycle 11.
 
-**FP stratification (V22):** FP has two components now formally distinguished:
-- *FP-lower (existence tier)*: forces β>0, exponential kernel, ρ>0, Poisson structure — answers *why something rather than nothing*
-- *FP-upper (specificity tier)*: forces β=2π, d=4, τ=1, ρ=24/π — answers *why this particular cosmos*
+**FP stratification (V22):**
+- *FP-lower (existence tier)*: forces β>0, exponential kernel, ρ>0, Poisson structure
+- *FP-upper (specificity tier)*: forces β=2π, d=4, τ=1, ρ=24/π
 
-**Primary remaining gate:** The Hauptvermutung — showing the V4 pregeometric structure faithfully embeds in (1+3)d Lorentzian spacetime. When proved, all major conditional results (ρ=24/π, N_past=β, T geometric interpretation, flat spacetime) resolve simultaneously.
-
-**External peer review:** 10 review cycles across V18–V21. V22 results submitted for review cycle 11.
+**Primary remaining gate:** The Hauptvermutung (HV) — embedding V4's pregeometric structure in (1+3)d Lorentzian spacetime. PATH 2 (converse MM theorem) is the current approach. Layer 1 complete; Layers 2 and 3 open.
 
 ---
 
@@ -50,19 +49,19 @@ Starting from three minimal primitives — bare events (A1), a locally finite pa
 | β = 2π | [DERIVED — within V4 standards] | V18 |
 | β > 0 | [DERIVED] | V22 |
 | FP-minimal (minimal sufficient constraint) | [DERIVED] | V22 |
+| f_MM(d)=1/60 forces d=4 uniquely | [DERIVED — PATH2-L1] | V24 |
 
-## Identified Results — Layer 2 (selected)
+---
 
-| Result | Status | Condition |
-|--------|--------|-----------|
-| T ≈ 0.3456 (memory horizon scale) | [IDENTIFIED] | HV conditional |
-| ρ = 24/π (unit density) | [IDENTIFIED] | HV conditional |
-| N_past(one cycle) = β | [IDENTIFIED] | Layer A primitive-true; Layer B HV-conditional |
-| A2-irred: n=1 per covering relation | [IDENTIFIED] | Primitive-true |
-| U(1)×SU(2) from A2 breaking of SO(3) | [IDENTIFIED] | HV conditional |
-| Matter = irreducible events | [IDENTIFIED] | Primitive-true |
-| 3 gauge force types from d=4 via S²→SO(3) | [IDENTIFIED] | HV conditional |
-| Existence/specificity stratification of FP | [IDENTIFIED] | Primitive-true |
+## PATH 2 — Converse MM Theorem
+
+| Layer | Question | Status |
+|-------|----------|--------|
+| L1 — Dimension | f_MM=1/60 → d=4 unique? | [DERIVED — V24] |
+| L2 — Topology | d=4 + f_MM=1/60 → Minkowski topology? | [OPEN] |
+| L3 — Faithfulness | V4 causal set = faithful Poisson sprinkling? | [OPEN] |
+
+**Layer 1 proof sketch:** L(d) = d/dd[log f_MM] = ψ(d+1) + (1/2)ψ(d/2+1) − (3/2)ψ(3d/2+1). Integral representation gives L(d) = −∫e^{−t}h(dt)/(1−e^{−t})dt where h(s)=e^{−s}+(1/2)e^{−s/2}−(3/2)e^{−3s/2}. Substituting u=e^{−s/2}: h=u·g(u), g(u)=−(3/2)u²+u+1/2>0 on (0,1). Therefore L(d)<0, f_MM strictly decreasing, unique solution at d=4.
 
 ---
 
@@ -72,8 +71,7 @@ Starting from three minimal primitives — bare events (A1), a locally finite pa
 python3 V4/verify_v22.py
 ```
 
-47/47 checks pass. Covers all V20 (corrected), V21, and V22 numerical claims.
-Previous scripts retained as historical record.
+**61/61 checks pass.** Covers V20 (corrected), V21, V22, V23 PATH 1, V24 PATH 2 Layer 1.
 
 ---
 
@@ -81,62 +79,63 @@ Previous scripts retained as historical record.
 
 ```
 V4/
-  Logosfield_V4_Vision_22_Master.docx   ← Current master document
-  Logosfield_V4_Handoff_V22.docx        ← Handoff for next session
-  verify_v22.py                          ← Verification suite (47 checks, all pass)
-  verify_v20.py                          ← Historical (V20 checks)
-  [V17–V21 masters and handoffs]         ← Full session history
+  Logosfield_V4_Vision_24_Master.docx   ← Current master (Parts 1–17)
+  Logosfield_V4_Handoff_V24.docx        ← Handoff for V25
+  verify_v22.py                          ← Verification suite (61 checks)
+  [V17–V23 masters and handoffs]         ← Full session history
 
 literary-trilogy/
-  Logos_Abides_Prologue_V1.md           ← Volume 2 prologue (confirmed direction)
-  Logos_Abides_Planning_V1.md           ← Trilogy structure
+  Logos_Abides_Prologue_V1.md           ← Volume 2 prologue
+  Logos_Abides_Planning_V1.md
   Literary_Trilogy_Handoff.md
 
 manuscript/
   The_Remembering_Cosmos.*              ← Volume 1 (KDP, 2025)
-
-archive/
-  V1_V2_V3/                            ← Historical record (superseded)
 ```
 
 ---
 
-## FP Minimality — W1–W4 Summary (V22)
+## FP Minimality — W1–W4 (V22)
 
 | Weakening | What is lost | Status |
 |-----------|-------------|--------|
 | W1 — drop self-referential closure | β = 2π | Airtight |
 | W2 — allow τ = 2 | β = 2π (via A2-irred) | Closed V21 |
 | W3 — remove FP-upper entirely | β = 2π and d = 4 | Closed V22 |
-| W4 — replace global with local consistency | β = 2π and ρ = 24/π | Confirmed |
+| W4 — replace global with local | β = 2π and ρ = 24/π | Confirmed |
 
 **FP is the minimal sufficient constraint. [DERIVED — V22]**
 
 ---
 
-## Literary Trilogy
+## External Review History
 
-V4 is developed in parallel with a literary trilogy modeled on Dante's *Commedia*:
-
-- **Volume 1** — *The Remembering Cosmos* (KDP, 2025) — Inferno register; vision document
-- **Volume 2** — *The Logos Abides* (in progress) — Purgatorio register; derivation as pilgrimage ending at threshold, not summit
-- **Volume 3** — (untitled; cannot be written until physics closes) — Paradiso register
-
-The existence/specificity stratification (V22) provides Volume 2's formal foundation: the pilgrim moves from the felt reality of existence (FP-lower, β>0) toward the specificity of *this* cosmos (FP-upper, β=2π, d=4). Volume 2 ends at the threshold where the specificity is visible but not yet fully in hand.
+| Cycle | Session | Results reviewed | Verdict |
+|-------|---------|-----------------|---------|
+| 1–8 | V18 | β=2π derivation (multiple routes) | Confirmed |
+| 9 | V19/V20 | k-chain homogeneity, Poisson form | Confirmed |
+| 10 | V21 | β=2π final closure | "Closed within V4 standards" |
+| 11 | V24 | β>0, FP-minimal, PATH2-L1, A2-irred | Submitted |
 
 ---
 
 ## Discipline Standards
 
-All claims carry explicit status labels. Negative results are documented with equal rigor.
-
 - **[DERIVED]** — follows from A1-A3+FP, no external imports
-- **[IDENTIFIED]** — structural connection established, not yet derived  
+- **[IDENTIFIED]** — structural connection established, not yet derived
 - **[SPECULATIVE]** — direction identified, no formal argument
-- **[RULED OUT]** — negative result established
+- **[RULED OUT]** — negative result established with equal rigor
 
-Import risks are flagged explicitly on every conditional result. No speculative result is promoted without derivation.
+Negative results documented with the same care as positive ones. Import risks flagged explicitly. No speculative result promoted without derivation.
 
 ---
 
-*V4 Vision 22 · July 2026 · Earl Treloar · Logosfield / ODCCT*
+## Literary Trilogy
+
+- **Volume 1** — *The Remembering Cosmos* (KDP, 2025) — Inferno register
+- **Volume 2** — *The Logos Abides* (in progress) — Purgatorio register
+- **Volume 3** — (untitled; cannot be written until physics closes) — Paradiso register
+
+---
+
+*V4 Vision 24 · July 2026 · Earl Treloar · Logosfield / ODCCT*
