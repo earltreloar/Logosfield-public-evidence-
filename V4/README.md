@@ -1,22 +1,22 @@
 # Logosfield V4 — Session Files
 
-Current session: **V4 Vision 24 · July 2026**
+Current session: **V4 Vision 25 · July 2026**
 
 ## Active Files
 
 | File | Purpose |
 |------|---------|
-| `Logosfield_V4_Vision_24_Master.docx` | Current master (Parts 1–17) |
-| `Logosfield_V4_Handoff_V24.docx` | Handoff for V25 — upload with master |
+| `Logosfield_V4_Vision_25_Master.docx` | Current master (Parts 1–18) |
+| `Logosfield_V4_Handoff_V25.docx` | Handoff for V26 — upload with master |
 | `verify_v22.py` | Verification suite — 61/61 checks pass |
 
-## How to Start V25
+## How to Start V26
 
 Upload both:
-1. `Logosfield_V4_Vision_24_Master.docx`
-2. `Logosfield_V4_Handoff_V24.docx`
+1. `Logosfield_V4_Vision_25_Master.docx`
+2. `Logosfield_V4_Handoff_V25.docx`
 
-Read Part 17 first (V24 results). Then the handoff.
+Read Part 18 (V25 results) first. The two-observer structure (18.3) is essential context for 18.4.
 
 ## Current Derived Results
 
@@ -29,12 +29,24 @@ Read Part 17 first (V24 results). Then the handoff.
 | FP-minimal | [DERIVED] | V22 |
 | f_MM(d)=1/60 → d=4 unique | [DERIVED — PATH2-L1] | V24 |
 
-## V25 Priority Targets
+## V25 Key Results
 
-1. **PATH 2 Layer 2** — topology forcing. Does f_MM=1/60 + d=4 force Minkowski topology? Handle HV-4c circularity carefully.
-2. **External review cycle 11** — submit PATH2-L1 first (strongest, most independently verifiable).
-3. **Global-to-local FP passage** — [OPEN — load-bearing]. Carried from V23.
-4. **Volume 2 prose** — begin actual sentences.
+| Result | Status |
+|--------|--------|
+| Global-to-local FP passage via memory completeness + two-observer structure | [IDENTIFIED — V25] |
+| N_past(f)=β pointwise at every event | [IDENTIFIED — V25] |
+| V_interval constant → R=0 (flatness) | [IDENTIFIED — conditional on HV] |
+| Statistical flatness at large scales (1/√β ≈ 40% Planck fluctuations) | [IDENTIFIED — prediction] |
+| De Sitter: not ruled out by FP global character | [RULED OUT as exclusion] |
+| Anti-de Sitter: FP-upper boundary argument | [IDENTIFIED — conditional] |
+
+## V26 Priority Targets
+
+1. **Layer 2: Rule out de Sitter** — may already be excluded by R=0 consequence of memory completeness. Check carefully.
+2. **Layer 2: Rule out large compact topologies** — Poisson combinatorial argument candidate.
+3. **Anti-de Sitter formalization** — state boundary escape in A2 chain terms.
+4. **External review cycle 11** — submit PATH2-L1 immediately.
+5. **Volume 2 prose** — begin actual sentences.
 
 ## Session History
 
@@ -46,5 +58,6 @@ Read Part 17 first (V24 results). Then the handoff.
 | V20 | HV-1, FF-1–4c, MF-1–4, ρ=24/π |
 | V21 | A2-irred, FP-W2, Q4a Layer A/B |
 | V22 | β>0 [DERIVED], FP-minimal [DERIVED], existence/specificity |
-| V23 | PATH1: interval reframe, four negatives, sign constraint, global-to-local FP |
-| V24 | PATH2-L1 [DERIVED]: f_MM=1/60 forces d=4 uniquely (complete proof) |
+| V23 | PATH1: interval reframe, four negatives, sign constraint, global-to-local FP [OPEN] |
+| V24 | PATH2-L1 [DERIVED]: f_MM=1/60 forces d=4 uniquely |
+| V25 | Global-to-local FP passage [IDENTIFIED], flatness conditional, Layer 2 scan |
