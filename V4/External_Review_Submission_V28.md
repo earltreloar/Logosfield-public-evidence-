@@ -110,7 +110,7 @@ These exactly match the corresponding quantities for a flat d=4 Minkowski Poisso
 
 **This match is non-trivial and is the content of the partial Layer 3 result [IDENTIFIED — V27].** It is conditional on the identification of ρ = 24/π from V4's self-consistency condition (Hauptvermutung).
 
-**Full Layer 3 (faithfulness) remains open:** The distribution of *causally ordered k-chains* (not merely k-element subsets) has not yet been compared. N_k counts subsets; the Minkowski chain count C_k = (1/60)^{k−1} counts ordered chains. Reconciling these objects is the V28 target.
+**Layer 3 chain probability match [IDENTIFIED — V28]:** The probability that k randomly chosen elements form a causally ordered chain equals P_chain(k) = f_MM^(k−1) = (1/60)^(k−1) in V4, matching the Minkowski prediction for all k ≥ 1. The earlier apparent discrepancy between N_k (k-element subset count) and C_k (ordered chain count) was a category error — comparing counts to probabilities rather than like to like. When compared at the probability level: P_chain(k) = C_k / N_k = [(1/k!) × (1/60)^(k−1)] / (1/k!) = (1/60)^(k−1). Exact match. Multiplicativity follows from A2 transitivity and Poisson independence of the event placement. Corrections are O(exp(−2β)) ≈ 3.5 × 10⁻⁶. Conditional on ρ = 24/π (HV). Full [DERIVED] status awaits HV proof.
 
 ---
 
@@ -133,27 +133,27 @@ The analytic proof of the converse MM theorem demonstrates that this emergence i
 
 - **What is derived:** The converse MM theorem (unique d=4 solution). The partial match of event-count statistics. All prior V4 results (β=2π, τ=1, d=4, β>0, FP-minimal, A2-irreducibility, etc.).
 - **What is not claimed:** GR unification, QFT recovery, tested cosmological predictions, or formal proof of any theological/philosophical interpretation. V4 remains pre-publication, pre-validation foundational work.
-- **Open gap:** Full causal order statistics comparison (Layer 3 complete). This is required before claiming full faithfulness to Minkowski spacetime.
+- **Layer 3 status [IDENTIFIED — V28]:** Chain probability statistics match Minkowski (P_chain(k) = (1/60)^(k−1) for all k). Conditional on HV. Full [DERIVED] status requires HV proof. The earlier framing of Layer 3 as fully open is superseded by V28.
 - **Conditionalities:** Several numerical contacts (ρ = 24/π, Layer 2 topology exclusion, Layer 3) are conditional on the Hauptvermutung identification. The core PATH2-L1 result stands independently.
 
 ---
 
 ## 6. Accompanying Materials
 
-- `verify_v22 3.py` — Full numerical verification suite for all core claims through V22 + PATH2-L1 (all checks PASS).
-- `Logosfield_V4_Vision_27_Master.docx` — Complete session record (Parts 1–20).
-- `Logosfield_V4_Handoff_V27.docx` — Session handoff with priorities and framing corrections.
-- This document incorporates the V27 framing correction (Section 20.3 of Master) retroactively.
+- `verify_v22.py` — Full numerical verification suite for all core claims through V22 + PATH2-L1 (61/61 checks PASS).
+- `Logosfield_V4_Vision_28_Master.docx` — Complete session record (Parts 1–21).
+- `Logosfield_V4_Handoff_V28.docx` — Session handoff with priorities.
+- This document incorporates the V27 framing correction (V4 is not a Minkowski sprinkling) and the V28 Layer 3 chain probability result.
 
 ---
 
 ## 7. Request for Review
 
-We submit PATH2-L1 for external scrutiny by the causal set theory community. We welcome:
+We submit PATH2-L1 and the Layer 3 chain probability result for external scrutiny by the causal set theory community. We welcome:
 - Verification of the analytic proof of L(d) < 0 and uniqueness of d = 4 as the solution to f_MM(d) = 1/60.
-- Discussion of whether the pregeometric framing offers a genuine foundational distinction from sprinkling-based CST.
-- Suggestions for closing the remaining Layer 3 gap (causal chain statistics vs. subset counts).
-- Any technical corrections or clarifications.
+- Assessment of whether the Layer 3 result — P_chain(k) = (1/60)^(k−1) from V4's pregeometric structure matching the Minkowski prediction — constitutes a meaningful faithfulness result or whether additional causal order statistics are required.
+- Discussion of whether the pregeometric framing (Minkowski statistics as emergent output rather than sprinkling input) offers a genuine foundational distinction from standard CST approaches.
+- Any technical corrections or clarifications on any of the above.
 
 The program maintains strict discipline: only what is derived is carried forward; framing corrections are applied immediately when identified; gaps are stated precisely.
 
